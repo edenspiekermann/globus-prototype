@@ -1,0 +1,21 @@
+{
+  "name": "globus-prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edenspiekermann/globus-prototype.git"
+  },
+  "keywords": [],
+  "author": "Gustav Pursche <g.pursche@de.edenspiekermann.com>",
+  "bugs": {
+    "url": "https://github.com/edenspiekermann/globus-prototype/issues"
+  },
+  "homepage": "https://github.com/edenspiekermann/globus-prototype#readme"
+}
