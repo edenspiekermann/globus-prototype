@@ -46,6 +46,7 @@ module.exports = {
       {
         aspects: [ 'invalidHref' ]
       }
-    ]
+    ],
+    'react/react-in-jsx-scope': 'off',
   }
 };
