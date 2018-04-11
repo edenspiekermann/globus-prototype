@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/edenspiekermann/globus-prototype/issues"
   },
-  "homepage": "https://github.com/edenspiekermann/globus-prototype#readme"
+  "homepage": "https://github.com/edenspiekermann/globus-prototype#readme",
+  "dependencies": {
+    "next": "^5.1.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  }
 }
