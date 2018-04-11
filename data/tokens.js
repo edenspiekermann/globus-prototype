@@ -1,7 +1,6 @@
 export default {
   colors: {
     black: 'rgb(0, 0, 0)',
-    melrose: 'rgb(198, 193, 255)',
   },
 
   mq: {

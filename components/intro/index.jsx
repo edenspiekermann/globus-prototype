@@ -3,7 +3,7 @@ import Share from '../share';
 
 import tokens from '../../data/tokens';
 
-export default ({ title, byline, text, image }) => (
+export default ({ title, byline, text, image, color }) => (
   <div className="intro">
     <style jsx>{`
       .intro {
@@ -11,7 +11,7 @@ export default ({ title, byline, text, image }) => (
       }
 
       .intro__header {
-        background-image: linear-gradient(to bottom, ${tokens.colors.melrose} 85%, transparent 0);
+        background-image: linear-gradient(to bottom, ${color} 85%, transparent 0);
         display: flex;
         flex-direction: column;
       }
