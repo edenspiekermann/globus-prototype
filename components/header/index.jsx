@@ -1,4 +1,4 @@
-import data from '../../data/header';
+import data from './data';
 
 export default () => (
   <header className="header">

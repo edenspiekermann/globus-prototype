@@ -6,6 +6,7 @@ import listicleData from '../data/pages/listicle';
 import sidebarData from '../data/sidebar';
 
 import Fonts from '../components/fonts';
+import Footer from '../components/footer';
 import Header from '../components/header';
 import Intro from '../components/intro';
 import MainContent from '../components/main-content';
@@ -31,5 +32,7 @@ export default () => (
       <ProductList products={listicleData.products} />
       <Sidebar {...sidebarData} />
     </MainContent>
+
+    <Footer />
   </Fragment>
 );

@@ -31,7 +31,7 @@ export default ({ items }) => (
         align-items: center;
         display: flex;
         flex-direction: row;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
       }
 
       .sidebar__list-item-image {

@@ -22,6 +22,7 @@ export default ({ products }) => (
 
       @media ${tokens.mq.desktop} {
         .product-list__item {
+          margin-bottom: 80px;
           padding-right: 0;
         }
       }
