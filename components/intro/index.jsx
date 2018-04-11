@@ -1,10 +1,9 @@
 import IntroTitle from './title';
 import Share from '../share';
 
-import data from '../../data/intro';
 import tokens from '../../data/tokens';
 
-export default () => (
+export default ({ title, byline, text, image }) => (
   <div className="intro">
     <style jsx>{`
       .intro {
@@ -70,14 +69,14 @@ export default () => (
 
     <div className="intro__header">
       <div className="intro__image">
-        <img src={data.image.url} alt={data.image.alt} />
+        <img src={image.url} alt={image.alt} />
       </div>
 
-      <IntroTitle byline={data.byline} title={data.title} />
+      <IntroTitle byline={byline} title={title} />
     </div>
 
     <div className="intro__content">
-      <div className="intro__text">{data.text.map(_ => <p>{_}</p>)}</div>
+      <div className="intro__text">{text.map(_ => <p>{_}</p>)}</div>
 
       <div className="intro__share">
         <Share />

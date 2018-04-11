@@ -24,7 +24,7 @@ const IntroTitle = ({ byline, title }) => <h2 className="intro__title">
     @media ${tokens.mq.desktop} {
       .intro__title {
         font-size: 88px;
-        margin-left: -${tokens.colWidth.desktop * 4}px;
+        margin-left: -${tokens.colWidth.desktop * 8}px;
         max-width: 700px;
         order: 2;
       }

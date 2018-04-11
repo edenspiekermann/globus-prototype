@@ -6,7 +6,6 @@ export default () => (
       .header {
         background-color: black;
         color: white;
-        margin-bottom: 1.5rem;
         padding: 1rem;
         text-align: center;
       }
