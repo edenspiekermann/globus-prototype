@@ -1,1 +1,1 @@
-export default () => <div>Welcome to next.js!</div>
+export default () => <p>This is going to be the shiny prototype for globus!</p>
