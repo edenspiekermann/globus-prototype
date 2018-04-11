@@ -60,3 +60,6 @@ typings/
 # project specific
 
 .next/
+build/
+
+.DS_Store
