@@ -6,7 +6,6 @@ export default () => (
 
     body {
       margin: 0;
-      overflow-x: hidden;
       padding: 0;
       width: 100vw;
     }

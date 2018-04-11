@@ -12,6 +12,8 @@ export default ({ items }) => (
 
       @media ${tokens.mq.desktop} {
         .sidebar {
+          position: sticky;
+          top: 10px;
           width: 25%;
         }
       }

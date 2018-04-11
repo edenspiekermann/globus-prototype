@@ -7,7 +7,7 @@ export default ({ title, byline, text, image }) => (
   <div className="intro">
     <style jsx>{`
       .intro {
-        padding-bottom: ${tokens.colWidth.mobile}px;
+        padding-bottom: 140px;
       }
 
       .intro__header {

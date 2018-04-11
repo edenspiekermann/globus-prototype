@@ -5,6 +5,7 @@ import introData from '../data/intro';
 import listicleData from '../data/pages/listicle';
 import sidebarData from '../data/sidebar';
 
+import Edition from '../components/edition';
 import Fonts from '../components/fonts';
 import Footer from '../components/footer';
 import Header from '../components/header';
@@ -27,6 +28,8 @@ export default () => (
     <Header />
 
     <Intro {...introData} />
+
+    <Edition />
 
     <MainContent>
       <ProductList products={listicleData.products} />
