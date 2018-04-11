@@ -5,6 +5,7 @@
 This prototype is build with [next.js](https://github.com/zeit/next.js#how-to-use). Please follow their documentation.
 
 ```bash
+npm install
 npm run develop
 ```
 
