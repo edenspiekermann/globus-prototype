@@ -2,7 +2,7 @@ export default {
   products: [
     {
       image: {
-        url: 'https://dummyimage.com/350x500/f6f6f6/fff',
+        url: '/static/images/product_1.jpg',
         alt: 'Dummy image',
       },
       title: 'PS By Paul Smith',
@@ -12,7 +12,7 @@ export default {
 
     {
       image: {
-        url: 'https://dummyimage.com/350x500/f6f6f6/fff',
+        url: '/static/images/product_2.jpg',
         alt: 'Dummy image',
       },
       title: 'Zadig & Voltaire',
@@ -22,7 +22,7 @@ export default {
 
     {
       image: {
-        url: 'https://dummyimage.com/350x500/f6f6f6/fff',
+        url: '/static/images/product_3.jpg',
         alt: 'Dummy image',
       },
       title: 'Ted Baker',
@@ -32,7 +32,7 @@ export default {
 
     {
       image: {
-        url: 'https://dummyimage.com/350x500/f6f6f6/fff',
+        url: '/static/images/product_4.jpg',
         alt: 'Dummy image',
       },
       title: 'Polo Ralph Lauren',
@@ -42,7 +42,7 @@ export default {
 
     {
       image: {
-        url: 'https://dummyimage.com/350x500/f6f6f6/fff',
+        url: '/static/images/product_5.jpg',
         alt: 'Dummy image',
       },
       title: 'Blue Lemon',

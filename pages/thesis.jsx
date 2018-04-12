@@ -2,9 +2,10 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 
 import introData from '../data/intro';
-import listicleData from '../data/pages/listicle';
+import productsData from '../data/product-list';
 import sidebarData from '../data/sidebar';
 
+import Button from '../components/input/button';
 import Edition from '../components/edition';
 import Fonts from '../components/fonts';
 import Footer from '../components/footer';
@@ -21,7 +22,7 @@ export default () => (
     <Fonts />
 
     <Head>
-      <title>Listicle</title>
+      <title>Thesis</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
 
@@ -32,7 +33,11 @@ export default () => (
     <Edition />
 
     <MainContent>
-      <ProductList products={listicleData.products} />
+      <ProductList products={productsData.products}>
+        <Button href="#" style="window">
+          Alle Blumen-Hemden ansehen
+        </Button>
+      </ProductList>
       <Sidebar {...sidebarData} />
     </MainContent>
 

@@ -19,7 +19,7 @@ export default () => (
       `}</style>
 
       <li className="index__item">
-        <Link href="/listicle">Listicle</Link>
+        <Link href="/thesis">Thesis</Link>
       </li>
     </ul>
   </Fragment>

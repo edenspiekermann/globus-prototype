@@ -2,8 +2,8 @@ export default {
   color: 'rgb(198, 193, 255)',
   byline: 'Globus Trends',
   image: {
-    url: 'https://dummyimage.com/600x800/aaa5e2/fff',
-    alt: 'Dummy image',
+    url: '/static/images/intro_1.jpg',
+    alt: 'Ein wunderschönes Blumen-Hemd',
   },
   title: 'Weil Blumen das Leben immer schöner machen. Ja, auch auf Männerhemden!',
   text: [
