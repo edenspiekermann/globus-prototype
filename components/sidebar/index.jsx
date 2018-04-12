@@ -7,14 +7,16 @@ export default ({ items }) => (
         background-color: rgb(245, 245, 250);
         overflow-x: hidden;
         padding: 20px;
-        width: 100%;
       }
 
       @media ${tokens.mq.desktop} {
         .sidebar {
+          align-self: flex-start;
+          margin-left: 60px;
+          margin-right: 60px;
           position: sticky;
           top: 10px;
-          width: 25%;
+          width: 450px;
         }
       }
 

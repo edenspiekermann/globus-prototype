@@ -6,8 +6,11 @@ export default ({ products, children }) => (
   <div className="product-list">
     <style jsx>{`
       .product-list {
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
         text-align: center;
-        width: 75%;
       }
 
       .product-list__list {

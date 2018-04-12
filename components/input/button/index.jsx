@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
 
-const LinkElement = ({ href, children, style }) => (
+const LinkElement = ({ href, children, look }) => (
   <Fragment>
     <style jsx>{`
       .button {
@@ -24,13 +24,13 @@ const LinkElement = ({ href, children, style }) => (
     `}</style>
 
     <Link href={href}>
-      <a className={`button ${style ? `button--${style}` : ''}`}>{children}</a>
+      <a className={`button ${look ? `button--${look}` : ''}`}>{children}</a>
     </Link>
   </Fragment>
 );
 
-const ButtonElement = ({ className, type = 'button', children, style }) => (
-  <button type="button" className={`button ${style && `button--${style}`}`}>
+const ButtonElement = ({ className, type = 'button', children, look }) => (
+  <button type="button" className={`button ${style && `button--${look}`}`}>
     {children}
   </button>
 );

@@ -68,6 +68,7 @@ export default ({ title, byline, text, image, color }) => (
     `}</style>
 
     <div className="intro__header">
+
       <div className="intro__image">
         <img src={image.url} alt={image.alt} />
       </div>

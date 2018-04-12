@@ -21,6 +21,10 @@ export default () => (
       <li className="index__item">
         <Link href="/thesis">Thesis</Link>
       </li>
+
+      <li className="index__item">
+        <Link href="/listicle">Listicle</Link>
+      </li>
     </ul>
   </Fragment>
 );
