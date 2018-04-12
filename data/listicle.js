@@ -34,6 +34,12 @@ export default {
         url: '/static/images/listicle_3.jpg',
         alt: 'Dicke Soundbox',
       },
+      price: '149.90',
+      location: 'Zinfandel, Napa Valley 2015',
+      button: {
+        url: '#',
+        label: 'Box kaufen',
+      },
     },
 
     {
@@ -58,6 +64,10 @@ export default {
       image: {
         url: '/static/images/listicle_5.jpg',
         alt: 'Modeshot',
+      },
+      button: {
+        url: '#',
+        label: 'Shop the look',
       },
     },
 

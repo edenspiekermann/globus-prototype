@@ -5,6 +5,7 @@ export default ({ products }) => <ul className="listicle">
     .listicle {
       list-style: none;
       margin: 0;
+      max-width: 1200px; /* TODO */
       padding: 0;
     }
 

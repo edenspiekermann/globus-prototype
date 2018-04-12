@@ -1,6 +1,7 @@
 export default {
   colors: {
     black: 'rgb(0, 0, 0)',
+    grey: 'rgb(166, 166, 166)',
   },
 
   mq: {

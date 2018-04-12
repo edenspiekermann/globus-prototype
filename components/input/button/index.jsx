@@ -5,15 +5,22 @@ const LinkElement = ({ href, children, look }) => (
   <Fragment>
     <style jsx>{`
       .button {
+        background-color: white;
         color: currentColor;
         display: inline-block;
+        line-height: 1;
         padding: 15px 30px;
         text-decoration: none;
         text-transform: uppercase;
       }
 
+      .button--window-condensed,
       .button--window {
         border: 1px solid black;
+      }
+
+      .button--window-condensed {
+        padding: 9px 30px;
       }
 
       .button--window:hover,

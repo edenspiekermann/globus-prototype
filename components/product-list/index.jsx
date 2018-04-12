@@ -9,7 +9,7 @@ export default ({ products, children }) => (
         align-self: center;
         margin-left: auto;
         margin-right: auto;
-        max-width: 800px;
+        max-width: 800px; /* TODO */
         text-align: center;
       }
 
@@ -35,8 +35,6 @@ export default ({ products, children }) => (
     `}</style>
 
     <ul className="product-list__list">
-
-
       {products.map(_ => (
         <li className="product-list__item">
           <Product {..._} />
