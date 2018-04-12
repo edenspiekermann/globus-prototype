@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build && next export -o build",
     "start": "next start",
-    "lint": "npx eslint components/**/**/* pages/**/* data/*"
+    "lint": "npx eslint --ignore-path .gitignore data/*.js pages/*.jsx components/**/**/*.jsx components/**/**/*.js"
   },
   "repository": {
     "type": "git",

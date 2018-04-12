@@ -23,6 +23,10 @@ export default () => (
       </li>
 
       <li className="index__item">
+        <Link href="/thesis-shoes">Thesis - Shoes</Link>
+      </li>
+
+      <li className="index__item">
         <Link href="/listicle">Listicle</Link>
       </li>
     </ul>

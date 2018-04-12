@@ -33,7 +33,7 @@ export default () => (
     <Edition />
 
     <MainContent>
-      <ProductList products={productsData.products}>
+      <ProductList {...productsData[0]}>
         <Button href="#" look="window">
           Alle Blumen-Hemden ansehen
         </Button>

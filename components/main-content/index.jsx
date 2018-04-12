@@ -6,6 +6,7 @@ export default ({ children }) => (
       .main-content {
         display: flex;
         flex-direction: column;
+        padding-bottom: 80px;
       }
 
       @media ${tokens.mq.desktop} {

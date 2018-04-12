@@ -3,17 +3,27 @@ import Share from '../share';
 
 import tokens from '../../data/tokens';
 
-export default ({ title, byline, text, image, color }) => (
-  <div className="intro">
+export default ({ title, byline, text, image, color, reversed = false, number }) => (
+  <div className={`intro ${reversed ? 'intro--reversed' : ''}`}>
     <style jsx>{`
       .intro {
         padding-bottom: 140px;
       }
 
       .intro__header {
-        background-image: linear-gradient(to bottom, ${color} 85%, transparent 0);
-        display: flex;
+        ${color
+          ? `background-image: linear-gradient(to bottom, ${color} 85%, transparent 0);`
+          : ''} display: flex;
         flex-direction: column;
+      }
+
+      .intro--reversed .intro__content {
+        display: flex;
+      }
+
+      .intro--reversed .intro__header,
+      .intro--reversed .intro__content {
+        align-items: flex-end;
       }
 
       @media ${tokens.mq.desktop} {
@@ -27,20 +37,22 @@ export default ({ title, byline, text, image, color }) => (
         order: 2;
       }
 
-      .intro__image,
-      .intro__content {
-        margin-left: ${tokens.colWidth.mobile * 5}px;
-      }
-
       @media ${tokens.mq.desktop} {
         .intro__image {
           margin-left: 0;
           max-width: auto;
           order: 1;
         }
+
+        .intro--reversed .intro__image {
+          margin-left: auto;
+          margin-right: 0;
+          order: 2;
+        }
       }
 
       .intro__content {
+        margin-left: ${tokens.colWidth.mobile * 5}px;
         margin-right: ${tokens.colWidth.mobile * 2}px;
       }
 
@@ -49,6 +61,12 @@ export default ({ title, byline, text, image, color }) => (
           margin-left: 700px;
           margin-right: 0;
           margin-top: -200px;
+        }
+
+        .intro--reversed .intro__content {
+          margin-left: 0;
+          margin-right: 700px;
+          margin-top: -40px;
         }
       }
 
@@ -64,16 +82,19 @@ export default ({ title, byline, text, image, color }) => (
           font-size: 32px;
           max-width: 540px;
         }
+
+        .intro--reversed .intro__text {
+          margin-left: auto;
+        }
       }
     `}</style>
 
     <div className="intro__header">
-
       <div className="intro__image">
         <img src={image.url} alt={image.alt} />
       </div>
 
-      <IntroTitle byline={byline} title={title} />
+      <IntroTitle byline={byline} title={title} transparent={!reversed} number={number} />
     </div>
 
     <div className="intro__content">

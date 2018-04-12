@@ -39,8 +39,10 @@ export default ({ items }) => (
       }
 
       .sidebar__list-item-image {
-        margin-left: -50px;
-        margin-right: 20px;
+        margin-right: -20px;
+        max-height: 100px;
+        max-width: 100px;
+        transform: translateX(-50%);
       }
 
       .sidebar__list-item-title {

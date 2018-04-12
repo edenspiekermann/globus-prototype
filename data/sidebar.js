@@ -2,7 +2,7 @@ export default {
   items: [
     {
       image: {
-        url: 'https://dummyimage.com/100x100/aaa5e2/fff',
+        url: '/static/images/sidebar_1.jpg',
         alt: '',
       },
       byline: 'Globus Trends',
@@ -11,7 +11,7 @@ export default {
 
     {
       image: {
-        url: 'https://dummyimage.com/100x100/aaa5e2/fff',
+        url: '/static/images/sidebar_2.jpg',
         alt: '',
       },
       title: '7 Produkte, die du jetzt für LA brauchst',
@@ -19,7 +19,7 @@ export default {
 
     {
       image: {
-        url: 'https://dummyimage.com/100x100/aaa5e2/fff',
+        url: '/static/images/sidebar_3.jpg',
         alt: '',
       },
       byline: 'Globus Trends',
@@ -28,7 +28,7 @@ export default {
 
     {
       image: {
-        url: 'https://dummyimage.com/100x100/aaa5e2/fff',
+        url: '/static/images/sidebar_4.jpg',
         alt: '',
       },
       title: '6 Gründe, für eine Reise an die Westcoast',
@@ -36,7 +36,7 @@ export default {
 
     {
       image: {
-        url: 'https://dummyimage.com/100x100/aaa5e2/fff',
+        url: '/static/images/sidebar_5.jpg',
         alt: '',
       },
       byline: 'Globus Trends',

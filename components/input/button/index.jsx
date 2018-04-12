@@ -6,7 +6,7 @@ const LinkElement = ({ href, children, look }) => (
     <style jsx>{`
       .button {
         background-color: white;
-        color: currentColor;
+        color: black;
         display: inline-block;
         line-height: 1;
         padding: 15px 30px;
@@ -36,8 +36,8 @@ const LinkElement = ({ href, children, look }) => (
   </Fragment>
 );
 
-const ButtonElement = ({ className, type = 'button', children, look }) => (
-  <button type="button" className={`button ${style && `button--${look}`}`}>
+const ButtonElement = ({ type = 'button', children, look }) => (
+  <button type={type} className={`button ${look && `button--${look}`}`}>
     {children}
   </button>
 );

@@ -10,7 +10,6 @@ export default () => (
         color: white;
         display: flex;
         justify-content: center;
-        margin-top: 60px;
         padding: 40px;
       }
 
