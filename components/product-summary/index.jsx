@@ -1,5 +1,7 @@
 import Button from '../input/button';
 
+import tokens from '../../data/tokens';
+
 export default ({ title, text, type, price, button, image, color, background }) => (
   <section className="product-summary">
     <style jsx>{`
@@ -31,15 +33,31 @@ export default ({ title, text, type, price, button, image, color, background }) 
       }
 
       .product-summary__title {
-        font-size: 56px;
-        line-height: 1.2;
+        font-family: ${tokens.fonts.founders.family};
+        font-size: 32px;
+        font-weight: ${tokens.fonts.founders.weight.medium};
+        line-height: 1;
         margin-bottom: 0;
         margin-top: 0;
       }
 
+      @media ${tokens.mq.desktop} {
+        .product-summary__title {
+          font-size: 56px;
+        }
+      }
+
       .product-summary__text {
+        font-family: ${tokens.fonts.founders.family};
         font-size: 20px;
-        line-height: 1.45;
+        line-height: ${ 24 / 20 };
+      }
+
+      .product-summary__meta {
+        font-family: ${tokens.fonts.founders.family};
+        font-size: 16px;
+        line-height: ${ 20 / 16};
+        opacity: .6;
       }
 
       .product-summary__type {

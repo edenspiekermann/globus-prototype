@@ -9,8 +9,8 @@ export default () => (
         background-color: black;
         color: white;
         display: flex;
+        font-family: Arial;
         justify-content: center;
-        overflow-x: hidden;
         padding: 40px;
       }
 

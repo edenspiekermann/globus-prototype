@@ -7,17 +7,20 @@ const IntroTitle = ({ byline, title, number }) => (
   <h2 className="intro-title">
     <style jsx>{`
       .intro-title {
-        font-family: Arial;
+        font-family: ${tokens.fonts.founders.family};
         // see https://www.smashingmagazine.com/2016/05/fluid-typography/
-        font-size: calc(48px + (105 - 48) * (100vw - 400px) / (2000 - 400));
-        font-weight: normal;
-        line-height: 1.05;
+        font-size: calc(48px + (90 - 48) * (100vw - 400px) / (2000 - 400));
+        font-weight: ${tokens.fonts.founders.weight.medium};
+        line-height: 1;
+        max-width: 800px;
         white-space: wrap;
       }
 
       .intro-title__byline {
         display: block;
+        font-family: ${tokens.fonts.domaine.family};
         font-size: 20px;
+        font-weight: ${tokens.fonts.domaine.weight.semibold};
         margin-bottom: ${tokens.colWidth.mobile}px;
       }
 

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import data from './data';
 
 export default () => (
@@ -11,10 +13,18 @@ export default () => (
       }
 
       .header__title {
+        color: currentColor;
         display: block;
         font-size: 2.5rem;
+        font-weight: bold;
         margin-bottom: 1rem;
+        text-decoration: none;
         text-transform: uppercase;
+      }
+
+      .header__title:hover,
+      .header__title:focus {
+        text-decoration: underline;
       }
 
       .header__item {
@@ -27,7 +37,9 @@ export default () => (
       }
     `}</style>
 
-    <strong className="header__title">Globus</strong>
+    <Link href="/">
+      <a className="header__title">Globus</a>
+    </Link>
 
     {data.items.map(item => (
       // eslint-disable-next-line jsx-a11y/anchor-is-valid

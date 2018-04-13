@@ -7,10 +7,18 @@ export default ({ products, children }) => (
     <style jsx>{`
       .product-list {
         align-self: center;
+        margin-bottom: 60px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 800px; /* TODO */
+        max-width: 900px; /* TODO */
+        padding-left: 20px;
         text-align: center;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .product-list {
+          padding-left: 60px;
+        }
       }
 
       .product-list__list {

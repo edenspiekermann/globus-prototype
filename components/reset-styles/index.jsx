@@ -1,13 +1,14 @@
 export default () => (
   <style global jsx>{`
-    * {
+    *,
+    *:before,
+    *:after {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
       padding: 0;
-      width: 100vw;
     }
 
     img {

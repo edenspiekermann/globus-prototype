@@ -1,4 +1,5 @@
 import Button from '../../input/button';
+import Dots from '../../dots';
 
 import tokens from '../../../data/tokens';
 
@@ -40,13 +41,18 @@ export default ({ index, image, title, text, type = 'left', location, price, but
       }
 
       .listicle-item__title {
+        font-family: ${tokens.fonts.founders.family};
         font-size: 32px;
+        font-weight: ${tokens.fonts.founders.weight.medium};
+        line-height: 1;
       }
 
       .listicle-item__index {
         display: block;
         font-size: 128px;
-        font-family: Arial;
+        font-family: ${tokens.fonts.founders.family};
+        font-weight: ${tokens.fonts.founders.weight.medium};
+        line-height: 1;
         margin-bottom: 10px;
       }
 
@@ -99,8 +105,9 @@ export default ({ index, image, title, text, type = 'left', location, price, but
       }
 
       .listicle-item__text {
+        font-family: ${tokens.fonts.founders.family};
         font-size: 20px;
-        line-height: 1.45;
+        line-height: ${24 / 20};
       }
 
       .listicle-item__text-paragraph {
@@ -134,6 +141,7 @@ export default ({ index, image, title, text, type = 'left', location, price, but
         <div className="listicle-item__button">
           <Button href={button.url} look="window-condensed">
             {button.label}
+            <Dots />
           </Button>
         </div>
       )}
