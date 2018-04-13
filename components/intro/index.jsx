@@ -56,6 +56,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
       @media ${tokens.mq.desktop} {
         .intro__content {
           margin-left: calc(40% + 100px);
+          max-width: 700px;
           position: relative;
           z-index: 2;
         }
