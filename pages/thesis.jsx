@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
+import editionData from '../data/edition';
 import introData from '../data/intro';
 import productsData from '../data/product-list';
 import sidebarData from '../data/sidebar';
@@ -29,7 +30,7 @@ export default () => (
     <Header />
 
     <Intro {...introData[0]}>
-      <Edition />
+      <Edition {...editionData[0]} />
     </Intro>
 
     <MainContent>

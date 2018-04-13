@@ -31,7 +31,7 @@ export default () => (
     <Header />
 
     <Intro {...introData[1]}>
-      <Edition {...editionData} />
+      <Edition {...editionData[1]} />
     </Intro>
 
     <MainContent>

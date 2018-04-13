@@ -1,18 +1,31 @@
-export default ({ image }) => (
-  <p className="edition">
+import tokens from '../../data/tokens';
+
+export default ({ image, label }) => (
+  <div className="edition">
     <style jsx>{`
       .edition {
-        display: inline-block;
-        margin-left: 30px;
-        margin-top: -300px;
+        position: relative;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .edition {
+          margin-top: -200px;
+          max-width: 250px;
+        }
+      }
+
+      .editon__label {
+        font-size: 16px;
+        margin: 0;
         text-transform: uppercase;
-        transform: rotate(-90deg);
+        //transform: rotate(-90deg) translateX(-103%) translateY(150%);
         transform-origin: bottom left;
+        white-space: nowrap;
       }
     `}</style>
 
-  {image && <img src={image.url} alt={image.alt} className="edition__image" />}
+  {image && <div className="edition__image-container"><img src={image.url} alt={image.alt} className="edition__image" /></div>}
 
-    Frühling / Sommer 2018
-  </p>
+    <p className="editon__label">{label}</p>
+  </div>
 );

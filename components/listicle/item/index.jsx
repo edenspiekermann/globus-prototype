@@ -50,6 +50,10 @@ export default ({ index, image, title, text, type = 'left', location, price, but
         margin-bottom: 10px;
       }
 
+      .listicle-item--full .listicle-item__image-container {
+        width: 100%;
+      }
+
       .listicle-item--right .listicle-item__content {
         text-align: right;
       }

@@ -4,10 +4,11 @@ export default ({ title, text, type, price, button, image, color, background }) 
   <section className="product-summary">
     <style jsx>{`
       .product-summary {
+        align-items: center;
         background-color: ${background};
         color: ${color};
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         padding: 60px;
       }
 
@@ -25,7 +26,6 @@ export default ({ title, text, type, price, button, image, color, background }) 
       }
 
       .product-summary__content {
-        margin-left: 200px;
         max-width: 500px; // TODO
         z-index: 2;
       }
