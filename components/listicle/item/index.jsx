@@ -99,6 +99,15 @@ export default ({ index, image, title, text, type = 'left', location, price, but
         line-height: 1.45;
       }
 
+      .listicle-item__text-paragraph {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      .listicle-item__text-paragraph + .listicle-item__text-paragraph {
+        margin-top: 5px;
+      }
+
       .listicle-item__meta {
         color: ${tokens.colors.grey};
         font-size: 16px;
@@ -132,7 +141,9 @@ export default ({ index, image, title, text, type = 'left', location, price, but
         {title}
       </h3>
 
-      <div className="listicle-item__text">{text.map(paragraph => <p>{paragraph}</p>)}</div>
+      <div className="listicle-item__text">
+        {text.map(paragraph => <p className="listicle-item__text-paragraph">{paragraph}</p>)}
+      </div>
 
       {(location || price) && (
         <p className="listicle-item__meta">

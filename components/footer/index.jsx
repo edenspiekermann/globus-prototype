@@ -10,6 +10,7 @@ export default () => (
         color: white;
         display: flex;
         justify-content: center;
+        overflow-x: hidden;
         padding: 40px;
       }
 

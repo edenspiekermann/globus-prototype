@@ -3,34 +3,16 @@ import { Fragment } from 'react';
 import mixins from '../../../data/mixins';
 import tokens from '../../../data/tokens';
 
-const IntroTitle = ({ byline, title, transparent, number }) => (
-  <h2 className={`intro-title ${transparent ? 'intro-title--transparent' : ''}`}>
+const IntroTitle = ({ byline, title, number }) => (
+  <h2 className="intro-title">
     <style jsx>{`
       .intro-title {
         font-family: Arial;
-        font-size: 48px;
+        // see https://www.smashingmagazine.com/2016/05/fluid-typography/
+        font-size: calc(48px + (105 - 48) * (100vw - 400px) / (2000 - 400));
         font-weight: normal;
-        line-height: 1;
-        margin-left: ${tokens.colWidth.mobile * 2}px;
-        margin-right: ${tokens.colWidth.mobile * 2}px;
+        line-height: 1.05;
         white-space: wrap;
-        z-index: 10;
-      }
-
-      @media ${tokens.mq.desktop} {
-        .intro-title {
-          font-size: 88px;
-          max-width: 750px; // TODO
-          order: 1;
-        }
-
-        .intro-title--transparent {
-          font-size: 88px;
-          margin-left: -${tokens.colWidth.desktop * 8}px;
-          margin-right: 0;
-
-          order: 2;
-        }
       }
 
       .intro-title__byline {

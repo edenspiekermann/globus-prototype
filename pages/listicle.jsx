@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
+import editionData from '../data/edition';
 import introData from '../data/intro';
 import listicleData from '../data/listicle';
 import productSummaryData from '../data/product-summary';
@@ -29,9 +30,9 @@ export default () => (
 
     <Header />
 
-    <Intro {...introData[1]} />
-
-    <Edition />
+    <Intro {...introData[1]}>
+      <Edition {...editionData} />
+    </Intro>
 
     <MainContent>
       <Listicle {...listicleData} />

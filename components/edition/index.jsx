@@ -1,4 +1,4 @@
-export default () => (
+export default ({ image }) => (
   <p className="edition">
     <style jsx>{`
       .edition {
@@ -10,6 +10,9 @@ export default () => (
         transform-origin: bottom left;
       }
     `}</style>
+
+  {image && <img src={image.url} alt={image.alt} className="edition__image" />}
+
     Frühling / Sommer 2018
   </p>
 );

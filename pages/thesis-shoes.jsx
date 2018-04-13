@@ -28,9 +28,9 @@ export default () => (
 
     <Header />
 
-    <Intro {...introData[2]} />
-
-    <Edition />
+    <Intro {...introData[2]}>
+      <Edition />
+    </Intro>
 
     <MainContent>
       <ProductList {...productsData[1]}>

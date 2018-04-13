@@ -15,14 +15,14 @@ export default [
 
   {
     image: {
-      url: '/static/images/intro_3.jpg',
-      alt: 'Cowboy Stiefel',
+      url: '/static/images/intro_4.png',
+      alt: 'Wein',
     },
-    number: '7',
-    title: 'DIE BESTEN COWBOY-STIEFEL DER SAISON KOMMEN AUS ITALIEN',
+    number: '6',
+    title: 'KALIFORNISCHE WEINE, DIE PERFEKT ZU DIESEM SOMMER PASSEN',
     text: [
-      'Goffredo Fantini heißt der Mann, der die derzeit elegantesten Cowboy-Boots designt und produziert — und er stammt nicht irgendwo aus Arizona, sondern aus einem Bauerndorf in der Emilia Romagna, viereinhalb Autostunden südlich von Mailand.',
-      'Zu den größten Fans seiner Marke gehört die Country-Sängerin und Stilikone Emmylou Harris. So viel zur Frage, ob Cowboystiefel auch aus Italien kommen dürfen.',
+      'David O’Halloran, Senior Buyer für Wein und Spirituosen, ist gebürtiger Ire und kam vor 28 Jahren in die Schweiz. Wenn er über Weine spricht, leuchten seine Augen und sein Redefluss ist kaum zu bremsen.',
+      'Mit vielen Winzern verbindet ihn nicht nur eine langjährige Geschäftsbeziehung, sondern auch eine tiefe Freundschaft.',
     ],
     reversed: true,
   },
