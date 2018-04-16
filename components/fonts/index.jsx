@@ -20,5 +20,11 @@ export default () => (
       font-weight: 600;
       src: url('/static/fonts/DomaineDisplayWeb-Semibold.woff2') format('woff2');
     }
+
+    @font-face {
+      font-family: 'Globus Icon';
+      font-display: swap;
+      src: url('/static/fonts/Globus-Icon.woff') format('woff');
+    }
   `}</style>
 );

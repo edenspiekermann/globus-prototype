@@ -1,14 +1,55 @@
+import {Fragment} from 'react';
+
+import mixins from '../../data/mixins';
+import tokens from '../../data/tokens';
+
 export default () => (
-  <button className="share">
+  <Fragment>
     <style jsx>{`
       .share {
-        background: transparent;
-        border: none;
-        font-size: 16px;
-        padding: 0;
-        text-transform: uppercase;
+        color: currentColor;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+      }
+
+      .share:before {
+        display: inline-block;
+        font-family: ${tokens.fonts.icon.family};
+        font-size: 32px;
+      }
+
+      .share__label {
+        ${mixins.visuallyHidden}
+      }
+
+      .share--facebook:before {
+        content: '\\e81a';
+        font-size: 26px;
+      }
+
+      .share--pinterest:before {
+        content: '\\e82a';
+      }
+
+      .share--pinterest:before {
+        content: '\\e826';
+      }
+
+      .share--print:before {
+        content: '\\e82b';
       }
     `}</style>
-    Share
-  </button>
+
+  <a href="#" className="share share--facebook">
+    <span className="share__label">Auf facebook teilen</span>
+  </a>
+  <a href="#" className="share share--pinterest">
+    <span className="share__label">Auf pinterest speichern</span></a>
+  <a href="#" className="share share--email">
+    <span className="share__label">Per Email verschicken</span></a>
+  <a href="#" className="share share--print">
+    <span className="share__label">Ausdrucken</span></a>
+
+  </Fragment>
 );

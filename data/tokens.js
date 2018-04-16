@@ -28,5 +28,9 @@ export default {
         medium: 500,
       },
     },
+
+    icon: {
+      family: 'Globus Icon',
+    },
   },
 };
