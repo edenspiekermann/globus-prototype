@@ -7,13 +7,22 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
   <section className={`intro ${reversed ? 'intro--reversed' : ''}`}>
     <style jsx>{`
       .intro {
-        padding-bottom: 100px;
+        max-width: 100vw;
+        overflow-x: hidden;
+        margin-bottom: 100px;
         position: relative;
       }
 
       .intro__title-container {
         background-color: ${color};
         padding: 20px 40px 300px 40px;
+      }
+
+      .intro--reversed .intro__title-container {
+        margin-bottom: 80px;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 2;
       }
 
       @media ${tokens.mq.desktop} {
@@ -24,12 +33,26 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
           position: relative;
           z-index: 2;
         }
+
+        .intro--reversed .intro__title-container {
+          margin-left: 100px;
+          margin-right: calc(40% - 100px);
+        }
       }
 
       .intro__image-container {
         margin-left: 120px;
         margin-right: 60px;
         margin-top: -280px;
+        z-index: 1;
+      }
+
+      .intro--reversed .intro__image-container {
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(50%);
       }
 
       @media ${tokens.mq.desktop} {
@@ -40,25 +63,46 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
           position: absolute;
           top: 0;
           width: 100%;
-          z-index: 1;
         }
 
         .intro__image {
           width: 40%;
+        }
+
+        .intro--reversed .intro__image-container {
+          height: 100%;
+          left: auto;
+          transform: none;
+        }
+
+        .intro--reversed .intro__image {
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
         }
       }
 
       .intro__content {
         margin-left: 120px;
         margin-right: 60px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .intro--reversed .intro__content {
+        margin-left: 40px;
       }
 
       @media ${tokens.mq.desktop} {
         .intro__content {
           margin-left: calc(40% + 100px);
           max-width: 700px;
-          position: relative;
-          z-index: 2;
+        }
+
+        .intro--reversed .intro__content {
+          margin-left: 360px;
+          max-width: 900px;
         }
       }
 
