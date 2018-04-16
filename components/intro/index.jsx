@@ -7,8 +7,6 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
   <section className={`intro ${reversed ? 'intro--reversed' : ''}`}>
     <style jsx>{`
       .intro {
-        max-width: 100vw;
-        overflow-x: hidden;
         margin-bottom: 100px;
         position: relative;
       }
@@ -58,6 +56,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
       @media ${tokens.mq.desktop} {
         .intro__image-container {
           background-image: linear-gradient(to bottom, ${color} 80%, transparent 0);
+          height: 100%;
           left: 0;
           margin: 0;
           position: absolute;
@@ -66,6 +65,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
         }
 
         .intro__image {
+          max-height: calc(100% + 80px);
           width: 40%;
         }
 
