@@ -24,6 +24,7 @@ const IntroTitle = ({ byline, title, number }) => (
         font-weight: ${tokens.fonts.domaine.weight.semibold};
         line-height: ${22 / 20}px;
         margin-bottom: 15px;
+        text-transform: uppercase;
       }
 
       .intro-title__byline-separator {

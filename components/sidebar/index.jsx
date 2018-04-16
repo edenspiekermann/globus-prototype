@@ -77,6 +77,7 @@ export default ({ items }) => (
         font-size: 13px;
         font-weight: ${tokens.fonts.domaine.weight.semibold};
         line-height: ${22 / 20};
+        text-transform: uppercase;
       }
     `}</style>
 

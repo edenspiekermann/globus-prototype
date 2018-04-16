@@ -5,7 +5,7 @@ export default {
   },
 
   mq: {
-    desktop: 'screen and (min-width: 1024px)',
+    desktop: 'screen and (min-width: 960px)',
   },
 
   colWidth: {
