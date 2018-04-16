@@ -11,7 +11,7 @@ const IntroTitle = ({ byline, title, number }) => (
         // see https://www.smashingmagazine.com/2016/05/fluid-typography/
         font-size: calc(48px + (90 - 48) * (100vw - 400px) / (2000 - 400));
         font-weight: ${tokens.fonts.founders.weight.medium};
-        line-height: ${ 88 / 84};
+        line-height: ${88 / 84};
         margin-bottom: 0;
         margin-top: 5%;
         max-width: 800px;
@@ -22,7 +22,7 @@ const IntroTitle = ({ byline, title, number }) => (
         font-family: ${tokens.fonts.domaine.family};
         font-size: 20px;
         font-weight: ${tokens.fonts.domaine.weight.semibold};
-        line-height: ${ 22 / 20}px;
+        line-height: ${22 / 20}px;
         margin-bottom: 15px;
       }
 
