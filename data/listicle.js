@@ -22,6 +22,7 @@ export default {
         url: '/static/images/listicle_2.jpg',
         alt: 'Viele leckere Gemüsekisten',
       },
+      badge: 'Ab Mai 2018 im Sortiment',
     },
 
     {
@@ -34,6 +35,7 @@ export default {
         url: '/static/images/listicle_3.jpg',
         alt: 'Dicke Soundbox',
       },
+      badge: 'Ab Mai 2018 im Sortiment',
       price: '149.90',
       location: 'Zinfandel, Napa Valley 2015',
       button: {

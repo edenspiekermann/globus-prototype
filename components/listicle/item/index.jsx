@@ -1,3 +1,4 @@
+import Badge from '../../badge';
 import Button from '../../input/button';
 import Dots from '../../dots';
 import ShoppingLayer from '../../shopping-layer';
@@ -15,7 +16,7 @@ export default class extends React.Component {
   }
 
   render() {
-    const { index, image, title, text, type = 'left', location, price, button } = this.props;
+    const { index, image, title, text, type = 'left', location, price, button, badge } = this.props;
 
     return (
       <div className={`listicle-item listicle-item--${type}`}>
@@ -54,6 +55,20 @@ export default class extends React.Component {
             }
           }
 
+          .listicle-item__badge {
+            position: absolute;
+            top: 0;
+            transform: translateY(-50%);
+          }
+
+          .listicle-item--full .listicle-item__badge {
+            left: 60px;
+          }
+
+          .listicle-item--left .listicle-item__badge {
+            right: 60px;
+          }
+
           .listicle-item__title {
             font-family: ${tokens.fonts.founders.family};
             font-size: 32px;
@@ -76,8 +91,14 @@ export default class extends React.Component {
           }
 
           @media ${tokens.mq.desktop} {
-            padding-left: 0;
-            padding-right: 0;
+            .listicle-item__content {
+              padding-left: 0;
+              padding-right: 0;
+            }
+          }
+
+          .listicle-item__image-container {
+            position: relative;
           }
 
           .listicle-item--full .listicle-item__image-container {
@@ -102,7 +123,8 @@ export default class extends React.Component {
 
             .listicle-item--left .listicle-item__content,
             .listicle-item--right .listicle-item__content {
-              width: 50%;
+              z-index: 2;
+              width: 40%;
             }
 
             .listicle-item--left .listicle-item__content {
@@ -118,6 +140,7 @@ export default class extends React.Component {
 
           .listicle-item--full .listicle-item__content {
             margin-top: -120px;
+            position: relative;
           }
 
           @media ${tokens.mq.desktop} {
@@ -130,6 +153,7 @@ export default class extends React.Component {
           .listicle-item__button {
             position: relative;
             transform: translateY(-55%);
+            z-index: 20;
           }
 
           .listicle-item__text {
@@ -164,6 +188,12 @@ export default class extends React.Component {
         `}</style>
 
         <div className="listicle-item__image-container">
+          {badge && (
+            <div className="listicle-item__badge">
+              <Badge text={badge} />
+            </div>
+          )}
+
           <img src={image.url} alt={image.alt} className="listicle-item__image" />
 
           {button && (
