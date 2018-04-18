@@ -1,6 +1,8 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
 
+import tokens from '../../../data/tokens';
+
 const LinkElement = ({ href, children, look }) => (
   <Fragment>
     <style jsx>{`
@@ -8,6 +10,10 @@ const LinkElement = ({ href, children, look }) => (
         background-color: white;
         color: black;
         display: inline-block;
+        font-family: ${tokens.fonts.gill.family};
+        font-size: 16px;
+        font-weight: ${tokens.fonts.gill.weight.regular};
+        letter-spacing: 0.5px;
         line-height: 1;
         padding: 15px 30px;
         text-decoration: none;
@@ -20,11 +26,11 @@ const LinkElement = ({ href, children, look }) => (
       }
 
       .button--window-condensed {
-        padding: 9px 30px;
+        padding: 8px 30px 7px 30px;
       }
 
-      .button--window:hover,
-      .button--window:focus {
+      .button:hover,
+      .button:focus {
         background-color: black;
         color: white;
       }

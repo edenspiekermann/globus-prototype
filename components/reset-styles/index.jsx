@@ -15,5 +15,9 @@ export default () => (
       height: auto;
       width: 100%;
     }
+
+    small {
+      font-size: inherit;
+    }
   `}</style>
 );

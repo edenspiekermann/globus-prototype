@@ -29,6 +29,13 @@ export default {
       },
     },
 
+    gill: {
+      family: 'Gill Sans, sans-serif',
+      weight: {
+        regular: 400,
+      },
+    },
+
     icon: {
       family: 'Globus Icon',
     },

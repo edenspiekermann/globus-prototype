@@ -121,8 +121,9 @@ export default ({ index, image, title, text, type = 'left', location, price, but
 
       .listicle-item__meta {
         color: ${tokens.colors.grey};
+        font-family: ${tokens.fonts.founders.family};
         font-size: 16px;
-        line-height: 1.5;
+        line-height: ${20 / 16};
       }
 
       .listicle-item__location {
