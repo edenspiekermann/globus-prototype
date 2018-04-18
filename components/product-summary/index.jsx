@@ -1,4 +1,5 @@
 import Button from '../input/button';
+import Dots from '../dots';
 
 import tokens from '../../data/tokens';
 
@@ -10,17 +11,34 @@ export default ({ title, text, type, price, button, image, color, background }) 
         background-color: ${background};
         color: ${color};
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        padding: 60px;
+        padding: 0 40px 40px 40px;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .product-summary {
+          flex-direction: row;
+          padding: 60px;
+        }
       }
 
       .product-summary__image-container {
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin-left: -120px;
-        margin-top: 100px;
-        order: 2;
+        margin-left: -40px;
+        margin-right: -40px;
+        order: 1;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .product-summary__image-container {
+          margin-left: -120px;
+          margin-right: 0;
+          margin-top: 100px;
+          order: 2;
+        }
       }
 
       .product-summary__button {
@@ -29,7 +47,14 @@ export default ({ title, text, type, price, button, image, color, background }) 
 
       .product-summary__content {
         max-width: 500px; // TODO
+        order: 2;
         z-index: 2;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .product-summary__content {
+          order: 1;
+        }
       }
 
       .product-summary__title {
@@ -75,6 +100,7 @@ export default ({ title, text, type, price, button, image, color, background }) 
         <div className="product-summary__button">
           <Button href={button.url} look="window-condensed">
             {button.label}
+            <Dots />
           </Button>
         </div>
       )}

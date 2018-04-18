@@ -8,6 +8,8 @@ export default ({ index, image, title, text, type = 'left', location, price, but
     <style jsx>{`
       .listicle-item {
         display: flex;
+        padding-left: 40px;
+        padding-right: 40px;
       }
 
       .listicle-item--full {
@@ -96,8 +98,13 @@ export default ({ index, image, title, text, type = 'left', location, price, but
 
       .listicle-item--full .listicle-item__content {
         margin-top: -120px;
-        max-width: 60%;
-        text-align: center;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .listicle-item--full .listicle-item__content {
+          max-width: 60%;
+          text-align: center;
+        }
       }
 
       .listicle-item__button {

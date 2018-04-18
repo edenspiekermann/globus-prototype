@@ -15,11 +15,12 @@ export default ({ items }) => (
       @media ${tokens.mq.desktop} {
         .sidebar {
           align-self: flex-start;
+          flex: 0 0 auto;
           margin-left: 60px;
           margin-right: 60px;
           position: sticky;
           top: 10px;
-          width: 400px;
+          width: 350px;
         }
       }
 
