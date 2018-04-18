@@ -58,11 +58,14 @@ export default ({ items }) => (
         max-height: 100px;
         max-width: 100px;
         transform: translateX(-50%);
-        transition: transform 100ms ease;
+        transition: transform 150ms ease;
+        will-change: transition;
+        z-index: 1;
       }
+
       .sidebar__outer-link:hover .sidebar__list-item-image,
       .sidebar__outer-link:focus .sidebar__list-item-image {
-        transform: translateX(-35%);
+        transform: translateX(0);
       }
 
       .sidebar__list-item-title {
@@ -70,6 +73,7 @@ export default ({ items }) => (
         font-size: 24px;
         font-weight: ${tokens.fonts.founders.weight.medium};
         line-height: ${25 / 24};
+        z-index: 2;
       }
 
       .sidebar__list-item-byline {

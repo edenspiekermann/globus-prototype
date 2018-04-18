@@ -8,8 +8,6 @@ export default ({ index, image, title, text, type = 'left', location, price, but
     <style jsx>{`
       .listicle-item {
         display: flex;
-        padding-left: 40px;
-        padding-right: 40px;
       }
 
       .listicle-item--full {
@@ -56,6 +54,16 @@ export default ({ index, image, title, text, type = 'left', location, price, but
         font-weight: ${tokens.fonts.founders.weight.medium};
         line-height: 1;
         margin-bottom: 10px;
+      }
+
+      .listicle-item__content {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      @media ${tokens.mq.desktop} {
+        padding-left: 0;
+        padding-right: 0;
       }
 
       .listicle-item--full .listicle-item__image-container {

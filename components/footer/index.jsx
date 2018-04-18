@@ -1,6 +1,7 @@
 import Newsletter from './newsletter';
 
 import data from './data';
+import tokens from '../../data/tokens';
 
 export default () => (
   <footer className="footer">
@@ -9,7 +10,7 @@ export default () => (
         background-color: black;
         color: white;
         display: flex;
-        font-family: Arial;
+        font-family: ${tokens.fonts.gill.family};
         justify-content: center;
         padding: 40px;
       }

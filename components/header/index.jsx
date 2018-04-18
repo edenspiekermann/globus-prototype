@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import data from './data';
+import tokens from '../../data/tokens';
 
 export default () => (
   <header className="header">
@@ -8,6 +9,7 @@ export default () => (
       .header {
         background-color: black;
         color: white;
+        font-family: ${tokens.fonts.gill.family};
         padding: 1rem;
         text-align: center;
       }

@@ -1,5 +1,4 @@
 import { Fragment } from 'react';
-import Head from 'next/head';
 
 import editionData from '../data/edition';
 import introData from '../data/intro';
@@ -8,24 +7,17 @@ import sidebarData from '../data/sidebar';
 
 import Button from '../components/input/button';
 import Edition from '../components/edition';
-import Fonts from '../components/fonts';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import Intro from '../components/intro';
 import MainContent from '../components/main-content';
+import PageHead from '../components/page-head';
 import ProductList from '../components/product-list';
-import ResetStyles from '../components/reset-styles';
 import Sidebar from '../components/sidebar';
 
 export default () => (
   <Fragment>
-    <ResetStyles />
-    <Fonts />
-
-    <Head>
-      <title>Thesis</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
+    <PageHead title="Thesis" />
 
     <Header />
 

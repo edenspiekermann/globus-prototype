@@ -66,6 +66,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
 
         .intro__image {
           max-height: calc(100% + 80px);
+          object-fit: contain;
           width: 40%;
         }
 
@@ -76,7 +77,6 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
         }
 
         .intro--reversed .intro__image {
-          height: 100%;
           position: absolute;
           right: 0;
           top: 0;
