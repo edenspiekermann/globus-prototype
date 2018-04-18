@@ -19,7 +19,7 @@ export default ({ items }) => (
           margin-left: 60px;
           margin-right: 60px;
           position: sticky;
-          top: 10px;
+          top: 20px;
           width: 350px;
         }
       }

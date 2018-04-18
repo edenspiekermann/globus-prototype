@@ -62,11 +62,23 @@ export default class extends React.Component {
           }
 
           .listicle-item--full .listicle-item__badge {
-            left: 60px;
+            left: 40px;
+          }
+
+          @media ${tokens.mq.desktop} {
+            .listicle-item--full .listicle-item__badge {
+              left: 60px;
+            }
           }
 
           .listicle-item--left .listicle-item__badge {
-            right: 60px;
+            right: 40px;
+          }
+
+          @media ${tokens.mq.desktop} {
+            .listicle-item--left .listicle-item__badge {
+              right: 60px;
+            }
           }
 
           .listicle-item__title {
@@ -88,6 +100,7 @@ export default class extends React.Component {
           .listicle-item__content {
             padding-left: 40px;
             padding-right: 40px;
+            position: relative;
           }
 
           @media ${tokens.mq.desktop} {
@@ -105,20 +118,25 @@ export default class extends React.Component {
             width: 100%;
           }
 
+          .listicle-item--left .listicle-item__image-container {
+            align-self: flex-end;
+          }
+
           .listicle-item--right .listicle-item__content {
             text-align: right;
           }
 
           .listicle-item--left .listicle-item__image-container,
           .listicle-item--right .listicle-item__image-container {
+            margin-bottom: -160px;
             text-align: center;
-            width: 80%;
+            width: 60%;
           }
 
           @media ${tokens.mq.desktop} {
             .listicle-item--left .listicle-item__image-container,
             .listicle-item--right .listicle-item__image-container {
-              width: 60%;
+              margin-bottom: 0;
             }
 
             .listicle-item--left .listicle-item__content,
@@ -141,12 +159,12 @@ export default class extends React.Component {
           .listicle-item--full .listicle-item__content {
             margin-top: -120px;
             position: relative;
+            text-align: center;
           }
 
           @media ${tokens.mq.desktop} {
             .listicle-item--full .listicle-item__content {
               max-width: 60%;
-              text-align: center;
             }
           }
 

@@ -43,6 +43,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
         margin-left: 120px;
         margin-right: 60px;
         margin-top: -280px;
+        overflow-y: hidden;
         z-index: 1;
       }
 
@@ -66,7 +67,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
         }
 
         .intro__image {
-          max-height: calc(100% + 80px);
+          max-height: 100%;
           object-fit: contain;
           width: 40%;
         }
