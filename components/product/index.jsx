@@ -1,7 +1,10 @@
+import tokens from '../../data/tokens';
+
 export default ({ image, title, type, price }) => (
   <div className="product">
     <style jsx>{`
       .product {
+        font-family: ${tokens.fonts.gill.family};
         text-align: center;
       }
 

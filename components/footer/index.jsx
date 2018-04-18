@@ -12,6 +12,7 @@ export default () => (
         display: flex;
         font-family: ${tokens.fonts.gill.family};
         justify-content: center;
+        overflow-x: hidden;
         padding: 40px;
       }
 

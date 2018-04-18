@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 import tokens from '../../../data/tokens';
 
-const LinkElement = ({ href, children, look }) => (
+const LinkElement = ({ href, children, look, onClick = null }) => (
   <Fragment>
     <style jsx>{`
-      .button {
+      .button__inner {
         background-color: white;
         color: black;
         display: inline-block;
@@ -20,31 +20,35 @@ const LinkElement = ({ href, children, look }) => (
         text-transform: uppercase;
       }
 
-      .button--window-condensed,
-      .button--window {
+      .button--window-condensed .button__inner,
+      .button--window .button__inner {
         border: 1px solid black;
       }
 
-      .button--window-condensed {
+      .button--window-condensed .button__inner {
         padding: 8px 30px 7px 30px;
       }
 
-      .button:hover,
-      .button:focus {
+      .button:hover .button__inner,
+      .button:focus .button__inner {
         background-color: black;
         color: white;
       }
     `}</style>
 
     <Link href={href}>
-      <a className={`button ${look ? `button--${look}` : ''}`}>{children}</a>
+      <a className={`button ${look ? `button--${look}` : ''}`}>
+        <span className="button__inner" onClick={onClick}>
+          {children}
+        </span>
+      </a>
     </Link>
   </Fragment>
 );
 
 const ButtonElement = ({ type = 'button', children, look }) => (
-  <button type={type} className={`button ${look && `button--${look}`}`}>
-    {children}
+  <button type={type} className={`button ${look && `button--${look}`}`} {...otherProps}>
+    <span className="button__inner">{children}</span>
   </button>
 );
 

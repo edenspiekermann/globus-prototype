@@ -8,6 +8,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
     <style jsx>{`
       .intro {
         margin-bottom: 100px;
+        overflow-x: hidden;
         position: relative;
       }
 
