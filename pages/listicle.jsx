@@ -8,6 +8,7 @@ import sidebarData from '../data/sidebar';
 
 import Edition from '../components/edition';
 import Footer from '../components/footer';
+import Header from '../components/header';
 import Intro from '../components/intro';
 import Listicle from '../components/listicle';
 import MainContent from '../components/main-content';
@@ -18,6 +19,8 @@ import Sidebar from '../components/sidebar';
 export default () => (
   <Fragment>
     <PageHead title="Listicle" />
+
+    <Header />
 
     <Intro {...introData[1]}>
       <Edition {...editionData[1]} />
