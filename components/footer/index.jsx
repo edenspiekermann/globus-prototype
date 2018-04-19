@@ -1,6 +1,7 @@
 import Newsletter from './newsletter';
 
 import data from './data';
+import tokens from '../../data/tokens';
 
 export default () => (
   <footer className="footer">
@@ -9,16 +10,23 @@ export default () => (
         background-color: black;
         color: white;
         display: flex;
-        font-family: Arial;
+        font-family: ${tokens.fonts.gill.family};
         justify-content: center;
+        overflow-x: hidden;
         padding: 40px;
       }
 
       .footer__layout-constraint {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         max-width: 1200px;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .footer__layout-constraint {
+          flex-direction: row;
+        }
       }
 
       .footer__category,

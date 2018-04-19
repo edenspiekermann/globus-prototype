@@ -6,7 +6,7 @@ This prototype is build with [next.js](https://github.com/zeit/next.js#how-to-us
 
 ```bash
 npm install
-npm run develop
+npm run dev
 ```
 
 To build a static version of the prototype into `build/`

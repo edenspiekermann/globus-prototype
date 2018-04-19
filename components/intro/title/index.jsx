@@ -9,12 +9,17 @@ const IntroTitle = ({ byline, title, number }) => (
       .intro-title {
         font-family: ${tokens.fonts.founders.family};
         // see https://www.smashingmagazine.com/2016/05/fluid-typography/
-        font-size: calc(48px + (90 - 48) * (100vw - 400px) / (2000 - 400));
+        font-size: calc(64px + ((42 * (100vw - 400px)) / 1600));
         font-weight: ${tokens.fonts.founders.weight.medium};
-        line-height: ${88 / 84};
-        margin-bottom: 0;
-        margin-top: 5%;
-        max-width: 800px;
+        line-height: 0.875;
+        margin-bottom: 20px;
+        max-width: 80%;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .intro-title {
+          margin-bottom: 80px;
+        }
       }
 
       .intro-title__byline {

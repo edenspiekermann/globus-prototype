@@ -22,6 +22,12 @@ export default () => (
     }
 
     @font-face {
+      font-family: 'Gill Sans';
+      font-display: swap;
+      src: url('/static/fonts/GillSans-Regular.woff') format('woff');
+    }
+
+    @font-face {
       font-family: 'Globus Icon';
       font-display: swap;
       src: url('/static/fonts/Globus-Icon.woff') format('woff');

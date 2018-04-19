@@ -2,37 +2,36 @@ import { Fragment } from 'react';
 
 import editionData from '../data/edition';
 import introData from '../data/intro';
-import productsData from '../data/product-list';
+import listicleData from '../data/listicle';
+import productSummaryData from '../data/product-summary';
 import sidebarData from '../data/sidebar';
 
-import Button from '../components/input/button';
 import Edition from '../components/edition';
 import Footer from '../components/footer';
 import Header from '../components/header';
 import Intro from '../components/intro';
+import Listicle from '../components/listicle';
 import MainContent from '../components/main-content';
 import PageHead from '../components/page-head';
-import ProductList from '../components/product-list';
+import ProductSummary from '../components/product-summary';
 import Sidebar from '../components/sidebar';
 
 export default () => (
   <Fragment>
-    <PageHead title="Thesis - Shoes" />
+    <PageHead title="Listicle - Wine" />
 
     <Header />
 
-    <Intro {...introData[2]}>
-      <Edition {...editionData[0]} />
+    <Intro {...introData[3]}>
+      <Edition {...editionData[1]} />
     </Intro>
 
     <MainContent>
-      <ProductList {...productsData[1]}>
-        <Button href="#" look="window">
-          Alle Cowboy-Boots ansehen
-        </Button>
-      </ProductList>
+      <Listicle {...listicleData[1]} />
       <Sidebar {...sidebarData} />
     </MainContent>
+
+    <ProductSummary {...productSummaryData} />
 
     <Footer />
   </Fragment>

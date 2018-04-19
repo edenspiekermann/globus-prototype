@@ -26,8 +26,14 @@ export default ({ products, children }) => (
         flex-direction: row;
         flex-wrap: wrap;
         list-style: none;
-        margin: 0;
+        margin: 0 0 40px 0;
         padding: 0;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .product-list__list {
+          margin-bottom: 0;
+        }
       }
 
       .product-list__item {

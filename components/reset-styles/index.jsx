@@ -7,6 +7,8 @@ export default () => (
     }
 
     body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       margin: 0;
       padding: 0;
     }
@@ -14,6 +16,10 @@ export default () => (
     img {
       height: auto;
       width: 100%;
+    }
+
+    small {
+      font-size: inherit;
     }
   `}</style>
 );
