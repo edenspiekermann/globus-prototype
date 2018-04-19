@@ -11,13 +11,19 @@ const LinkElement = ({ href, children, look, onClick = null }) => (
         color: black;
         display: inline-block;
         font-family: ${tokens.fonts.gill.family};
-        font-size: 16px;
+        font-size: 14px;
         font-weight: ${tokens.fonts.gill.weight.regular};
         letter-spacing: 0.5px;
         line-height: 1;
-        padding: 15px 30px;
+        padding: 15px 25px;
         text-decoration: none;
         text-transform: uppercase;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .button__inner {
+          font-size: 16px;
+        }
       }
 
       .button--window-condensed .button__inner,
@@ -25,8 +31,19 @@ const LinkElement = ({ href, children, look, onClick = null }) => (
         border: 1px solid black;
       }
 
+      .button--window .button__inner {
+        padding-bottom: 12px;
+        padding-top: 18px;
+      }
+
       .button--window-condensed .button__inner {
-        padding: 8px 30px 7px 30px;
+        padding: 6px 15px;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .button--window-condensed .button__inner {
+          padding: 7px 30px;
+        }
       }
 
       .button:hover .button__inner,
