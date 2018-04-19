@@ -17,6 +17,11 @@ export default ({ image, label }) => (
         .edition {
           transform: translateY(-80%);
         }
+
+        .edition,
+        .edition--with-image {
+          position: absolute;
+        }
       }
 
       .editon__label {

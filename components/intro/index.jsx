@@ -10,9 +10,15 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
     <section className={`intro ${reversed ? 'intro--reversed' : ''}`}>
       <style jsx>{`
         .intro {
-          margin-bottom: 100px;
+          margin-bottom: 80px;
           overflow-x: hidden;
           position: relative;
+        }
+
+        @media ${tokens.mq.desktop} {
+          .intro {
+            margin-bottom: 120px;
+          }
         }
 
         .intro__title-container {
