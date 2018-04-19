@@ -25,7 +25,6 @@ export default class extends React.Component {
         <style jsx>{`
           .listicle-item {
             display: flex;
-            //border: 1px solid red;
           }
 
           .listicle-item--full {
@@ -50,7 +49,7 @@ export default class extends React.Component {
             .listicle-item--right .listicle-item__image-container,
             .listicle-item--left .listicle-item__content {
               order: 1;
-            } 
+            }
 
             .listicle-item--right .listicle-item__content,
             .listicle-item--left .listicle-item__image-container {
@@ -104,7 +103,6 @@ export default class extends React.Component {
             position: relative;
             padding-left: 5%;
             padding-right: 5%;
-            //border: 1px solid blue;
             margin-top: -180px;
           }
 
@@ -112,7 +110,7 @@ export default class extends React.Component {
             .listicle-item__content {
               padding-left: 0;
               padding-right: 0;
-                margin-top: 0;
+              margin-top: 0;
             }
           }
 
@@ -128,11 +126,11 @@ export default class extends React.Component {
           .listicle-item--right .listicle-item__content {
             text-align: right;
           }
-            
+
           .listicle-item--left .listicle-item__image-container {
             align-self: flex-end;
           }
-            
+
           .listicle-item--left .listicle-item__image-container,
           .listicle-item--right .listicle-item__image-container {
             text-align: center;

@@ -29,13 +29,15 @@ export default ({ items }) => (
         font-size: 20px;
         font-weight: ${tokens.fonts.domaine.weight.semibold};
         line-height: ${22 / 20};
+        margin-bottom: 0;
+        margin-top: 10px;
         text-align: center;
         text-transform: uppercase;
       }
 
       .sidebar__list {
         list-style: none;
-        margin: 0;
+        margin: 30px 0 0 0;
         padding: 0;
       }
 
@@ -45,7 +47,7 @@ export default ({ items }) => (
         display: block;
         display: flex;
         flex-direction: row;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         text-decoration: none;
       }
 
@@ -82,6 +84,7 @@ export default ({ items }) => (
         font-size: 13px;
         font-weight: ${tokens.fonts.domaine.weight.semibold};
         line-height: ${22 / 20};
+        margin-bottom: 5px;
         text-transform: uppercase;
       }
     `}</style>
