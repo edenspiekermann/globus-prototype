@@ -36,6 +36,7 @@ export default ({ items }) => (
         font-family: ${tokens.fonts.domaine.family};
         font-size: 20px;
         font-weight: ${tokens.fonts.domaine.weight.semibold};
+        letter-spacing: 1px;
         line-height: ${22 / 20};
         margin-bottom: 0;
         margin-top: 10px;
@@ -117,6 +118,7 @@ export default ({ items }) => (
         font-family: ${tokens.fonts.domaine.family};
         font-size: 13px;
         font-weight: ${tokens.fonts.domaine.weight.semibold};
+        letter-spacing: 0.5px;
         line-height: ${22 / 20};
         margin-bottom: 5px;
         text-transform: uppercase;

@@ -18,7 +18,7 @@ const IntroTitle = ({ byline, title, number }) => (
 
       @media ${tokens.mq.desktop} {
         .intro-title {
-          margin-bottom: 80px;
+          margin-bottom: 60px;
         }
       }
 

@@ -116,7 +116,6 @@ export default class extends React.Component {
 
           .listicle-item__image-container {
             position: relative;
-            //border: 1px solid green;
           }
 
           .listicle-item--full .listicle-item__image-container {
@@ -161,9 +160,15 @@ export default class extends React.Component {
             text-align: center;
           }
 
+          @media ${tokens.mq.tablet} {
+            .listicle-item--full .listicle-item__content {
+              max-width: 80%;
+            }
+          }
+
           @media ${tokens.mq.desktop} {
             .listicle-item--full .listicle-item__content {
-              max-width: 50%;
+              max-width: 65%;
             }
           }
 

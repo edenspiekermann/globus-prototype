@@ -119,7 +119,22 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
         }
 
         @media ${tokens.mq.desktop} {
-          font-size: 32px;
+          .intro__text {
+            font-size: 32px;
+          }
+        }
+
+        .intro__text-paragraph {
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+
+        .intro__text-paragraph + .intro__text-paragraph {
+          margin-top: 15px;
+        }
+
+        .intro__share {
+          margin-top: 40px;
         }
       `}</style>
 
@@ -132,7 +147,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
       </div>
 
       <div className="intro__content">
-        <div className="intro__text">{text.map(_ => <p>{_}</p>)}</div>
+        <div className="intro__text">{text.map(_ => <p className="intro__text-paragraph">{_}</p>)}</div>
         <div className="intro__share">
           <Share />
         </div>
