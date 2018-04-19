@@ -64,7 +64,7 @@ const LinkElement = ({ href, children, look, onClick = null }) => (
 );
 
 const ButtonElement = ({ type = 'button', children, look }) => (
-  <button type={type} className={`button ${look && `button--${look}`}`} {...otherProps}>
+  <button type={type} className={`button ${look && `button--${look}`}`}>
     <span className="button__inner">{children}</span>
   </button>
 );

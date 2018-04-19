@@ -19,7 +19,7 @@ export default [
       alt: 'Wein',
     },
     number: '6',
-    title: 'Gute Gründe für mehr Kalifornien im Leben',
+    title: 'GUTE GRÜNDE FÜR MEHR KALIFORNIEN IM LEBEN',
     text: [
       'Angesteckt vom vibrierenden «Californian Spirit», dem Gefühl von Leichtigkeit und purer Lebensfreude, zelebrieren wir diesen Sommer den kalifornischen Lebensstil — betont locker und entspannt.',
       '7 Ideen, wie Sie sich das Lebensgefühl der Westküste zu sich nach Hause holen.',

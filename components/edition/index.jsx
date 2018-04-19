@@ -1,26 +1,40 @@
 import tokens from '../../data/tokens';
 
 export default ({ image, label }) => (
-  <div className="edition">
+  <div className={`edition ${image ? 'edition--with-image' : ''}`}>
     <style jsx>{`
       .edition {
+        width: 30px;
+      }
+
+      .edition--with-image {
+        max-width: 250px;
         position: relative;
+        width: auto;
       }
 
       @media ${tokens.mq.desktop} {
         .edition {
-          margin-top: -200px;
-          max-width: 250px;
+          transform: translateY(-80%);
         }
       }
 
       .editon__label {
+        font-family: ${tokens.fonts.founders.family};
         font-size: 16px;
+        font-weight: ${tokens.fonts.founders.weight.medium};
+        line-height: ${20 / 16};
         margin: 0;
         text-transform: uppercase;
-        //transform: rotate(-90deg) translateX(-103%) translateY(150%);
-        transform-origin: bottom left;
+        transform: rotate(-90deg) translateX(calc(100% + 10px));
+        transform-origin: bottom right;
         white-space: nowrap;
+      }
+
+      .edition--with-image .editon__label {
+        bottom: 0;
+        position: absolute;
+        right: -25px;
       }
     `}</style>
 
