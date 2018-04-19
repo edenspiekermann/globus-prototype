@@ -43,7 +43,7 @@ export default ({ image, label }) => (
       }
     `}</style>
 
-  {image && <div className="edition__image-container"><img src={image.url} alt={image.alt} className="edition__image" /></div>}
+    {image && <div className="edition__image-container"><img src={image.url} alt={image.alt} className="edition__image" /></div>}
 
     <p className="editon__label">{label}</p>
   </div>
