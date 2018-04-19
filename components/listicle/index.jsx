@@ -5,8 +5,8 @@ export default ({ products }) => (
     <style jsx>{`
       .listicle {
         list-style: none;
-        margin: 0;
-        max-width: 1200px; /* TODO */
+        margin: auto;
+        max-width: 1000px; /* TODO */
         padding: 0;
       }
 

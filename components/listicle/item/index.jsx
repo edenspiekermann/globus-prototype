@@ -25,6 +25,7 @@ export default class extends React.Component {
         <style jsx>{`
           .listicle-item {
             display: flex;
+            //border: 1px solid red;
           }
 
           .listicle-item--full {
@@ -49,7 +50,7 @@ export default class extends React.Component {
             .listicle-item--right .listicle-item__image-container,
             .listicle-item--left .listicle-item__content {
               order: 1;
-            }
+            } 
 
             .listicle-item--right .listicle-item__content,
             .listicle-item--left .listicle-item__image-container {
@@ -100,60 +101,58 @@ export default class extends React.Component {
           }
 
           .listicle-item__content {
-            padding-left: 40px;
-            padding-right: 40px;
             position: relative;
+            padding-left: 5%;
+            padding-right: 5%;
+            //border: 1px solid blue;
+            margin-top: -180px;
           }
 
           @media ${tokens.mq.desktop} {
             .listicle-item__content {
               padding-left: 0;
               padding-right: 0;
+                margin-top: 0;
             }
           }
 
           .listicle-item__image-container {
             position: relative;
+            //border: 1px solid green;
           }
 
           .listicle-item--full .listicle-item__image-container {
             width: 100%;
           }
 
-          .listicle-item--left .listicle-item__image-container {
-            align-self: flex-end;
-          }
-
           .listicle-item--right .listicle-item__content {
             text-align: right;
           }
-
+            
+          .listicle-item--left .listicle-item__image-container {
+            align-self: flex-end;
+          }
+            
           .listicle-item--left .listicle-item__image-container,
           .listicle-item--right .listicle-item__image-container {
-            margin-bottom: -160px;
             text-align: center;
-            width: 60%;
+            width: calc(100% / 3 * 2);
           }
 
           @media ${tokens.mq.desktop} {
-            .listicle-item--left .listicle-item__image-container,
-            .listicle-item--right .listicle-item__image-container {
-              margin-bottom: 0;
-            }
-
             .listicle-item--left .listicle-item__content,
             .listicle-item--right .listicle-item__content {
               z-index: 2;
-              width: 40%;
+              width: calc(100% / 3);
+              min-width: 240px;
             }
 
             .listicle-item--left .listicle-item__content {
-              margin-right: -40px;
-              padding-left: 60px;
+              transform: translateX(20%);
             }
 
             .listicle-item--right .listicle-item__content {
-              margin-left: -40px;
+              transform: translateX(-20%);
               text-align: right;
             }
           }
@@ -166,7 +165,7 @@ export default class extends React.Component {
 
           @media ${tokens.mq.desktop} {
             .listicle-item--full .listicle-item__content {
-              max-width: 60%;
+              max-width: 50%;
             }
           }
 

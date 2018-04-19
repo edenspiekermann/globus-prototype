@@ -115,6 +115,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
           font-family: ${tokens.fonts.founders.family};
           font-size: 24px;
           line-height: ${27 / 24};
+          max-width: 640px;
         }
 
         @media ${tokens.mq.desktop} {

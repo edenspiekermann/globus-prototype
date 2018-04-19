@@ -39,7 +39,7 @@ const IntroTitle = ({ byline, title, number }) => (
       .intro-title__number {
         display: block;
         font-size: 160px;
-        font-weight: bold;
+        font-weight: 500;
         margin-bottom: 40px;
       }
     `}</style>
