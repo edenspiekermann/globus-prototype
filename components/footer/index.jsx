@@ -18,9 +18,15 @@ export default () => (
 
       .footer__layout-constraint {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         max-width: 1200px;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .footer__layout-constraint {
+          flex-direction: row;
+        }
       }
 
       .footer__category,

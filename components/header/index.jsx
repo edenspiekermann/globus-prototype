@@ -19,9 +19,16 @@ export default () => (
         display: block;
         font-size: 2.5rem;
         font-weight: bold;
-        margin-bottom: 1rem;
+        margin-top: 10px;
         text-decoration: none;
         text-transform: uppercase;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .header__title {
+          margin-bottom: 10px;
+          margin-top: 0;
+        }
       }
 
       .header__title:hover,
@@ -31,11 +38,17 @@ export default () => (
 
       .header__item {
         color: currentColor;
-        display: inline-block;
+        display: none;
         padding-left: 1rem;
         padding-right: 1rem;
         text-decoration: none;
         text-transform: uppercase;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .header__item {
+          display: inline-block;
+        }
       }
     `}</style>
 
