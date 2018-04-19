@@ -50,13 +50,19 @@ export default () => (
 
       <li className="index__item">
         <Link href="/thesis-shoes">
-          <a className="index__item-link">Thesis - Shoes</a>
+          <a className="index__item-link">Thesis + Shoes</a>
         </Link>
       </li>
 
       <li className="index__item">
         <Link href="/listicle">
           <a className="index__item-link">Listicle</a>
+        </Link>
+      </li>
+
+      <li className="index__item">
+        <Link href="/listicle-wine">
+          <a className="index__item-link">Listicle + Wine</a>
         </Link>
       </li>
     </ul>

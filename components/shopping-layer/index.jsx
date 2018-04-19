@@ -7,7 +7,7 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
     .shopping-layer {
       background-color: white;
       border: 1px solid black;
-      padding: 50px;
+      padding: 60px;
       position: absolute;
       right: 0;
       top: calc(100% + 35px);
@@ -17,7 +17,7 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
 
     @media ${tokens.mq.desktop} {
       .shopping-layer {
-        width: 40vw;
+        width: 60vw;
       }
     }
 
@@ -28,7 +28,7 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
       display: block;
       height: 0;
       position: absolute;
-      right: 40%;
+      right: 200px;
       top: -62px;
       width: 0;
     }
@@ -36,6 +36,7 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
     .shopping-layer:after {
       border-color: transparent transparent white transparent;
       border-width: 30px;
+      right: 201px;
       top: -60px;
     }
 
@@ -67,15 +68,19 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
       color: #848484;
       font-family: ${tokens.fonts.gill.family};
       font-size: 16px;
+      margin-bottom: 5px;
+      margin-top: 10px;
     }
 
     .shopping-layer__title {
       font-family: ${tokens.fonts.gill.family};
       font-size: 20px;
+      font-weight: ${tokens.fonts.gill.weight.regular};
       text-transform: uppercase;
     }
 
     .shopping-layer__product-container {
+      margin-top: 20px;
       position: relative;
     }
 
@@ -97,7 +102,7 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
     .shopping-layer__product {
       display: flex;
       list-style: none;
-      margin: 30px -15px 0 0;
+      margin-right: -20px;
       padding: 0;
     }
 

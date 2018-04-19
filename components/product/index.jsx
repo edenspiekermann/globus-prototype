@@ -9,6 +9,8 @@ export default ({ image, title, type, price }) => (
       }
 
       .product__title {
+        font-size: 16px;
+        margin-bottom: 0;
         text-transform: uppercase;
       }
 

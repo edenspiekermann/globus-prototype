@@ -27,7 +27,7 @@ export default () => (
     </Intro>
 
     <MainContent>
-      <Listicle {...listicleData} />
+      <Listicle {...listicleData[0]} />
       <Sidebar {...sidebarData} />
     </MainContent>
 

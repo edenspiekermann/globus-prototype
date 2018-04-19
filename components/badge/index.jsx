@@ -27,7 +27,7 @@ export default ({ text }) => (
         font-weight: ${tokens.fonts.founders.weight.medium};
         line-height: 1;
         margin: 0;
-        padding: 20px;
+        padding: 20px 13px;
         text-align: center;
       }
 

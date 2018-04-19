@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Badge from '../../badge';
 import Button from '../../input/button';
 import Dots from '../../dots';
