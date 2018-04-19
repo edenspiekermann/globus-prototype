@@ -5,12 +5,8 @@ export default {
   },
 
   mq: {
+    tablet: 'screen and (min-width: 768px)',
     desktop: 'screen and (min-width: 960px)',
-  },
-
-  colWidth: {
-    desktop: 20,
-    mobile: 20,
   },
 
   fonts: {

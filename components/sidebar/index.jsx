@@ -12,14 +12,22 @@ export default ({ items }) => (
         padding-top: 20px;
       }
 
-      @media ${tokens.mq.desktop} {
+      @media ${tokens.mq.tablet} {
         .sidebar {
           align-self: flex-start;
           flex: 0 0 auto;
-          margin-left: 60px;
-          margin-right: 60px;
+          margin-left: 20px;
+          margin-right: 20px;
           position: sticky;
           top: 20px;
+          width: 240px;
+        }
+      }
+
+      @media ${tokens.mq.desktop} {
+        .sidebar {
+          margin-left: 60px;
+          margin-right: 60px;
           width: 350px;
         }
       }
@@ -65,6 +73,20 @@ export default ({ items }) => (
         z-index: 1;
       }
 
+      @media ${tokens.mq.tablet} {
+        .sidebar__list-item-image {
+          max-height: 80px;
+          max-width: 80px;
+        }
+      }
+
+      @media ${tokens.mq.desktop} {
+        .sidebar__list-item-image {
+          max-height: 100px;
+          max-width: 100px;
+        }
+      }
+
       .sidebar__outer-link:hover .sidebar__list-item-image,
       .sidebar__outer-link:focus .sidebar__list-item-image {
         transform: translateX(0);
@@ -76,6 +98,18 @@ export default ({ items }) => (
         font-weight: ${tokens.fonts.founders.weight.medium};
         line-height: ${25 / 24};
         z-index: 2;
+      }
+
+      @media ${tokens.mq.tablet} {
+        .sidebar__list-item-title {
+          font-size: 18px;
+        }
+      }
+
+      @media ${tokens.mq.desktop} {
+        .sidebar__list-item-title {
+          font-size: 24px;
+        }
       }
 
       .sidebar__list-item-byline {

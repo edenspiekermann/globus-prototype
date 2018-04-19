@@ -9,7 +9,7 @@ export default ({ children }) => (
         padding-bottom: 80px;
       }
 
-      @media ${tokens.mq.desktop} {
+      @media ${tokens.mq.tablet} {
         .main-content {
           flex-direction: row;
           justify-content: space-between;
