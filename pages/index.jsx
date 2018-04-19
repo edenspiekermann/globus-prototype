@@ -1,10 +1,17 @@
 import { Fragment } from 'react';
+import Head from 'next/head';
 import Link from 'next/link';
 
 import tokens from '../data/tokens';
 
 export default () => (
   <Fragment>
+    <Head>
+      <title>Globus - Available templates</title>
+      <link rel="icon" href="/static/favicon.ico" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
+
     <ul className="index">
       <style jsx>{`
         .index {
