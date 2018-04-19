@@ -41,6 +41,7 @@ module.exports = {
     'linebreak-style': 'off',
     // adding this for compatibility reasons
     'jsx-a11y/href-no-hash': 'off',
+    'react/prop-types': 'off',
     'jsx-a11y/anchor-is-valid': [
       'warn',
       {
