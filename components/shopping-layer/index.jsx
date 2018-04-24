@@ -118,18 +118,37 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
         border: 0;
         font-family: ${tokens.fonts.gill.family};
         font-size: 14px;
+        left: 50%;
         letter-spacing: 0.5px;
-        padding: 5px 10px 1px 10px;
+        padding: 5px 20px 1px 10px;
         position: absolute;
-        right: 20px;
         text-transform: uppercase;
         top: 20px;
+        transform: translateX(-50%);
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer__close {
+          left: auto;
+          right: 20px;
+          transform: none;
+        }
       }
 
       .shopping-layer__close:hover,
       .shopping-layer__close:focus {
         background-color: #f0f0f0;
         cursor: pointer;
+      }
+
+      .shopping-layer__close::after {
+        content: '×';
+        font-family: ${tokens.fonts.gill.family};
+        font-size: 28px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(calc(-50% + 4px));
       }
 
       .shopping-layer__not-in-stock {
@@ -185,6 +204,7 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
 
       .shopping-layer__product {
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
         margin-bottom: 0;
         margin-right: -20px;
@@ -192,13 +212,21 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
       }
 
       .shopping-layer__product-item {
+        margin-bottom: 20px;
         padding-right: 20px;
-        width: 33.3333%;
+        width: 50%;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer__product-item {
+          margin-bottom: 0;
+          width: 33.3333%;
+        }
       }
     `}</style>
 
     <button className="shopping-layer__close" onClick={() => hide()}>
-      Schließen ×
+      Schließen
     </button>
 
     {!inStock && (
