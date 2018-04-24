@@ -93,18 +93,30 @@ export default class extends React.Component {
 
           .listicle-item__index {
             display: block;
-            font-size: 128px;
+            font-size: 108px;
             font-family: ${tokens.fonts.founders.family};
             font-weight: ${tokens.fonts.founders.weight.medium};
             line-height: 1;
             margin-bottom: 10px;
           }
 
+          @media ${tokens.mq.tablet} {
+            .listicle-item__index {
+              font-size: 118px;
+            }
+          }
+
+          @media ${tokens.mq.desktop} {
+            .listicle-item__index {
+              font-size: 128px;
+            }
+          }
+
           .listicle-item__content {
             position: relative;
             padding-left: 5%;
             padding-right: 5%;
-            margin-top: -180px;
+            margin-top: -120px;
           }
 
           @media ${tokens.mq.desktop} {

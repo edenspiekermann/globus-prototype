@@ -10,6 +10,10 @@ export default [
           url: '/static/images/listicle_1.jpg',
           alt: 'Logomania',
         },
+        button: {
+          url: '#',
+          label: 'Shop the style',
+        },
       },
 
       {

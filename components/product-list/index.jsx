@@ -37,8 +37,15 @@ export default ({ products, children }) => (
       }
 
       .product-list__item {
+        margin-bottom: 20px;
         padding-right: 20px;
         width: 50%;
+      }
+
+      @media ${tokens.mq.tablet} {
+        .product-list__item {
+          margin-bottom: 40px;
+        }
       }
 
       @media ${tokens.mq.desktop} {

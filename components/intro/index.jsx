@@ -49,9 +49,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
         }
 
         .intro__image-container {
-          margin-left: 120px;
-          margin-right: 60px;
-          margin-top: -280px;
+          margin: -280px 60px 20px 120px;
           overflow-y: hidden;
           z-index: 1;
         }
