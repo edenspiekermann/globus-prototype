@@ -1,12 +1,11 @@
 import { Fragment } from 'react';
-import Link from 'next/link';
 
 import tokens from '../../../data/tokens';
 
 const LinkElement = ({ href, children, look, onClick = null, modifier }) => (
   <Fragment>
     <style jsx>{`
-      .button__inner {
+      .button {
         background-color: white;
         color: black;
         display: inline-block;
@@ -21,22 +20,22 @@ const LinkElement = ({ href, children, look, onClick = null, modifier }) => (
       }
 
       @media ${tokens.mq.desktop} {
-        .button__inner {
+        .button {
           font-size: 16px;
         }
       }
 
-      .button--window-condensed .button__inner,
-      .button--window .button__inner {
+      .button--window-condensed,
+      .button--window {
         border: 1px solid black;
       }
 
-      .button--window .button__inner {
+      .button--window {
         padding-bottom: 12px;
         padding-top: 18px;
       }
 
-      .button--window-condensed .button__inner {
+      .button--window-condensed {
         padding: 12px 25px 10px 25px;
       }
 
@@ -75,29 +74,27 @@ const LinkElement = ({ href, children, look, onClick = null, modifier }) => (
       }
 
       @media ${tokens.mq.desktop} {
-        .button--window-condensed .button__inner {
+        .button--window-condensed {
           padding: 13px 30px 7px 30px;
         }
       }
 
-      .button:hover .button__inner,
-      .button:focus .button__inner {
+      .button:hover,
+      .button:focus {
         background-color: black;
         color: white;
       }
     `}</style>
 
-    <Link href={href}>
-      <a
-        className={`button ${look ? `button--${look}` : ''} ${
-          modifier && look ? `button--${look}-${modifier}` : ''
-        }`}
-      >
-        <span className="button__inner" onClick={onClick}>
-          {children}
-        </span>
-      </a>
-    </Link>
+    <a
+      href={href}
+      className={`button ${look ? `button--${look}` : ''} ${
+        modifier && look ? `button--${look}-${modifier}` : ''
+      }`}
+      onClick={onClick}
+    >
+      {children}
+    </a>
   </Fragment>
 );
 
