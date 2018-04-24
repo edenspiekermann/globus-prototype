@@ -18,6 +18,21 @@ export default class extends React.Component {
 
   render() {
     const { index, image, title, text, type = 'left', location, price, button, badge } = this.props;
+    let position;
+
+    switch(type) {
+      case 'full':
+        position = 'center';
+        break;
+
+      case 'left':
+        position = 'right';
+        break;
+
+      default:
+        position = 'left';
+        break;
+    }
 
     return (
       <div className={`listicle-item listicle-item--${type}`}>
@@ -248,6 +263,7 @@ export default class extends React.Component {
 
               {this.state.showShoppingLayer && (
                 <ShoppingLayer
+                  position={position}
                   hide={() => this.toggleShoppingLayer()}
                   products={productListData[0].products.slice(0, 3)}
                   title="Das könnte Ihnen auch gefallen"

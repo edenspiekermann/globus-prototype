@@ -2,24 +2,33 @@ import Product from '../product';
 
 import tokens from '../../data/tokens';
 
-export default ({ products, title, inStock = true, hide = () => {} }) => (
-  <div className="shopping-layer">
+export default ({ products, title, inStock = true, hide = () => {}, position = 'center' }) => (
+  <div className={`shopping-layer shopping-layer--position-${position}`}>
     <style jsx>{`
       .shopping-layer {
         background-color: white;
         border: 1px solid black;
         padding: 60px 30px 15px 30px;
         position: absolute;
-        right: 0;
-        top: calc(100% + 35px);
+        top: calc(100% + 23px);
         width: 90vw;
         z-index: 20;
+      }
+
+      .shopping-layer--position-left {
+        left: 0;
+        transform: translateX(-15%);
+      }
+
+      .shopping-layer--position-right {
+        right: 0;
+        transform: translateX(15%);
       }
 
       @media ${tokens.mq.desktop} {
         .shopping-layer {
           padding: 60px 60px 30px 60px;
-          width: 60vw;
+          width: 50vw;
         }
       }
 
@@ -30,21 +39,37 @@ export default ({ products, title, inStock = true, hide = () => {} }) => (
         display: block;
         height: 0;
         position: absolute;
-        right: calc(40% + 50px);
-        top: -62px;
+        top: -40px;
         width: 0;
+      }
+
+      .shopping-layer--position-left::after,
+      .shopping-layer--position-left::before {
+        left: calc(15% + 50px);
+      }
+
+      .shopping-layer--position-right::after,
+      .shopping-layer--position-right::before {
+        right: calc(15% + 50px);
       }
 
       .shopping-layer::after {
         border-color: transparent transparent white transparent;
-        border-width: 30px;
-        right: calc(40% + 51px);
-        top: -60px;
+        border-width: 19px;
+        top: -38px;
+      }
+
+      .shopping-layer--position-right::after {
+        right: calc(15% + 51px);
+      }
+
+      .shopping-layer--position-left::after {
+        left: calc(15% + 51px);
       }
 
       .shopping-layer::before {
         border-color: transparent transparent black transparent;
-        border-width: 31px;
+        border-width: 20px;
       }
 
       .shopping-layer__close {

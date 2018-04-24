@@ -116,13 +116,18 @@ export default class extends React.Component {
               <Button
                 href={button.url}
                 look="window-condensed"
-                onClick={() => this.toggleShoppingLayer()}
+                modifier={this.state.showShoppingLayer ? 'open' : null}
+                onClick={event => {
+                  event.preventDefault();
+                  this.toggleShoppingLayer();
+                }}
               >
                 {button.label}
               </Button>
 
               {this.state.showShoppingLayer && (
                 <ShoppingLayer
+                  position="right"
                   hide={() => this.toggleShoppingLayer()}
                   products={productListData[0].products.slice(0, 3)}
                   title="Das könnte Ihnen auch gefallen"
