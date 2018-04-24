@@ -12,7 +12,7 @@ export default class extends React.Component {
   };
 
   toggleShoppingLayer() {
-    this.setState({ showShoppingLayer: !this.state.showShoppingLayer })
+    this.setState({ showShoppingLayer: !this.state.showShoppingLayer });
   }
 
   render() {
@@ -90,14 +90,14 @@ export default class extends React.Component {
           .product-summary__text {
             font-family: ${tokens.fonts.founders.family};
             font-size: 20px;
-            line-height: ${ 24 / 20 };
+            line-height: ${24 / 20};
           }
 
           .product-summary__meta {
             font-family: ${tokens.fonts.founders.family};
             font-size: 16px;
-            line-height: ${ 20 / 16};
-            opacity: .6;
+            line-height: ${20 / 16};
+            opacity: 0.6;
           }
 
           .product-summary__type {
@@ -113,7 +113,11 @@ export default class extends React.Component {
           <img src={image.url} alt={image.alt} className="product-summary__image" />
           {button && (
             <div className="product-summary__button">
-              <Button href={button.url} look="window-condensed" onClick={() => this.toggleShoppingLayer()}>
+              <Button
+                href={button.url}
+                look="window-condensed"
+                onClick={() => this.toggleShoppingLayer()}
+              >
                 {button.label}
               </Button>
 

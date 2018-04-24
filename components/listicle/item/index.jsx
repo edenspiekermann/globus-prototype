@@ -265,7 +265,11 @@ export default class extends React.Component {
           </h3>
 
           <div className="listicle-item__text">
-            {text.map(paragraph => <p className="listicle-item__text-paragraph">{paragraph}</p>)}
+            {text.map(paragraph => (
+              <p className="listicle-item__text-paragraph" key={paragraph}>
+                {paragraph}
+              </p>
+            ))}
           </div>
 
           {(location || price) && (

@@ -16,7 +16,7 @@ export default ({ products }) => (
     `}</style>
 
     {products.map((_, index) => (
-      <li className="listicle__item">
+      <li className="listicle__item" key={_.title}>
         <ListicleItem {..._} index={index + 1} />
       </li>
     ))}
