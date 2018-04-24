@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Button from '../input/button';
-import Dots from '../dots';
 import ShoppingLayer from '../shopping-layer';
 
 import productListData from '../../data/product-list';
@@ -116,7 +115,6 @@ export default class extends React.Component {
             <div className="product-summary__button">
               <Button href={button.url} look="window-condensed" onClick={() => this.toggleShoppingLayer()}>
                 {button.label}
-                <Dots />
               </Button>
 
               {this.state.showShoppingLayer && (

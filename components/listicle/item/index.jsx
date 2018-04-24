@@ -2,7 +2,6 @@ import React from 'react';
 
 import Badge from '../../badge';
 import Button from '../../input/button';
-import Dots from '../../dots';
 import ShoppingLayer from '../../shopping-layer';
 
 import productListData from '../../../data/product-list';
@@ -226,7 +225,6 @@ export default class extends React.Component {
                 onClick={() => this.toggleShoppingLayer()}
               >
                 {button.label}
-                <Dots />
               </Button>
 
               {this.state.showShoppingLayer && (

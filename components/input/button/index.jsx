@@ -37,12 +37,45 @@ const LinkElement = ({ href, children, look, onClick = null }) => (
       }
 
       .button--window-condensed .button__inner {
-        padding: 6px 15px;
+        padding: 8px 15px 6px 15px;
+      }
+
+      .button--window-condensed:after,
+      .button--window-condensed:before {
+        border: solid transparent;
+        content: '';
+        display: none;
+        height: 0;
+        left: 50%;
+        position: absolute;
+        top: 100%;
+        width: 0;
+      }
+
+      .button--window-condensed:hover:after,
+      .button--window-condensed:focus:after,
+      .button--window-condensed:hover:before,
+      .button--window-condensed:focus:before {
+        display: block;
+      }
+
+      .button--window-condensed:after {
+        border-color: transparent;
+        border-top-color: black;
+        border-width: 8px;
+        margin-left: -8px;
+      }
+
+      .button--window-condensed:before {
+        border-color: transparent;
+        border-top-color: black;
+        border-width: 9px;
+        margin-left: -9px;
       }
 
       @media ${tokens.mq.desktop} {
         .button--window-condensed .button__inner {
-          padding: 7px 30px;
+          padding: 13px 30px 7px 30px;
         }
       }
 
