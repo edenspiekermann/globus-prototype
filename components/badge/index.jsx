@@ -23,12 +23,18 @@ export default ({ text }) => (
 
       .badge__text {
         font-family: ${tokens.fonts.founders.family};
-        font-size: 14px;
+        font-size: 13px;
         font-weight: ${tokens.fonts.founders.weight.medium};
         line-height: 1;
         margin: 0;
         padding: 20px 13px;
         text-align: center;
+      }
+
+      @media ${tokens.mq.tablet} {
+        .badge__text {
+          font-size: 14px;
+        }
       }
 
       @media ${tokens.mq.desktop} {
