@@ -17,7 +17,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
 
         @media ${tokens.mq.desktop} {
           .intro {
-            margin-bottom: 120px;
+            margin-bottom: 200px;
           }
         }
 

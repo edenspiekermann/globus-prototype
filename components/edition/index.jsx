@@ -8,14 +8,18 @@ export default ({ image, label }) => (
       }
 
       .edition--with-image {
+        margin-bottom: 80px;
+        margin-right: 100px;
         max-width: 250px;
         position: relative;
         width: auto;
       }
 
-      @media ${tokens.mq.desktop} {
+      @media ${tokens.mq.tablet} {
         .edition {
-          transform: translateY(-80%);
+          margin-bottom: 0;
+          margin-right: 0;
+          transform: translateY(-115%);
         }
 
         .edition,
