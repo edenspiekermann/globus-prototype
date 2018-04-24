@@ -87,6 +87,8 @@ export default class extends React.Component {
             font-size: 32px;
             font-weight: ${tokens.fonts.founders.weight.medium};
             line-height: 1;
+            margin-bottom: 20px;
+            margin-top: 0;
           }
 
           .listicle-item__index {
@@ -144,17 +146,17 @@ export default class extends React.Component {
             }
 
             .listicle-item--left .listicle-item__content {
-              transform: translateX(20%);
+              transform: translateX(30%);
             }
 
             .listicle-item--right .listicle-item__content {
-              transform: translateX(-20%);
+              transform: translateX(-30%);
               text-align: right;
             }
           }
 
           .listicle-item--full .listicle-item__content {
-            margin-top: -120px;
+            margin-top: -80px;
             position: relative;
             text-align: center;
           }
@@ -172,6 +174,7 @@ export default class extends React.Component {
           }
 
           .listicle-item__button {
+            display: inline-flex;
             position: relative;
             transform: translateY(-55%);
             z-index: 20;
@@ -189,7 +192,7 @@ export default class extends React.Component {
           }
 
           .listicle-item__text-paragraph + .listicle-item__text-paragraph {
-            margin-top: 5px;
+            margin-top: 15px;
           }
 
           .listicle-item__meta {
@@ -222,7 +225,11 @@ export default class extends React.Component {
               <Button
                 href={button.url}
                 look="window-condensed"
-                onClick={() => this.toggleShoppingLayer()}
+                modifier={this.state.showShoppingLayer ? 'open' : null}
+                onClick={event => {
+                  event.preventDefault();
+                  this.toggleShoppingLayer();
+                }}
               >
                 {button.label}
               </Button>

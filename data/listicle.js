@@ -85,6 +85,10 @@ export default [
           url: '/static/images/listicle_6.jpg',
           alt: 'Ein rotes Fahrrad',
         },
+        button: {
+          url: '#',
+          label: 'Shop the bike',
+        },
       },
 
       {

@@ -7,8 +7,9 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
     .shopping-layer {
       background-color: white;
       border: 1px solid black;
-      padding: 60px;
+      padding: 60px 60px 30px 60px;
       position: absolute;
+      transform: translateX(40%);
       right: 0;
       top: calc(100% + 35px);
       width: 90vw;
@@ -28,7 +29,7 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
       display: block;
       height: 0;
       position: absolute;
-      right: 200px;
+      right: calc(40% + 50px);
       top: -62px;
       width: 0;
     }
@@ -36,7 +37,7 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
     .shopping-layer:after {
       border-color: transparent transparent white transparent;
       border-width: 30px;
-      right: 201px;
+      right: calc(40% + 51px);
       top: -60px;
     }
 
@@ -70,12 +71,16 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
       font-size: 16px;
       margin-bottom: 5px;
       margin-top: 10px;
+      text-align: center;
     }
 
     .shopping-layer__title {
+      color: black;
+      display: block;
       font-family: ${tokens.fonts.gill.family};
       font-size: 20px;
       font-weight: ${tokens.fonts.gill.weight.regular};
+      text-align: center;
       text-transform: uppercase;
     }
 
@@ -102,6 +107,7 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
     .shopping-layer__product {
       display: flex;
       list-style: none;
+      margin-bottom: 0;
       margin-right: -20px;
       padding: 0;
     }

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import tokens from '../../../data/tokens';
 
-const LinkElement = ({ href, children, look, onClick = null }) => (
+const LinkElement = ({ href, children, look, onClick = null, modifier }) => (
   <Fragment>
     <style jsx>{`
       .button__inner {
@@ -47,15 +47,16 @@ const LinkElement = ({ href, children, look, onClick = null }) => (
         display: none;
         height: 0;
         left: 50%;
+        pointer-events: none;
         position: absolute;
         top: 100%;
         width: 0;
       }
 
-      .button--window-condensed:hover:after,
-      .button--window-condensed:focus:after,
-      .button--window-condensed:hover:before,
-      .button--window-condensed:focus:before {
+      .button--window-condensed:not(.button--window-condensed-open):hover:after,
+      .button--window-condensed:not(.button--window-condensed-open):focus:after,
+      .button--window-condensed:not(.button--window-condensed-open):hover:before,
+      .button--window-condensed:not(.button--window-condensed-open):focus:before {
         display: block;
       }
 
@@ -87,7 +88,11 @@ const LinkElement = ({ href, children, look, onClick = null }) => (
     `}</style>
 
     <Link href={href}>
-      <a className={`button ${look ? `button--${look}` : ''}`}>
+      <a
+        className={`button ${look ? `button--${look}` : ''} ${
+          modifier && look ? `button--${look}-${modifier}` : ''
+        }`}
+      >
         <span className="button__inner" onClick={onClick}>
           {children}
         </span>

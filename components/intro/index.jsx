@@ -136,7 +136,7 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
         }
 
         .intro__text-paragraph + .intro__text-paragraph {
-          margin-top: 15px;
+          margin-top: 20px;
         }
 
         .intro__share {
