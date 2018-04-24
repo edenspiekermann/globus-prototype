@@ -11,7 +11,7 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
       .shopping-layer {
         background-color: white;
         border: 1px solid black;
-        padding: 60px 30px 15px 30px;
+        padding: 60px 35px 15px 35px;
         position: absolute;
         top: calc(100% + 23px);
         width: 70vw;
@@ -126,7 +126,7 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
         font-size: 14px;
         left: 50%;
         letter-spacing: 0.5px;
-        padding: 5px 20px 1px 10px;
+        padding: 5px 25px 1px 10px;
         position: absolute;
         text-transform: uppercase;
         top: 20px;
@@ -143,7 +143,8 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
 
       .shopping-layer__close:hover,
       .shopping-layer__close:focus {
-        background-color: #f0f0f0;
+        background-color: black;
+        color: white;
         cursor: pointer;
       }
 
@@ -152,7 +153,7 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
         font-family: ${tokens.fonts.gill.family};
         font-size: 28px;
         position: absolute;
-        right: 0;
+        right: 5px;
         top: 50%;
         transform: translateY(calc(-50% + 4px));
       }
@@ -160,20 +161,33 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
       .shopping-layer__not-in-stock {
         color: #848484;
         font-family: ${tokens.fonts.gill.family};
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 5px;
-        margin-top: 10px;
+        margin-top: 0px;
         text-align: center;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer__not-in-stock {
+          font-size: 16px;
+          margin-top: 10px;
+        }
       }
 
       .shopping-layer__title {
         color: black;
         display: block;
         font-family: ${tokens.fonts.gill.family};
-        font-size: 20px;
+        font-size: 16px;
         font-weight: ${tokens.fonts.gill.weight.regular};
         text-align: center;
         text-transform: uppercase;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer__title {
+          font-size: 20px;
+        }
       }
 
       .shopping-layer__product-container {
@@ -189,7 +203,7 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
       }
 
       .shopping-layer__product-nav-prev {
-        left: -25px;
+        left: -28px;
       }
 
       @media ${tokens.mq.desktop} {
@@ -199,7 +213,7 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
       }
 
       .shopping-layer__product-nav-next {
-        right: -25px;
+        right: -28px;
       }
 
       @media ${tokens.mq.desktop} {
@@ -227,6 +241,16 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
         .shopping-layer__product-item {
           margin-bottom: 0;
           width: 33.3333%;
+        }
+      }
+
+      .shopping-layer__product-item:last-child {
+        display: none;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer__product-item:last-child {
+          display: block;
         }
       }
     `}</style>
