@@ -31,9 +31,13 @@ export default ({ image, label }) => (
         line-height: ${20 / 16};
         margin: 0;
         text-transform: uppercase;
-        transform: rotate(-90deg) translateX(calc(250% + 10px));
+        transform: rotate(-90deg) translateX(calc(100% + 10px));
         transform-origin: bottom right;
         white-space: nowrap;
+      }
+
+      .edition:not(.edition--with-image).editon__label {
+        transform: rotate(-90deg) translateX(calc(250% + 10px));
       }
 
       @media ${tokens.mq.desktop} {
