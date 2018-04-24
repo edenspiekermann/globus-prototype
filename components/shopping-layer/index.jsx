@@ -14,8 +14,21 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
         padding: 60px 30px 15px 30px;
         position: absolute;
         top: calc(100% + 23px);
-        width: 90vw;
+        width: 70vw;
         z-index: 20;
+      }
+
+      @media ${tokens.mq.tablet} {
+        .shopping-layer {
+          width: 60vw;
+        }
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer {
+          padding: 60px 60px 30px 60px;
+          width: 50vw;
+        }
       }
 
       .shopping-layer--position-left {
@@ -37,13 +50,6 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
       @media ${tokens.mq.desktop} {
         .shopping-layer--position-right {
           transform: translateX(${OFFSET_DESKTOP});
-        }
-      }
-
-      @media ${tokens.mq.desktop} {
-        .shopping-layer {
-          padding: 60px 60px 30px 60px;
-          width: 50vw;
         }
       }
 
