@@ -2,7 +2,7 @@ import Product from '../product';
 
 import tokens from '../../data/tokens';
 
-const OFFSET_MOBILE = '0';
+const OFFSET_MOBILE = '0px';
 const OFFSET_DESKTOP = '10%';
 
 export default ({ products, title, inStock = true, hide = () => {}, position = 'center' }) => (
