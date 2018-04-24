@@ -2,6 +2,9 @@ import Product from '../product';
 
 import tokens from '../../data/tokens';
 
+const OFFSET_MOBILE = '0';
+const OFFSET_DESKTOP = '10%';
+
 export default ({ products, title, inStock = true, hide = () => {}, position = 'center' }) => (
   <div className={`shopping-layer shopping-layer--position-${position}`}>
     <style jsx>{`
@@ -17,12 +20,24 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
 
       .shopping-layer--position-left {
         left: 0;
-        transform: translateX(-15%);
+        transform: translateX(-${OFFSET_MOBILE});
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer--position-left {
+          transform: translateX(-${OFFSET_DESKTOP});
+        }
       }
 
       .shopping-layer--position-right {
         right: 0;
-        transform: translateX(15%);
+        transform: translateX(${OFFSET_MOBILE});
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer--position-right {
+          transform: translateX(${OFFSET_DESKTOP});
+        }
       }
 
       @media ${tokens.mq.desktop} {
@@ -45,12 +60,26 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
 
       .shopping-layer--position-left::after,
       .shopping-layer--position-left::before {
-        left: calc(15% + 50px);
+        left: calc(${OFFSET_MOBILE} + 50px);
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer--position-left::after,
+        .shopping-layer--position-left::before {
+          left: calc(${OFFSET_DESKTOP} + 50px);
+        }
       }
 
       .shopping-layer--position-right::after,
       .shopping-layer--position-right::before {
-        right: calc(15% + 50px);
+        right: calc(${OFFSET_MOBILE} + 50px);
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer--position-right::after,
+        .shopping-layer--position-right::before {
+          right: calc(${OFFSET_DESKTOP} + 50px);
+        }
       }
 
       .shopping-layer::after {
@@ -60,11 +89,23 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
       }
 
       .shopping-layer--position-right::after {
-        right: calc(15% + 51px);
+        right: calc(${OFFSET_MOBILE} + 51px);
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer--position-right::after {
+          right: calc(${OFFSET_DESKTOP} + 51px);
+        }
       }
 
       .shopping-layer--position-left::after {
-        left: calc(15% + 51px);
+        left: calc(${OFFSET_MOBILE} + 51px);
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer--position-left::after {
+          left: calc(${OFFSET_DESKTOP} + 51px);
+        }
       }
 
       .shopping-layer::before {

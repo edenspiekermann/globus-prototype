@@ -58,6 +58,7 @@ export default class extends React.Component {
 
           .product-summary__button {
             transform: translateY(-50%);
+            z-index: 5;
           }
 
           .product-summary__content {
