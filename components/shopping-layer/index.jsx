@@ -22,8 +22,8 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
       }
     }
 
-    .shopping-layer:after,
-    .shopping-layer:before {
+    .shopping-layer::after,
+    .shopping-layer::before {
       border-style: solid;
       content: '';
       display: block;
@@ -34,14 +34,14 @@ export default ({ products, title, inStock = true, hide = () => {} }) => <div cl
       width: 0;
     }
 
-    .shopping-layer:after {
+    .shopping-layer::after {
       border-color: transparent transparent white transparent;
       border-width: 30px;
       right: calc(40% + 51px);
       top: -60px;
     }
 
-    .shopping-layer:before {
+    .shopping-layer::before {
       border-color: transparent transparent black transparent;
       border-width: 31px;
     }

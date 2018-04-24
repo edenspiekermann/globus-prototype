@@ -13,7 +13,7 @@ export default () => (
         text-decoration: none;
       }
 
-      .share:before {
+      .share::before {
         display: inline-block;
         font-family: ${tokens.fonts.icon.family};
         font-size: 32px;
@@ -23,20 +23,20 @@ export default () => (
         ${mixins.visuallyHidden}
       }
 
-      .share--facebook:before {
+      .share--facebook::before {
         content: '\\e81a';
         font-size: 26px;
       }
 
-      .share--pinterest:before {
+      .share--pinterest::before {
         content: '\\e82a';
       }
 
-      .share--pinterest:before {
+      .share--pinterest::before {
         content: '\\e826';
       }
 
-      .share--print:before {
+      .share--print::before {
         content: '\\e82b';
       }
     `}</style>

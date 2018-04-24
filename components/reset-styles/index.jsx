@@ -1,8 +1,8 @@
 export default () => (
   <style global jsx>{`
     *,
-    *:before,
-    *:after {
+    *::before,
+    *::after {
       box-sizing: border-box;
     }
 

@@ -39,8 +39,8 @@ const LinkElement = ({ href, children, look, onClick = null, modifier }) => (
         padding: 12px 25px 10px 25px;
       }
 
-      .button--window-condensed:after,
-      .button--window-condensed:before {
+      .button--window-condensed::after,
+      .button--window-condensed::before {
         border: solid transparent;
         content: '';
         display: none;
@@ -52,21 +52,21 @@ const LinkElement = ({ href, children, look, onClick = null, modifier }) => (
         width: 0;
       }
 
-      .button--window-condensed:not(.button--window-condensed-open):hover:after,
-      .button--window-condensed:not(.button--window-condensed-open):focus:after,
-      .button--window-condensed:not(.button--window-condensed-open):hover:before,
-      .button--window-condensed:not(.button--window-condensed-open):focus:before {
+      .button--window-condensed:not(.button--window-condensed-open):hover::after,
+      .button--window-condensed:not(.button--window-condensed-open):focus::after,
+      .button--window-condensed:not(.button--window-condensed-open):hover::before,
+      .button--window-condensed:not(.button--window-condensed-open):focus::before {
         display: block;
       }
 
-      .button--window-condensed:after {
+      .button--window-condensed::after {
         border-color: transparent;
         border-top-color: black;
         border-width: 8px;
         margin-left: -8px;
       }
 
-      .button--window-condensed:before {
+      .button--window-condensed::before {
         border-color: transparent;
         border-top-color: black;
         border-width: 9px;
