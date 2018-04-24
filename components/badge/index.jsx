@@ -43,7 +43,6 @@ export default ({ text }) => (
         }
       }
     `}</style>
-  <p className="badge__text">
-    { text }
-  </p>
-</div>);
+
+    <p className="badge__text">{text}</p>
+  </div>);

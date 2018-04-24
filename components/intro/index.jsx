@@ -151,7 +151,9 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
       </div>
 
       <div className="intro__content">
-        <div className="intro__text">{text.map(_ => <p className="intro__text-paragraph">{_}</p>)}</div>
+        <div className="intro__text">
+          {text.map(_ => <p className="intro__text-paragraph">{_}</p>)}
+        </div>
         <div className="intro__share">
           <Share />
         </div>
