@@ -36,7 +36,7 @@ const LinkElement = ({ href, children, look, onClick = null, modifier }) => (
       }
 
       .button--window-condensed {
-        padding: 12px 25px 10px 25px;
+        padding: 14px 25px 10px 25px;
       }
 
       .button--window-condensed::after,
