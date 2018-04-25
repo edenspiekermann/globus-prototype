@@ -75,7 +75,7 @@ export default ({
           .intro__image-container {
             background-image: linear-gradient(
               to bottom,
-              ${color} 80%,
+              ${color} 65%,
               transparent 0
             );
             height: 100%;
@@ -102,6 +102,16 @@ export default ({
             position: absolute;
             right: 0;
             top: 0;
+          }
+        }
+
+        @media ${tokens.mq.large} {
+          .intro__image-container {
+            background-image: linear-gradient(
+              to bottom,
+              ${color} 80%,
+              transparent 0
+            );
           }
         }
 
