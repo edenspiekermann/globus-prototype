@@ -16,15 +16,21 @@ export default ({ image, label }) => (
       }
 
       @media ${tokens.mq.tablet} {
-        .edition {
-          margin-bottom: 0;
+        .edition--with-image {
+          margin-bottom: 40px;
           margin-right: 0;
+        }
+      }
+
+      @media ${tokens.mq.desktop} {
+        .edition--with-image {
+          margin-bottom: 0;
+          position: absolute;
           transform: translateY(-115%);
         }
 
-        .edition,
-        .edition--with-image {
-          position: absolute;
+        .edition:not(.edition--with-image) {
+          transform: translateY(80px);
         }
       }
 
