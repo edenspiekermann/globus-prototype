@@ -13,7 +13,7 @@ export default ({
   color,
   reversed = false,
   number,
-  children,
+  children
 }) => (
   <Fragment>
     <section className={`intro ${reversed ? 'intro--reversed' : ''}`}>

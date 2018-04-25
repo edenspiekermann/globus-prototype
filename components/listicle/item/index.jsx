@@ -11,7 +11,7 @@ import styles from './styles';
 export default class extends React.Component {
   state = {
     showShoppingLayer: false,
-    shoppingLayerPosition: {},
+    shoppingLayerPosition: {}
   };
 
   toggleShoppingLayer(event) {
@@ -24,13 +24,13 @@ export default class extends React.Component {
 
       position = {
         top: rect.top - bodyRect.top,
-        left: parseInt(rect.left + rect.width / 2, 10),
+        left: parseInt(rect.left + rect.width / 2, 10)
       };
     }
 
     this.setState({
       showShoppingLayer: !this.state.showShoppingLayer,
-      shoppingLayerPosition: position,
+      shoppingLayerPosition: position
     });
   }
 
@@ -44,7 +44,7 @@ export default class extends React.Component {
       location,
       price,
       button,
-      badge,
+      badge
     } = this.props;
 
     return (

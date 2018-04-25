@@ -9,7 +9,7 @@ import tokens from '../../tokens';
 
 export default class extends React.Component {
   state = {
-    showShoppingLayer: false,
+    showShoppingLayer: false
   };
 
   toggleShoppingLayer(event) {
@@ -22,13 +22,13 @@ export default class extends React.Component {
 
       position = {
         top: rect.top - bodyRect.top,
-        left: parseInt(rect.left + rect.width / 2, 10),
+        left: parseInt(rect.left + rect.width / 2, 10)
       };
     }
 
     this.setState({
       showShoppingLayer: !this.state.showShoppingLayer,
-      shoppingLayerPosition: position,
+      shoppingLayerPosition: position
     });
   }
 
@@ -41,7 +41,7 @@ export default class extends React.Component {
       button,
       image,
       color,
-      background,
+      background
     } = this.props;
 
     return (

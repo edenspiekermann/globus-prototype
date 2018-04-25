@@ -8,7 +8,7 @@ export default ({
   inStock = true,
   hide = () => {},
   position = 'center',
-  coordinates,
+  coordinates
 }) => (
   <div
     className={`shopping-layer shopping-layer--position-${position}`}

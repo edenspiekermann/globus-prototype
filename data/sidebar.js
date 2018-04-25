@@ -3,44 +3,44 @@ export default {
     {
       image: {
         url: '/static/images/sidebar_1.jpg',
-        alt: '',
+        alt: ''
       },
       byline: 'Globus Trends',
-      title: 'Farmers Markets sind die neuen Bioläden',
+      title: 'Farmers Markets sind die neuen Bioläden'
     },
 
     {
       image: {
         url: '/static/images/sidebar_2.jpg',
-        alt: '',
+        alt: ''
       },
-      title: '7 Produkte, die du jetzt für LA brauchst',
+      title: '7 Produkte, die du jetzt für LA brauchst'
     },
 
     {
       image: {
         url: '/static/images/sidebar_3.jpg',
-        alt: '',
+        alt: ''
       },
       byline: 'Globus Trends',
-      title: 'Warum die Hemden-Looks jetzt so richtig aufblühen',
+      title: 'Warum die Hemden-Looks jetzt so richtig aufblühen'
     },
 
     {
       image: {
         url: '/static/images/sidebar_4.jpg',
-        alt: '',
+        alt: ''
       },
-      title: '6 Gründe, für eine Reise an die Westcoast',
+      title: '6 Gründe, für eine Reise an die Westcoast'
     },
 
     {
       image: {
         url: '/static/images/sidebar_5.jpg',
-        alt: '',
+        alt: ''
       },
       byline: 'Globus Trends',
-      title: 'Die besten Cowboy-Stiefel  der Saison kommen aus Italien',
-    },
-  ],
+      title: 'Die besten Cowboy-Stiefel  der Saison kommen aus Italien'
+    }
+  ]
 };
