@@ -134,7 +134,7 @@ export default ({
 
         @media ${tokens.mq.desktop} {
           .intro__content {
-            margin-left: calc(50% + 120px);
+            margin-left: calc(45% + 120px);
             max-width: 700px;
           }
 
