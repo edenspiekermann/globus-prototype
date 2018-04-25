@@ -81,7 +81,7 @@ export default ({
         transform: translateX(-50%);
       }
 
-      @media ${tokens.mq.desktop} {
+      @media ${tokens.mq.tablet} {
         .shopping-layer__close {
           left: auto;
           right: 20px;
