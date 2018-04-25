@@ -1,5 +1,6 @@
 import React from 'react';
 
+import BodyEnd from '../body-end';
 import Button from '../input/button';
 import ShoppingLayer from '../shopping-layer';
 
@@ -11,8 +12,24 @@ export default class extends React.Component {
     showShoppingLayer: false,
   };
 
-  toggleShoppingLayer() {
-    this.setState({ showShoppingLayer: !this.state.showShoppingLayer });
+  toggleShoppingLayer(event) {
+    let position;
+
+    if (event) {
+      const { target } = event.nativeEvent;
+      const rect = target.getBoundingClientRect();
+      const bodyRect = document.body.getBoundingClientRect();
+
+      position = {
+        top: rect.top - bodyRect.top,
+        left: parseInt(rect.left + rect.width / 2, 10),
+      };
+    }
+
+    this.setState({
+      showShoppingLayer: !this.state.showShoppingLayer,
+      shoppingLayerPosition: position,
+    });
   }
 
   render() {
@@ -120,20 +137,22 @@ export default class extends React.Component {
                 modifier={this.state.showShoppingLayer ? 'open' : null}
                 onClick={event => {
                   event.preventDefault();
-                  this.toggleShoppingLayer();
+                  this.toggleShoppingLayer(event);
                 }}
               >
                 {button.label}
               </Button>
 
               {this.state.showShoppingLayer && (
-                <ShoppingLayer
-                  position="right"
-                  hide={() => this.toggleShoppingLayer()}
-                  products={productListData[0].products.slice(0, 3)}
-                  title="Das könnte Ihnen auch gefallen"
-                  inStock={false}
-                />
+                <BodyEnd>
+                  <ShoppingLayer
+                    hide={() => this.toggleShoppingLayer()}
+                    products={productListData[0].products.slice(0, 3)}
+                    title="Das könnte Ihnen auch gefallen"
+                    inStock={false}
+                    coordinates={this.state.shoppingLayerPosition}
+                  />
+                </BodyEnd>
               )}
             </div>
           )}

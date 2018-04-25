@@ -5,52 +5,24 @@ import tokens from '../../data/tokens';
 const OFFSET_MOBILE = '0px';
 const OFFSET_DESKTOP = '10%';
 
-export default ({ products, title, inStock = true, hide = () => {}, position = 'center' }) => (
-  <div className={`shopping-layer shopping-layer--position-${position}`}>
+export default ({
+  products,
+  title,
+  inStock = true,
+  hide = () => {},
+  position = 'center',
+  coordinates,
+}) => (
+  <div
+    className={`shopping-layer shopping-layer--position-${position}`}
+    style={{ top: coordinates.top }}
+  >
     <style jsx>{`
       .shopping-layer {
-        background-color: white;
-        border: 1px solid black;
-        padding: 60px 35px 15px 35px;
         position: absolute;
-        top: calc(100% + 23px);
-        width: 70vw;
-        z-index: 20;
-      }
-
-      @media ${tokens.mq.tablet} {
-        .shopping-layer {
-          width: 60vw;
-        }
-      }
-
-      @media ${tokens.mq.desktop} {
-        .shopping-layer {
-          padding: 60px 60px 30px 60px;
-          width: 50vw;
-        }
-      }
-
-      .shopping-layer--position-left {
-        left: 0;
-        transform: translateX(-${OFFSET_MOBILE});
-      }
-
-      @media ${tokens.mq.desktop} {
-        .shopping-layer--position-left {
-          transform: translateX(-${OFFSET_DESKTOP});
-        }
-      }
-
-      .shopping-layer--position-right {
-        right: 0;
-        transform: translateX(${OFFSET_MOBILE});
-      }
-
-      @media ${tokens.mq.desktop} {
-        .shopping-layer--position-right {
-          transform: translateX(${OFFSET_DESKTOP});
-        }
+        transform: translateY(60px);
+        width: 100%;
+        z-index: 5;
       }
 
       .shopping-layer::after,
@@ -60,63 +32,39 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
         display: block;
         height: 0;
         position: absolute;
-        top: -40px;
+        transform: translateX(-15px);
+        top: -39px;
         width: 0;
-      }
-
-      .shopping-layer--position-left::after,
-      .shopping-layer--position-left::before {
-        left: calc(${OFFSET_MOBILE} + 50px);
-      }
-
-      @media ${tokens.mq.desktop} {
-        .shopping-layer--position-left::after,
-        .shopping-layer--position-left::before {
-          left: calc(${OFFSET_DESKTOP} + 50px);
-        }
-      }
-
-      .shopping-layer--position-right::after,
-      .shopping-layer--position-right::before {
-        right: calc(${OFFSET_MOBILE} + 50px);
-      }
-
-      @media ${tokens.mq.desktop} {
-        .shopping-layer--position-right::after,
-        .shopping-layer--position-right::before {
-          right: calc(${OFFSET_DESKTOP} + 50px);
-        }
       }
 
       .shopping-layer::after {
         border-color: transparent transparent white transparent;
         border-width: 19px;
-        top: -38px;
-      }
-
-      .shopping-layer--position-right::after {
-        right: calc(${OFFSET_MOBILE} + 51px);
-      }
-
-      @media ${tokens.mq.desktop} {
-        .shopping-layer--position-right::after {
-          right: calc(${OFFSET_DESKTOP} + 51px);
-        }
-      }
-
-      .shopping-layer--position-left::after {
-        left: calc(${OFFSET_MOBILE} + 51px);
-      }
-
-      @media ${tokens.mq.desktop} {
-        .shopping-layer--position-left::after {
-          left: calc(${OFFSET_DESKTOP} + 51px);
-        }
+        left: ${coordinates.left}px;
+        top: -37px;
       }
 
       .shopping-layer::before {
         border-color: transparent transparent black transparent;
         border-width: 20px;
+        left: ${coordinates.left - 1}px;
+      }
+
+      .shopping-layer__overlay {
+        background-color: white;
+        border: 1px solid black;
+        left: 50%;
+        padding: 60px 35px 15px 35px;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer__overlay {
+          padding: 60px 60px 30px 60px;
+          width: 70%;
+        }
       }
 
       .shopping-layer__close {
@@ -255,42 +203,44 @@ export default ({ products, title, inStock = true, hide = () => {}, position = '
       }
     `}</style>
 
-    <button className="shopping-layer__close" onClick={() => hide()}>
-      Schließen
-    </button>
+    <div className="shopping-layer__overlay">
+      <button className="shopping-layer__close" onClick={() => hide()}>
+        Schließen
+      </button>
 
-    {!inStock && (
-      <p className="shopping-layer__not-in-stock">Das Produkt ist leider ausverkauft.</p>
-    )}
+      {!inStock && (
+        <p className="shopping-layer__not-in-stock">Das Produkt ist leider ausverkauft.</p>
+      )}
 
-    {title && <strong className="shopping-layer__title">{title}</strong>}
+      {title && <strong className="shopping-layer__title">{title}</strong>}
 
-    <div className="shopping-layer__product-container">
-      <svg
-        width="18"
-        height="32"
-        xmlns="http://www.w3.org/2000/svg"
-        className="shopping-layer__product-nav-prev"
-      >
-        <path d="M17 0L1 16l16 16" stroke="#000" fill="none" />
-      </svg>
+      <div className="shopping-layer__product-container">
+        <svg
+          width="18"
+          height="32"
+          xmlns="http://www.w3.org/2000/svg"
+          className="shopping-layer__product-nav-prev"
+        >
+          <path d="M17 0L1 16l16 16" stroke="#000" fill="none" />
+        </svg>
 
-      <ul className="shopping-layer__product">
-        {products.map(_ => (
-          <li className="shopping-layer__product-item">
-            <Product {..._} />
-          </li>
-        ))}
-      </ul>
+        <ul className="shopping-layer__product">
+          {products.map(_ => (
+            <li className="shopping-layer__product-item">
+              <Product {..._} />
+            </li>
+          ))}
+        </ul>
 
-      <svg
-        width="18"
-        height="32"
-        xmlns="http://www.w3.org/2000/svg"
-        className="shopping-layer__product-nav-next"
-      >
-        <path d="M1 0l16 16L1 32" stroke="#000" fill="none" />
-      </svg>
+        <svg
+          width="18"
+          height="32"
+          xmlns="http://www.w3.org/2000/svg"
+          className="shopping-layer__product-nav-next"
+        >
+          <path d="M1 0l16 16L1 32" stroke="#000" fill="none" />
+        </svg>
+      </div>
     </div>
   </div>
 );

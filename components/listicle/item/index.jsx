@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Badge from '../../badge';
+import BodyEnd from '../../body-end';
 import Button from '../../input/button';
 import ShoppingLayer from '../../shopping-layer';
 
@@ -10,29 +11,31 @@ import tokens from '../../../data/tokens';
 export default class extends React.Component {
   state = {
     showShoppingLayer: false,
+    shoppingLayerPosition: {},
   };
 
-  toggleShoppingLayer() {
-    this.setState({ showShoppingLayer: !this.state.showShoppingLayer });
+  toggleShoppingLayer(event) {
+    let position;
+
+    if (event) {
+      const { target } = event.nativeEvent;
+      const rect = target.getBoundingClientRect();
+      const bodyRect = document.body.getBoundingClientRect();
+
+      position = {
+        top: rect.top - bodyRect.top,
+        left: parseInt(rect.left + rect.width / 2, 10),
+      };
+    }
+
+    this.setState({
+      showShoppingLayer: !this.state.showShoppingLayer,
+      shoppingLayerPosition: position,
+    });
   }
 
   render() {
     const { index, image, title, text, type = 'left', location, price, button, badge } = this.props;
-    let position;
-
-    switch(type) {
-      case 'full':
-        position = 'center';
-        break;
-
-      case 'left':
-        position = 'right';
-        break;
-
-      default:
-        position = 'left';
-        break;
-    }
 
     return (
       <div className={`listicle-item listicle-item--${type}`}>
@@ -255,20 +258,22 @@ export default class extends React.Component {
                 modifier={this.state.showShoppingLayer ? 'open' : null}
                 onClick={event => {
                   event.preventDefault();
-                  this.toggleShoppingLayer();
+                  this.toggleShoppingLayer(event);
                 }}
               >
                 {button.label}
               </Button>
 
               {this.state.showShoppingLayer && (
-                <ShoppingLayer
-                  position={position}
-                  hide={() => this.toggleShoppingLayer()}
-                  products={productListData[0].products.slice(0, 3)}
-                  title="Das könnte Ihnen auch gefallen"
-                  inStock={false}
-                />
+                <BodyEnd>
+                  <ShoppingLayer
+                    hide={() => this.toggleShoppingLayer()}
+                    products={productListData[0].products.slice(0, 3)}
+                    title="Das könnte Ihnen auch gefallen"
+                    inStock={false}
+                    coordinates={this.state.shoppingLayerPosition}
+                  />
+                </BodyEnd>
               )}
             </div>
           )}
