@@ -1,4 +1,4 @@
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default ({ image, title, type, price }) => (
   <div className="product">

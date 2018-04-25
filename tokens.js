@@ -1,6 +1,5 @@
 export default {
   colors: {
-    black: 'rgb(0, 0, 0)',
     grey: 'rgb(166, 166, 166)',
   },
 
@@ -37,5 +36,15 @@ export default {
     icon: {
       family: 'Globus Icon',
     },
+  },
+
+  mixins: {
+    visuallyHidden: `
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+      clip: rect(1px, 1px, 1px, 1px);
+    `,
   },
 };

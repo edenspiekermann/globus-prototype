@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 
-import mixins from '../../data/mixins';
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default () => (
   <Fragment>
@@ -20,7 +19,7 @@ export default () => (
       }
 
       .share__label {
-        ${mixins.visuallyHidden};
+        ${tokens.mixins.visuallyHidden};
       }
 
       .share--facebook::before {

@@ -1,6 +1,6 @@
 import Product from '../product';
 
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default ({ products, children }) => (
   <div className="product-list">

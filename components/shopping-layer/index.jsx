@@ -1,9 +1,6 @@
 import Product from '../product';
 
-import tokens from '../../data/tokens';
-
-const OFFSET_MOBILE = '0px';
-const OFFSET_DESKTOP = '10%';
+import tokens from '../../tokens';
 
 export default ({
   products,

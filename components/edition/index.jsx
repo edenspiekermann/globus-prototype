@@ -1,4 +1,4 @@
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default ({ image, label }) => (
   <div className={`edition ${image ? 'edition--with-image' : ''}`}>

@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 
-import mixins from '../../../data/mixins';
-import tokens from '../../../data/tokens';
+import tokens from '../../../tokens';
 
 const IntroTitle = ({ byline, title, number }) => (
   <h2 className="intro-title">
@@ -33,7 +32,7 @@ const IntroTitle = ({ byline, title, number }) => (
       }
 
       .intro-title__byline-separator {
-        ${mixins.visuallyHidden};
+        ${tokens.mixins.visuallyHidden};
       }
 
       .intro-title__number {

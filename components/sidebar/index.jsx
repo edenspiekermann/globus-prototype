@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default ({ items }) => (
   <aside className="sidebar">

@@ -1,4 +1,4 @@
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default ({ children }) => (
   <section className="main-content">

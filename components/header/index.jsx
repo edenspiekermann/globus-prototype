@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import data from './data';
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default () => (
   <header className="header">

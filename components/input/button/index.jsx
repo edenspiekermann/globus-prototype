@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-import tokens from '../../../data/tokens';
+import tokens from '../../../tokens';
 
 const LinkElement = ({ href, children, look, onClick = null, modifier }) => (
   <Fragment>

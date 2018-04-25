@@ -1,7 +1,7 @@
 import Newsletter from './newsletter';
 
 import data from './data';
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default () => (
   <footer className="footer">

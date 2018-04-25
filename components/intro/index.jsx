@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import IntroTitle from './title';
 import Share from '../share';
 
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default ({ title, byline, text, image, color, reversed = false, number, children }) => (
   <Fragment>

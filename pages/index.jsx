@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
-import tokens from '../data/tokens';
+import tokens from '../tokens';
 
 export default () => (
   <Fragment>

@@ -5,7 +5,7 @@ import Button from '../input/button';
 import ShoppingLayer from '../shopping-layer';
 
 import productListData from '../../data/product-list';
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default class extends React.Component {
   state = {
