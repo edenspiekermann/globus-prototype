@@ -45,7 +45,7 @@ export default ({
         @media ${tokens.mq.desktop} {
           .intro__title-container {
             background-color: transparent;
-            margin-left: calc(40% - 100px);
+            margin-left: calc(45% - 100px);
             padding-bottom: 0;
             position: relative;
             z-index: 2;
@@ -53,7 +53,7 @@ export default ({
 
           .intro--reversed .intro__title-container {
             margin-left: 100px;
-            margin-right: calc(40% - 100px);
+            margin-right: calc(50% - 100px);
           }
         }
 
@@ -89,7 +89,7 @@ export default ({
           .intro__image {
             max-height: 100%;
             object-fit: contain;
-            width: 40%;
+            width: 50%;
           }
 
           .intro--reversed .intro__image-container {
@@ -113,6 +113,12 @@ export default ({
               transparent 0
             );
           }
+
+          .intro__image {
+            max-height: 100%;
+            object-fit: contain;
+            width: 45%;
+          }
         }
 
         .intro__content {
@@ -128,7 +134,7 @@ export default ({
 
         @media ${tokens.mq.desktop} {
           .intro__content {
-            margin-left: calc(40% + 100px);
+            margin-left: calc(50% + 120px);
             max-width: 700px;
           }
 
