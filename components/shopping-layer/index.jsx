@@ -22,6 +22,7 @@ export default ({
         position: absolute;
         transform: translateY(60px);
         width: 100%;
+        z-index: 5;
       }
 
       .shopping-layer::after,
