@@ -8,6 +8,7 @@ export default {
     phone: 'screen and (min-width: 380px)',
     tablet: 'screen and (min-width: 768px)',
     desktop: 'screen and (min-width: 960px)',
+    large: 'screen and (min-width: 1400px)',
   },
 
   fonts: {

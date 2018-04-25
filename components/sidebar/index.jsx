@@ -28,7 +28,13 @@ export default ({ items }) => (
         .sidebar {
           margin-left: 60px;
           margin-right: 60px;
-          width: 350px;
+          width: 320px;
+        }
+      }
+
+      @media ${tokens.mq.large} {
+        .sidebar {
+          width: 390px;
         }
       }
 
@@ -103,13 +109,19 @@ export default ({ items }) => (
 
       @media ${tokens.mq.tablet} {
         .sidebar__list-item-title {
-          font-size: 18px;
+          font-size: 17px;
         }
       }
 
       @media ${tokens.mq.desktop} {
         .sidebar__list-item-title {
           font-size: 24px;
+        }
+      }
+
+      @media ${tokens.mq.large} {
+        .sidebar__list-item-title {
+          font-size: 25px;
         }
       }
 
