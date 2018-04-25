@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
 
+import IntroContent from './content';
+import IntroImage from './image';
 import IntroTitle from './title';
-import Share from '../share';
 
 import tokens from '../../tokens';
 
@@ -35,13 +36,6 @@ export default ({
           padding: 20px 40px 300px 40px;
         }
 
-        .intro--reversed .intro__title-container {
-          margin-bottom: 80px;
-          padding-bottom: 0;
-          position: relative;
-          z-index: 2;
-        }
-
         @media ${tokens.mq.desktop} {
           .intro__title-container {
             background-color: transparent;
@@ -50,7 +44,16 @@ export default ({
             position: relative;
             z-index: 2;
           }
+        }
 
+        .intro--reversed .intro__title-container {
+          margin-bottom: 80px;
+          padding-bottom: 0;
+          position: relative;
+          z-index: 2;
+        }
+
+        @media ${tokens.mq.desktop} {
           .intro--reversed .intro__title-container {
             margin-left: 100px;
             margin-right: calc(50% - 100px);
@@ -61,14 +64,6 @@ export default ({
           margin: -280px 60px 20px 120px;
           overflow-y: hidden;
           z-index: 1;
-        }
-
-        .intro--reversed .intro__image-container {
-          margin: 0;
-          position: absolute;
-          right: 0;
-          top: 0;
-          transform: translateX(50%);
         }
 
         @media ${tokens.mq.desktop} {
@@ -85,23 +80,21 @@ export default ({
             top: 0;
             width: 100%;
           }
+        }
 
-          .intro__image {
-            max-height: 100%;
-            object-fit: contain;
-            width: 50%;
-          }
+        .intro--reversed .intro__image-container {
+          margin: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateX(50%);
+        }
 
+        @media ${tokens.mq.desktop} {
           .intro--reversed .intro__image-container {
             height: 100%;
             left: auto;
             transform: none;
-          }
-
-          .intro--reversed .intro__image {
-            position: absolute;
-            right: 0;
-            top: 0;
           }
         }
 
@@ -113,12 +106,6 @@ export default ({
               transparent 0
             );
           }
-
-          .intro__image {
-            max-height: 100%;
-            object-fit: contain;
-            width: 45%;
-          }
         }
 
         .intro__content {
@@ -128,46 +115,22 @@ export default ({
           z-index: 2;
         }
 
-        .intro--reversed .intro__content {
-          margin-left: 40px;
-        }
-
         @media ${tokens.mq.desktop} {
           .intro__content {
             margin-left: calc(45% + 120px);
             max-width: 700px;
           }
+        }
 
+        .intro--reversed .intro__content {
+          margin-left: 40px;
+        }
+
+        @media ${tokens.mq.desktop} {
           .intro--reversed .intro__content {
             margin-left: 360px;
             max-width: 900px;
           }
-        }
-
-        .intro__text {
-          font-family: ${tokens.fonts.founders.family};
-          font-size: 24px;
-          line-height: ${27 / 24};
-          max-width: 640px;
-        }
-
-        @media ${tokens.mq.desktop} {
-          .intro__text {
-            font-size: 32px;
-          }
-        }
-
-        .intro__text-paragraph {
-          margin-bottom: 0;
-          margin-top: 0;
-        }
-
-        .intro__text-paragraph + .intro__text-paragraph {
-          margin-top: 20px;
-        }
-
-        .intro__share {
-          margin-top: 40px;
         }
       `}</style>
 
@@ -176,16 +139,11 @@ export default ({
       </div>
 
       <div className="intro__image-container">
-        <img src={image.url} alt={image.alt} className="intro__image" />
+        <IntroImage image={image} reversed={reversed} />
       </div>
 
       <div className="intro__content">
-        <div className="intro__text">
-          {text.map(_ => <p className="intro__text-paragraph">{_}</p>)}
-        </div>
-        <div className="intro__share">
-          <Share />
-        </div>
+        <IntroContent text={text} />
       </div>
     </section>
 
