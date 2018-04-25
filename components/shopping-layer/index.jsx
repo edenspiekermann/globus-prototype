@@ -54,6 +54,7 @@ export default ({
         background-color: white;
         border: 1px solid black;
         left: 50%;
+        max-width: 1400px;
         padding: 60px 35px 15px 35px;
         position: absolute;
         transform: translateX(-50%);
