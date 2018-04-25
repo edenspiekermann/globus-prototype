@@ -6,6 +6,9 @@ import IntroTitle from './title';
 
 import tokens from '../../tokens';
 
+const IMAGE_SIZE_DESKTOP = '50%';
+const IMAGE_SIZE_LARGE = '45%';
+
 export default ({
   title,
   byline,
@@ -39,10 +42,16 @@ export default ({
         @media ${tokens.mq.desktop} {
           .intro__title-container {
             background-color: transparent;
-            margin-left: calc(45% - 100px);
+            margin-left: calc(${IMAGE_SIZE_DESKTOP} - 100px);
             padding-bottom: 0;
             position: relative;
             z-index: 2;
+          }
+        }
+
+        @media ${tokens.mq.large} {
+          .intro__title-container {
+            margin-left: calc(${IMAGE_SIZE_LARGE} - 150px);
           }
         }
 
@@ -56,7 +65,14 @@ export default ({
         @media ${tokens.mq.desktop} {
           .intro--reversed .intro__title-container {
             margin-left: 100px;
-            margin-right: calc(50% - 100px);
+            margin-right: calc(${IMAGE_SIZE_DESKTOP} - 100px);
+          }
+        }
+
+        @media ${tokens.mq.large} {
+          .intro--reversed .intro__title-container {
+            margin-left: 100px;
+            margin-right: calc(${IMAGE_SIZE_LARGE} - 100px);
           }
         }
 
@@ -117,8 +133,14 @@ export default ({
 
         @media ${tokens.mq.desktop} {
           .intro__content {
-            margin-left: calc(45% + 120px);
+            margin-left: calc(${IMAGE_SIZE_DESKTOP} + 100px);
             max-width: 700px;
+          }
+        }
+
+        @media ${tokens.mq.large} {
+          .intro__content {
+            margin-left: calc(${IMAGE_SIZE_LARGE} + 100px);
           }
         }
 
