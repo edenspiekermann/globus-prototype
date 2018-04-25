@@ -146,7 +146,6 @@ export default class extends React.Component {
               {this.state.showShoppingLayer && (
                 <BodyEnd>
                   <ShoppingLayer
-                    position="right"
                     hide={() => this.toggleShoppingLayer()}
                     products={productListData[0].products.slice(0, 3)}
                     title="Das könnte Ihnen auch gefallen"
