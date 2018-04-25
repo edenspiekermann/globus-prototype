@@ -5,7 +5,16 @@ import Share from '../share';
 
 import tokens from '../../tokens';
 
-export default ({ title, byline, text, image, color, reversed = false, number, children }) => (
+export default ({
+  title,
+  byline,
+  text,
+  image,
+  color,
+  reversed = false,
+  number,
+  children,
+}) => (
   <Fragment>
     <section className={`intro ${reversed ? 'intro--reversed' : ''}`}>
       <style jsx>{`
@@ -64,7 +73,11 @@ export default ({ title, byline, text, image, color, reversed = false, number, c
 
         @media ${tokens.mq.desktop} {
           .intro__image-container {
-            background-image: linear-gradient(to bottom, ${color} 80%, transparent 0);
+            background-image: linear-gradient(
+              to bottom,
+              ${color} 80%,
+              transparent 0
+            );
             height: 100%;
             left: 0;
             margin: 0;

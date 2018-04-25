@@ -13,9 +13,17 @@ export default ({ items }) => (
         <li className="sidebar__list-item">
           <Link href="#">
             <a className="sidebar__outer-link">
-              <img src={_.image.url} alt={_.image.alt} className="sidebar__list-item-image" />
+              <img
+                src={_.image.url}
+                alt={_.image.alt}
+                className="sidebar__list-item-image"
+              />
               <strong className="sidebar__list-item-title">
-                {_.byline && <small className="sidebar__list-item-byline">{_.byline}</small>}
+                {_.byline && (
+                  <small className="sidebar__list-item-byline">
+                    {_.byline}
+                  </small>
+                )}
 
                 {_.title}
               </strong>

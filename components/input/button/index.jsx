@@ -25,5 +25,7 @@ const ButtonElement = ({ type = 'button', children, look }) => (
 );
 
 export default props => (
-  <Fragment>{props.href ? <LinkElement {...props} /> : <ButtonElement {...props} />}</Fragment>
+  <Fragment>
+    {props.href ? <LinkElement {...props} /> : <ButtonElement {...props} />}
+  </Fragment>
 );

@@ -35,7 +35,17 @@ export default class extends React.Component {
   }
 
   render() {
-    const { index, image, title, text, type = 'left', location, price, button, badge } = this.props;
+    const {
+      index,
+      image,
+      title,
+      text,
+      type = 'left',
+      location,
+      price,
+      button,
+      badge,
+    } = this.props;
 
     return (
       <div className={`listicle-item listicle-item--${type}`}>
@@ -48,7 +58,11 @@ export default class extends React.Component {
             </div>
           )}
 
-          <img src={image.url} alt={image.alt} className="listicle-item__image" />
+          <img
+            src={image.url}
+            alt={image.alt}
+            className="listicle-item__image"
+          />
 
           {button && (
             <div className="listicle-item__button">
@@ -95,8 +109,12 @@ export default class extends React.Component {
 
           {(location || price) && (
             <p className="listicle-item__meta">
-              {location && <small className="listicle-item__location">{location}</small>}
-              {price && <small className="listicle-item__price">CHF {price}</small>}
+              {location && (
+                <small className="listicle-item__location">{location}</small>
+              )}
+              {price && (
+                <small className="listicle-item__price">CHF {price}</small>
+              )}
             </p>
           )}
         </div>

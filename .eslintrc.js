@@ -16,16 +16,12 @@ module.exports = {
       defaultParams: true
     }
   },
-  globals: {
-    // we need this to use System.import() for code splitting
-    'System': false,
-  },
   rules: {
     'prettier/prettier': [
       'error',
       {
         singleQuote: true,
-        printWidth: 100,
+        printWidth: 80,
         trailingComma: 'es5',
         bracketSpacing: true,
       }

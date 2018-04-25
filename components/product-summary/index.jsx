@@ -33,7 +33,16 @@ export default class extends React.Component {
   }
 
   render() {
-    const { title, text, type, price, button, image, color, background } = this.props;
+    const {
+      title,
+      text,
+      type,
+      price,
+      button,
+      image,
+      color,
+      background,
+    } = this.props;
 
     return (
       <section className="product-summary">
@@ -128,7 +137,11 @@ export default class extends React.Component {
         `}</style>
 
         <div className="product-summary__image-container">
-          <img src={image.url} alt={image.alt} className="product-summary__image" />
+          <img
+            src={image.url}
+            alt={image.alt}
+            className="product-summary__image"
+          />
           {button && (
             <div className="product-summary__button">
               <Button
@@ -160,12 +173,16 @@ export default class extends React.Component {
 
         <div className="product-summary__content">
           <h3 className="product-summary__title">{title}</h3>
-          <div className="product-summary__text">{text.map(_ => <p>{_}</p>)}</div>
+          <div className="product-summary__text">
+            {text.map(_ => <p>{_}</p>)}
+          </div>
 
           {(type || price) && (
             <p className="product-summary__meta">
               {type && <small className="product-summary__type">{type}</small>}
-              {price && <small className="product-summary__price">CHF {price}</small>}
+              {price && (
+                <small className="product-summary__price">CHF {price}</small>
+              )}
             </p>
           )}
         </div>

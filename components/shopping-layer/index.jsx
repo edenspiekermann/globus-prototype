@@ -206,7 +206,9 @@ export default ({
       </button>
 
       {!inStock && (
-        <p className="shopping-layer__not-in-stock">Das Produkt ist leider ausverkauft.</p>
+        <p className="shopping-layer__not-in-stock">
+          Das Produkt ist leider ausverkauft.
+        </p>
       )}
 
       {title && <strong className="shopping-layer__title">{title}</strong>}
