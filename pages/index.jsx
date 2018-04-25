@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
+
+import PageHead from '../components/page-head';
 
 import tokens from '../tokens';
 
@@ -74,11 +75,7 @@ export default () => (
       }
     `}</style>
 
-    <Head>
-      <title>Globus - Available templates</title>
-      <link rel="icon" href="/static/favicon.ico" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
+    <PageHead title="Verfügbare Templates" />
 
     <div className="index">
       <h1 className="index__title">Verfügbare Templates:</h1>
