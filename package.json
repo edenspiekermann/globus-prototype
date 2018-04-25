@@ -22,7 +22,8 @@
   "dependencies": {
     "next": "^5.1.0",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "styled-jsx": "^2.2.6"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
