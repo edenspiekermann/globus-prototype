@@ -72,6 +72,12 @@ export default css`
     margin-top: 0;
   }
 
+  @media ${tokens.mq.large} {
+    .listicle-item__title {
+      font-size: 46px;
+    }
+  }
+
   .listicle-item__index {
     display: block;
     font-size: 108px;
@@ -90,6 +96,12 @@ export default css`
   @media ${tokens.mq.desktop} {
     .listicle-item__index {
       font-size: 128px;
+    }
+  }
+
+  @media ${tokens.mq.large} {
+    .listicle-item__index {
+      font-size: 143px;
     }
   }
 
@@ -148,6 +160,13 @@ export default css`
     }
   }
 
+  @media ${tokens.mq.large} {
+    .listicle-item--left .listicle-item__content,
+    .listicle-item--right .listicle-item__content {
+      width: calc(100% / 2);
+    }
+  }
+
   .listicle-item--full .listicle-item__content {
     margin-top: -80px;
     position: relative;
@@ -177,6 +196,12 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     font-size: 20px;
     line-height: ${24 / 20};
+  }
+
+  @media ${tokens.mq.large} {
+    .listicle-item__text {
+      font-size: 24px;
+    }
   }
 
   .listicle-item__text-paragraph {
