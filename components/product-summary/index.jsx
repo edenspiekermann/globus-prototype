@@ -120,6 +120,12 @@ export default class extends React.Component {
             line-height: ${24 / 20};
           }
 
+          @media ${tokens.mq.large} {
+            .product-summary__text {
+              font-size: 22px;
+            }
+          }
+
           .product-summary__meta {
             font-family: ${tokens.fonts.founders.family};
             font-size: 16px;

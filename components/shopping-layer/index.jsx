@@ -59,7 +59,7 @@ export default ({
 
       @media ${tokens.mq.desktop} {
         .shopping-layer__overlay {
-          padding: 60px 60px 30px 60px;
+          padding: 40px 60px 30px 60px;
           width: 70%;
         }
       }
@@ -88,9 +88,7 @@ export default ({
 
       .shopping-layer__close:hover,
       .shopping-layer__close:focus {
-        background-color: black;
-        color: white;
-        cursor: pointer;
+        text-decoration: underline;
       }
 
       .shopping-layer__close::after {

@@ -18,7 +18,7 @@ export default css`
       margin-right: 20px;
       position: sticky;
       top: 20px;
-      width: 240px;
+      width: 290px;
     }
   }
 
@@ -102,25 +102,25 @@ export default css`
     font-size: 24px;
     font-weight: ${tokens.fonts.founders.weight.medium};
     line-height: ${25 / 24};
+    max-width: 410px;
     z-index: 2;
   }
 
   @media ${tokens.mq.tablet} {
     .sidebar__list-item-title {
-      font-size: 17px;
+      font-size: 20px;
     }
   }
 
   @media ${tokens.mq.desktop} {
     .sidebar__list-item-title {
-      font-size: 24px;
+      font-size: 22px;
     }
   }
 
   @media ${tokens.mq.large} {
     .sidebar__list-item-title {
-      font-size: 26px;
-      line-height: ${26 / 24};
+      font-size: 24px;
     }
   }
 

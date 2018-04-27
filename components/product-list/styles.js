@@ -8,7 +8,7 @@ export default css`
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 900px; /* TODO */
+    max-width: 1400px;
     padding-left: 20px;
     text-align: center;
   }
@@ -38,6 +38,12 @@ export default css`
     margin-bottom: 20px;
     padding-right: 20px;
     width: 50%;
+  }
+
+  @media ${tokens.mq.large} {
+    .product-list__item {
+      width: 33.3333%;
+    }
   }
 
   @media ${tokens.mq.tablet} {
