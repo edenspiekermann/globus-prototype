@@ -119,7 +119,8 @@ export default css`
 
   @media ${tokens.mq.large} {
     .sidebar__list-item-title {
-      font-size: 25px;
+      font-size: 26px;
+      line-height: ${26 / 24};
     }
   }
 
