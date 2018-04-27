@@ -15,6 +15,15 @@ export default css`
     width: auto;
   }
 
+  @media ${tokens.mq.phablet} {
+    .edition--with-image {
+      margin-bottom: 0;
+      max-width: 150px;
+      position: absolute;
+      transform: translateY(-115%);
+    }
+  }
+
   @media ${tokens.mq.tablet} {
     .edition--with-image {
       margin-bottom: 40px;
@@ -24,11 +33,11 @@ export default css`
 
   @media ${tokens.mq.desktop} {
     .edition--with-image {
-      margin-bottom: 0;
-      position: absolute;
-      transform: translateY(-115%);
+      max-width: 250px;
     }
+  }
 
+  @media ${tokens.mq.desktop} {
     .edition:not(.edition--with-image) {
       transform: translateY(80px);
     }

@@ -101,6 +101,12 @@ export default css`
     margin-left: 40px;
   }
 
+  @media ${tokens.mq.phablet} {
+    .intro--reversed .intro__content {
+      margin-left: 240px;
+    }
+  }
+
   @media ${tokens.mq.desktop} {
     .intro--reversed .intro__content {
       margin-left: 360px;
