@@ -7,8 +7,10 @@ export default css`
     display: flex;
   }
 
-  .listicle-item:first-child {
-    padding-top: 120px; 
+  @media ${tokens.mq.desktop} {
+    .listicle-item:first-child {
+      padding-top: 120px; 
+    }
   }
 
   .listicle-item--full {
