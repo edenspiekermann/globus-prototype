@@ -7,6 +7,10 @@ export default css`
     display: flex;
   }
 
+  .listicle-item:first-child {
+    padding-top: 120px; 
+  }
+
   .listicle-item--full {
     align-items: center;
     flex-direction: column;

@@ -7,7 +7,6 @@ export default css`
     display: flex;
     flex-direction: column;
     padding-bottom: 80px;
-    padding-top: 120px;
   }
 
   @media ${tokens.mq.tablet} {
