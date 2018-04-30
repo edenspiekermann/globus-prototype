@@ -5,6 +5,7 @@ export default css`
     list-style: none;
     max-width: 1200px;
     padding: 0;
+    margin: 0;
   }
 
   .listicle__item {
