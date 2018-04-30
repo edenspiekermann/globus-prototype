@@ -18,11 +18,15 @@ export default css`
     }
   }
 
+  .intro__title-container {
+    padding: 20px 5% 300px 5%;
+  }
+
   @media ${tokens.mq.desktop} {
     .intro__title-container {
       background-color: transparent;
       margin-left: calc(${IMAGE_SIZE_DESKTOP} - 100px);
-      padding-bottom: 0;
+      padding: 20px 40px 0 40px;
       position: relative;
       z-index: 2;
     }
@@ -56,7 +60,7 @@ export default css`
   }
 
   .intro__image-container {
-    margin: -280px 60px 20px 120px;
+    margin: -280px 5% 20px 20%;
     overflow-y: hidden;
     z-index: 1;
   }
@@ -78,15 +82,15 @@ export default css`
   }
 
   .intro__content {
-    margin-left: 120px;
-    margin-right: 60px;
+    margin-left: 20%;
+    margin-right: 5%;
     position: relative;
     z-index: 2;
   }
 
   @media ${tokens.mq.desktop} {
     .intro__content {
-      margin-left: calc(${IMAGE_SIZE_DESKTOP} + 100px);
+      margin-left: calc(${IMAGE_SIZE_DESKTOP} + -50px);
       max-width: 700px;
     }
   }
@@ -98,7 +102,7 @@ export default css`
   }
 
   .intro--reversed .intro__content {
-    margin-left: 40px;
+    margin-left: 5%;
   }
 
   @media ${tokens.mq.phablet} {

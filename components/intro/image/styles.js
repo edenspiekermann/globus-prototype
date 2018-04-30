@@ -21,7 +21,7 @@ export default css`
 
   @media ${tokens.mq.large} {
     .intro-image {
-      max-height: 100%;
+      max-height: inherit;
       object-fit: contain;
       width: 45%;
     }

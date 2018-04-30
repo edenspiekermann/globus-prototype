@@ -22,7 +22,6 @@ export default ({
       <style jsx>{`
         .intro__title-container {
           background-color: ${color};
-          padding: 20px 40px 300px 40px;
         }
       `}</style>
 
