@@ -27,9 +27,10 @@ export default css`
 
   .share--pinterest::before {
     content: '\\e82a';
+    font-size: 27px;
   }
 
-  .share--pinterest::before {
+  .share--email::before {
     content: '\\e826';
   }
 
