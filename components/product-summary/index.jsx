@@ -54,13 +54,13 @@ export default class extends React.Component {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 0 40px 40px 40px;
           }
 
           @media ${tokens.mq.desktop} {
             .product-summary {
               flex-direction: row;
-              padding: 60px;
+              padding-top: 80px;
+              padding-bottom: 80px;
             }
           }
 
@@ -68,17 +68,18 @@ export default class extends React.Component {
             align-items: center;
             display: flex;
             flex-direction: column;
-            margin-left: -40px;
-            margin-right: -40px;
+            //margin-left: -40px;
+            //margin-right: -40px;
             order: 1;
+            width: 100%;
           }
 
           @media ${tokens.mq.desktop} {
             .product-summary__image-container {
-              margin-left: -120px;
-              margin-right: 0;
-              margin-top: 100px;
               order: 2;
+              width: calc(100% / 2);
+              margin-top: 80px;
+              transform: translateX(-7.5%);
             }
           }
 
@@ -88,14 +89,22 @@ export default class extends React.Component {
           }
 
           .product-summary__content {
-            max-width: 500px; // TODO
             order: 2;
             z-index: 2;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 20px;
+            padding-bottom: 40px;
           }
 
           @media ${tokens.mq.desktop} {
             .product-summary__content {
               order: 1;
+              width: calc(100% / 3);
+              min-width: 240px;
+              padding: 0;
+              transform: translateX(7.5%);
+              align-self: flex-start;
             }
           }
 
@@ -108,7 +117,7 @@ export default class extends React.Component {
             margin-top: 0;
           }
 
-          @media ${tokens.mq.desktop} {
+          @media ${tokens.mq.large} {
             .product-summary__title {
               font-size: 56px;
             }
@@ -118,6 +127,12 @@ export default class extends React.Component {
             font-family: ${tokens.fonts.founders.family};
             font-size: 20px;
             line-height: ${24 / 20};
+          }
+          
+          @media ${tokens.mq.desktop} {
+            .product-summary__text {
+              width: 80%; //@gustav TODO
+            }
           }
 
           @media ${tokens.mq.large} {
