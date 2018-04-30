@@ -3,6 +3,12 @@ import css from 'styled-jsx/css';
 import tokens from '../../../tokens';
 
 export default css`
+
+  .intro-image {
+    width: 75%;  
+  }
+
+
   @media ${tokens.mq.desktop} {
     .intro-image {
       max-height: 100%;

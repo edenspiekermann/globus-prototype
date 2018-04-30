@@ -18,6 +18,13 @@ export default css`
     }
   }
 
+  @media ${tokens.mq.large} {
+    .intro {
+      padding-bottom: 10%;
+      margin-bottom: 10%;
+    }
+  }
+
   .intro__title-container {
     padding: 20px 5% 300px 5%;
   }
@@ -70,7 +77,8 @@ export default css`
     position: absolute;
     right: 0;
     top: 0;
-    transform: translateX(50%);
+    transform: translateX(calc(50%));
+    height: 75%;
   }
 
   @media ${tokens.mq.desktop} {
