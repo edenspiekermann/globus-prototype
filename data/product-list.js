@@ -40,6 +40,16 @@ export default [
         type: 'Hemd Regular Fit',
         price: '139.00'
       },
+      
+      {
+        image: {
+          url: '/static/images/product_1.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'PS By Paul Smith',
+        type: 'Hemd Regular Fit',
+        price: '179.00'
+      },
 
       {
         image: {
@@ -103,7 +113,17 @@ export default [
         title: 'Timberland',
         type: 'Sandale',
         price: '179.00'
-      }
+      },
+      
+      {
+        image: {
+          url: '/static/images/thesis_shoes_2.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Zadig & Voltaire',
+        type: 'Schnürboots',
+        price: '199.00'
+      },
     ]
   }
 ];
