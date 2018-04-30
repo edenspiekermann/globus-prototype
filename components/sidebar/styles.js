@@ -17,7 +17,7 @@ export default css`
       margin-left: 20px;
       margin-right: 20px;
       position: sticky;
-      top: 20px;
+      top: 6vh;
       width: 290px;
     }
   }
