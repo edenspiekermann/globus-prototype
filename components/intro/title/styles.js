@@ -17,6 +17,7 @@ export default css`
       margin-bottom: 60px;
       font-size: calc(3.5rem + ((42 * (100vw - 400px)) / 1600));
       max-width: 80%;
+      hyphens: auto;
     }
   }
 
@@ -25,6 +26,7 @@ export default css`
       margin-bottom: 60px;
       font-size: calc(4rem + ((42 * (100vw - 400px)) / 1600));
       max-width: 80%;
+      hyphens: inherit;
     }
   }
 
