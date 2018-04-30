@@ -10,36 +10,30 @@ export default css`
     color: white;
     display: flex;
     justify-content: center;
-    height: 90px;
-    width: 90px;
+    height: 6rem;
+    width: 6rem;
   }
 
   @media ${tokens.mq.desktop} {
     .badge__text {
-      height: 100px;
-      width: 100px;
+      height: 6rem;
+      width: 6rem;
     }
   }
 
   .badge__text {
     font-family: ${tokens.fonts.founders.family};
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: ${tokens.fonts.founders.weight.medium};
     line-height: 1;
     margin: 0;
-    padding: 20px 13px;
+    padding: 1.375em 0.75em 1.5em 0.75em;
     text-align: center;
   }
 
-  @media ${tokens.mq.tablet} {
-    .badge__text {
-      font-size: 14px;
-    }
-  }
-
   @media ${tokens.mq.desktop} {
-    .badge__text {
-      font-size: 16px;
+    .badge {
+      transform: scale(1.25);
     }
   }
 `;
