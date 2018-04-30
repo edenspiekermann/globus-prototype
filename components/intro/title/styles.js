@@ -16,8 +16,13 @@ export default css`
     .intro-title {
       margin-bottom: 60px;
       font-size: calc(3.5rem + ((42 * (100vw - 400px)) / 1600));
-      max-width: 80%;
       hyphens: auto;
+    }
+  }
+
+  @media ${tokens.mq.phablet} {
+    .intro-title {
+      max-width: 50%;
     }
   }
 
@@ -25,8 +30,14 @@ export default css`
     .intro-title {
       margin-bottom: 60px;
       font-size: calc(4rem + ((42 * (100vw - 400px)) / 1600));
-      max-width: 80%;
+      max-width: 50%;
       hyphens: inherit;
+    }
+  }
+
+  @media ${tokens.mq.desktop} {
+    .intro-title {
+      max-width: 80%;
     }
   }
 

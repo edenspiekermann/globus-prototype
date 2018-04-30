@@ -13,7 +13,7 @@ export default css`
     .intro-image {
       max-height: 100%;
       object-fit: contain;
-      width: 50%;
+      width: 40%;
     }
   }
 
