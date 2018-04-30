@@ -8,6 +8,10 @@ export default css`
   }
 
   .listicle__item {
-    margin-bottom: 120px;
+    margin-bottom: 240px;
+  }
+
+  .listicle__item:last-child {
+    margin-bottom: 120px;  
   }
 `;
