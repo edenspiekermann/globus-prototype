@@ -19,7 +19,7 @@ export default [
       url: '/static/images/intro_3.jpg',
       alt: 'Wein'
     },
-    number: '6',
+    number: '7',
     title: 'GUTE GRÜNDE FÜR MEHR KALIFORNIEN IM LEBEN',
     text: [
       'Angesteckt vom vibrierenden «Californian Spirit», dem Gefühl von Leichtigkeit und purer Lebensfreude, zelebrieren wir diesen Sommer den kalifornischen Lebensstil — betont locker und entspannt.',
@@ -35,7 +35,7 @@ export default [
       url: '/static/images/intro_2.jpg',
       alt: 'Cowboy Stiefel'
     },
-    title: 'DIE BESTEN COWBOY-STIEFEL DER SAISON KOMMEN AUS ITALIEN',
+    title: 'Die besten Cowboy-Boots der Saison kommen aus Italien',
     text: [
       'Goffredo Fantini heißt der Mann, der die derzeit elegantesten Cowboy-Boots designt und produziert — und er stammt nicht irgendwo aus Arizona, sondern aus einem Bauerndorf in der Emilia Romagna, viereinhalb Autostunden südlich von Mailand.',
       'Zu den größten Fans seiner Marke gehört die Country-Sängerin und Stilikone Emmylou Harris. So viel zur Frage, ob Cowboystiefel auch aus Italien kommen dürfen.'

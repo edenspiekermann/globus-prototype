@@ -12,7 +12,7 @@ export default {
   price: '239.00',
   type: '6er Box Kalifornische Weine',
   button: {
-    label: 'Weinkiste kaufen',
+    label: 'Weinbox bestellen',
     url: '#'
   }
 };

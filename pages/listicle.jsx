@@ -31,8 +31,6 @@ export default () => (
       <Sidebar {...sidebarData} />
     </MainContent>
 
-    <ProductSummary {...productSummaryData} />
-
     <Footer />
   </Fragment>
 );
