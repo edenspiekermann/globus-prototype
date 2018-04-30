@@ -160,13 +160,6 @@ export default css`
     }
   }
 
-  @media ${tokens.mq.large} {
-    .listicle-item--left .listicle-item__content,
-    .listicle-item--right .listicle-item__content {
-      width: calc(100% / 2);
-    }
-  }
-
   .listicle-item--full .listicle-item__content {
     margin-top: -80px;
     position: relative;
@@ -181,7 +174,7 @@ export default css`
 
   @media ${tokens.mq.desktop} {
     .listicle-item--full .listicle-item__content {
-      max-width: 65%;
+      max-width: 50%;
     }
   }
 
@@ -196,6 +189,20 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     font-size: 20px;
     line-height: ${24 / 20};
+  }
+
+  @media ${tokens.mq.desktop} {
+    .listicle-item--left .listicle-item__text,
+    .listicle-item--right .listicle-item__text,
+    .listicle-item--left .listicle-item__meta,
+    .listicle-item--right .listicle-item__meta {
+      width: 80%;
+    }
+    
+    .listicle-item--right .listicle-item__text,
+    .listicle-item--right .listicle-item__meta {
+        margin-left: 20%;
+    }
   }
 
   @media ${tokens.mq.large} {
