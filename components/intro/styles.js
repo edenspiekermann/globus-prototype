@@ -14,13 +14,17 @@ export default css`
 
   @media ${tokens.mq.desktop} {
     .intro {
-      margin-bottom: 200px;
+      margin-bottom: 180px;
     }
   }
 
   @media ${tokens.mq.large} {
     .intro {
       padding-bottom: 10%;
+      margin-bottom: 5%;
+    }
+    
+    .intro--reversed {
       margin-bottom: 10%;
     }
   }
