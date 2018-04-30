@@ -40,7 +40,6 @@ export default [
           url: '/static/images/listicle_3.jpg',
           alt: 'Dicke Soundbox'
         },
-        badge: 'Ab Mai 2018 im Sortiment',
         price: '149.90',
         location: 'Zinfandel, Napa Valley 2015',
         button: {
@@ -56,6 +55,7 @@ export default [
           'Die unterschiedlichen Mud-Treatments schaffen eine ideale Pflegegrundlage und eignen sich für verschiedene Hauttypen.'
         ],
         type: 'right',
+        badge: 'Ab Mai 2018 im Sortiment',
         image: {
           url: '/static/images/listicle_4.jpg',
           alt: 'Mud-Treatment Cremes'
@@ -135,6 +135,7 @@ export default [
         type: 'right',
         location: 'Zinfandel, Napa Valley 2015',
         price: '49.90',
+        badge: 'Ab Mai 2018 im Sortiment',
         image: {
           url: '/static/images/wine_2.jpg',
           alt: 'Viele leckere Gemüsekisten'
@@ -187,6 +188,7 @@ export default [
         ],
         location: 'Zinfandel, Napa Valley 2015',
         price: '49.90',
+        badge: 'Ab Mai 2018 im Sortiment',
         image: {
           url: '/static/images/wine_4.jpg',
           alt: 'Modeshot'

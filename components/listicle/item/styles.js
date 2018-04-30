@@ -50,23 +50,15 @@ export default css`
   }
 
   .listicle-item--full .listicle-item__badge {
-    left: 40px;
-  }
-
-  @media ${tokens.mq.desktop} {
-    .listicle-item--full .listicle-item__badge {
-      left: 60px;
-    }
+    left: 10%;
   }
 
   .listicle-item--left .listicle-item__badge {
-    right: 40px;
+    right: 10%;
   }
 
-  @media ${tokens.mq.desktop} {
-    .listicle-item--left .listicle-item__badge {
-      right: 60px;
-    }
+.listicle-item--right .listicle-item__badge {
+    left: 10%;
   }
 
   .listicle-item__title {
