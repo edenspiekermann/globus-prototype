@@ -39,7 +39,10 @@ export default css`
 
   @media ${tokens.mq.desktop} {
     .edition:not(.edition--with-image) {
-      transform: translateY(80px);
+      position: sticky;
+      top: 240px;
+      bottom: -20px;
+      z-index: 1000;
     }
   }
 
