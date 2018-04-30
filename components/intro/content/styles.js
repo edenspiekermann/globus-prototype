@@ -5,14 +5,14 @@ import tokens from '../../../tokens';
 export default css`
   .intro-text {
     font-family: ${tokens.fonts.founders.family};
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: ${27 / 24};
     max-width: 640px;
   }
 
   @media ${tokens.mq.desktop} {
     .intro-text {
-      font-size: 32px;
+      font-size: 2rem;
     }
   }
 

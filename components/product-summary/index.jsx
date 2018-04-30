@@ -68,8 +68,6 @@ export default class extends React.Component {
             align-items: center;
             display: flex;
             flex-direction: column;
-            //margin-left: -40px;
-            //margin-right: -40px;
             order: 1;
             width: 100%;
           }
@@ -110,7 +108,7 @@ export default class extends React.Component {
 
           .product-summary__title {
             font-family: ${tokens.fonts.founders.family};
-            font-size: 32px;
+            font-size: 2rem;
             font-weight: ${tokens.fonts.founders.weight.medium};
             line-height: 1;
             margin-bottom: 0;
@@ -119,14 +117,14 @@ export default class extends React.Component {
 
           @media ${tokens.mq.large} {
             .product-summary__title {
-              font-size: 56px;
+              font-size: 3.5rem;
             }
           }
 
           .product-summary__text {
             font-family: ${tokens.fonts.founders.family};
-            font-size: 20px;
-            line-height: ${24 / 20};
+            font-size: 1.25rem;
+            line-height: 1.25;
           }
           
           @media ${tokens.mq.desktop} {
@@ -137,13 +135,13 @@ export default class extends React.Component {
 
           @media ${tokens.mq.large} {
             .product-summary__text {
-              font-size: 22px;
+              font-size: calc(1.25rem * 1.125);
             }
           }
 
           .product-summary__meta {
             font-family: ${tokens.fonts.founders.family};
-            font-size: 16px;
+            font-size: 1rem;
             line-height: ${20 / 16};
             opacity: 0.6;
           }

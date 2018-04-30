@@ -65,7 +65,7 @@ export default css`
 
   .listicle-item__title {
     font-family: ${tokens.fonts.founders.family};
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: ${tokens.fonts.founders.weight.medium};
     line-height: 1;
     margin-bottom: 20px;
@@ -74,13 +74,13 @@ export default css`
 
   @media ${tokens.mq.large} {
     .listicle-item__title {
-      font-size: calc(32px * 1.125);
+      font-size: calc(2rem * 1.125);
     }
   }
 
   .listicle-item__index {
     display: block;
-    font-size: 96px;
+    font-size: 6rem;
     font-family: ${tokens.fonts.founders.family};
     font-weight: ${tokens.fonts.founders.weight.medium};
     line-height: 1;
@@ -89,19 +89,19 @@ export default css`
 
   @media ${tokens.mq.tablet} {
     .listicle-item__index {
-      font-size: calc(96px * 1.125);
+      font-size: calc(6rem * 1.125);
     }
   }
 
   @media ${tokens.mq.desktop} {
     .listicle-item__index {
-      font-size: calc(96px * 1.25);
+      font-size: calc(6rem * 1.25);
     }
   }
 
   @media ${tokens.mq.large} {
     .listicle-item__index {
-      font-size: calc(96px * 1.5);
+      font-size: calc(6rem * 1.5);
     }
   }
 
@@ -187,7 +187,7 @@ export default css`
 
   .listicle-item__text {
     font-family: ${tokens.fonts.founders.family};
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.25;
   }
 
@@ -207,7 +207,7 @@ export default css`
 
   @media ${tokens.mq.large} {
     .listicle-item__text {
-      font-size: calc(20px * 1.125);
+      font-size: calc(1.25rem * 1.125);
     }
   }
 
@@ -223,7 +223,7 @@ export default css`
   .listicle-item__meta {
     color: ${tokens.colors.grey};
     font-family: ${tokens.fonts.founders.family};
-    font-size: 16px;
+    font-size: 1rem;
     line-height: ${20 / 16};
   }
 

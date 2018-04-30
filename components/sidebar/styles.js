@@ -38,7 +38,7 @@ export default css`
 
   .sidebar__title {
     font-family: ${tokens.fonts.domaine.family};
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: ${tokens.fonts.domaine.weight.semibold};
     letter-spacing: 1px;
     line-height: ${22 / 20};
@@ -99,38 +99,32 @@ export default css`
 
   .sidebar__list-item-title {
     font-family: ${tokens.fonts.founders.family};
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: ${tokens.fonts.founders.weight.medium};
-    line-height: ${25 / 24};
+    line-height: 1;
     max-width: 410px;
     z-index: 2;
   }
 
   @media ${tokens.mq.tablet} {
     .sidebar__list-item-title {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
 
   @media ${tokens.mq.desktop} {
     .sidebar__list-item-title {
-      font-size: 22px;
-    }
-  }
-
-  @media ${tokens.mq.large} {
-    .sidebar__list-item-title {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   }
 
   .sidebar__list-item-byline {
     display: block;
     font-family: ${tokens.fonts.domaine.family};
-    font-size: 13px;
+    font-size: 0.75rem;
     font-weight: ${tokens.fonts.domaine.weight.semibold};
     letter-spacing: 0.5px;
-    line-height: ${22 / 20};
+    line-height: 1;
     margin-bottom: 5px;
     text-transform: uppercase;
   }

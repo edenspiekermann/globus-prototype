@@ -45,29 +45,30 @@ export default css`
 
   .editon__label {
     font-family: ${tokens.fonts.founders.family};
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: ${tokens.fonts.founders.weight.medium};
-    line-height: ${20 / 16};
+    line-height: 1.25;
+    letter-spacing: 0.5px;
     margin: 0;
     text-transform: uppercase;
-    transform: rotate(-90deg) translateX(calc(100% + 10px));
+    transform: rotate(-90deg) translateX(calc(100% + 4px));
     transform-origin: bottom right;
     white-space: nowrap;
   }
 
   .edition:not(.edition--with-image).editon__label {
-    transform: rotate(-90deg) translateX(calc(250% + 10px));
+    transform: rotate(-90deg) translateX(calc(250% + 4px));
   }
 
   @media ${tokens.mq.desktop} {
     .editon__label {
-      transform: rotate(-90deg) translateX(calc(100% + 10px));
+      transform: rotate(-90deg) translateX(calc(100% + 4px));
     }
   }
 
   .edition--with-image .editon__label {
     bottom: 0;
     position: absolute;
-    right: -25px;
+    right: -30px;
   }
 `;
