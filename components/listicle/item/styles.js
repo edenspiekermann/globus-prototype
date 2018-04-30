@@ -74,13 +74,13 @@ export default css`
 
   @media ${tokens.mq.large} {
     .listicle-item__title {
-      font-size: 46px;
+      font-size: calc(32px * 1.125);
     }
   }
 
   .listicle-item__index {
     display: block;
-    font-size: 108px;
+    font-size: 96px;
     font-family: ${tokens.fonts.founders.family};
     font-weight: ${tokens.fonts.founders.weight.medium};
     line-height: 1;
@@ -89,19 +89,19 @@ export default css`
 
   @media ${tokens.mq.tablet} {
     .listicle-item__index {
-      font-size: 118px;
+      font-size: calc(96px * 1.125);
     }
   }
 
   @media ${tokens.mq.desktop} {
     .listicle-item__index {
-      font-size: 128px;
+      font-size: calc(96px * 1.25);
     }
   }
 
   @media ${tokens.mq.large} {
     .listicle-item__index {
-      font-size: 143px;
+      font-size: calc(96px * 1.5);
     }
   }
 
@@ -188,7 +188,7 @@ export default css`
   .listicle-item__text {
     font-family: ${tokens.fonts.founders.family};
     font-size: 20px;
-    line-height: ${24 / 20};
+    line-height: 1.25;
   }
 
   @media ${tokens.mq.desktop} {
@@ -207,7 +207,7 @@ export default css`
 
   @media ${tokens.mq.large} {
     .listicle-item__text {
-      font-size: 24px;
+      font-size: calc(20px * 1.125);
     }
   }
 
@@ -217,7 +217,7 @@ export default css`
   }
 
   .listicle-item__text-paragraph + .listicle-item__text-paragraph {
-    margin-top: 15px;
+    margin-top: 0.5em;
   }
 
   .listicle-item__meta {
