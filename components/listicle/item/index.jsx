@@ -15,9 +15,18 @@ export default class extends React.Component {
 
   toggleShoppingLayer(event) {
     let shoppingLayerPosition = { top: null, left: null };
+    const windowCallback = windowClickEvent => {
+      if (!windowClickEvent.target.closest('.shopping-layer')) {
+        this.toggleShoppingLayer();
+
+        setTimeout(() => {
+          document.removeEventListener('click', windowCallback);
+        });
+      }
+    };
 
     if (event) {
-      const { target } = event.nativeEvent;
+      const { target } = event;
       const rect = target.getBoundingClientRect();
       const bodyRect = document.body.getBoundingClientRect();
 
@@ -27,10 +36,17 @@ export default class extends React.Component {
       };
     }
 
-    this.setState({
-      showShoppingLayer: !this.state.showShoppingLayer,
-      shoppingLayerPosition
-    });
+    this.setState(
+      {
+        showShoppingLayer: !this.state.showShoppingLayer,
+        shoppingLayerPosition
+      },
+      () => {
+        document[
+          `${this.state.showShoppingLayer ? 'add' : 'remove'}EventListener`
+        ]('click', windowCallback);
+      }
+    );
   }
 
   render() {
@@ -72,6 +88,7 @@ export default class extends React.Component {
                 modifier={this.state.showShoppingLayer ? 'open' : null}
                 onClick={event => {
                   event.preventDefault();
+                  event.nativeEvent.stopImmediatePropagation();
                   this.toggleShoppingLayer(event);
                 }}
               >
@@ -79,7 +96,7 @@ export default class extends React.Component {
               </Button>
 
               {this.state.showShoppingLayer && (
-                <BodyEnd onBodyClick={() => this.toggleShoppingLayer()}>
+                <BodyEnd>
                   <ShoppingLayer
                     hide={event => this.toggleShoppingLayer(event)}
                     coordinates={this.state.shoppingLayerPosition}
