@@ -126,9 +126,9 @@ export default class extends React.Component {
             font-size: 1.25rem;
             line-height: 1.25;
           }
-          
+
           @media ${tokens.mq.desktop} {
-            .product-summary__text {
+            .product-summary__text {
               width: 80%; //@gustav TODO
             }
           }
