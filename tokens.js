@@ -1,13 +1,14 @@
 export default {
   colors: {
-    black: 'rgb(0, 0, 0)',
     grey: 'rgb(166, 166, 166)',
   },
 
   mq: {
     phone: 'screen and (min-width: 380px)',
+    phablet: 'screen and (min-width: 650px)',
     tablet: 'screen and (min-width: 768px)',
     desktop: 'screen and (min-width: 960px)',
+    large: 'screen and (min-width: 1400px)',
   },
 
   fonts: {
@@ -36,5 +37,15 @@ export default {
     icon: {
       family: 'Globus Icon',
     },
+  },
+
+  mixins: {
+    visuallyHidden: `
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+      clip: rect(1px, 1px, 1px, 1px);
+    `,
   },
 };

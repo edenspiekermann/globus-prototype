@@ -10,7 +10,7 @@ export default ({ title }) => (
     <Fonts />
 
     <Head>
-      <title>{title}</title>
+      <title>Globus - {title}</title>
       <link rel="icon" href="/static/favicon.ico" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>

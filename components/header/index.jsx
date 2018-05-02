@@ -1,56 +1,11 @@
 import Link from 'next/link';
 
 import data from './data';
-import tokens from '../../data/tokens';
+import styles from './styles';
 
 export default () => (
   <header className="header">
-    <style jsx>{`
-      .header {
-        background-color: black;
-        color: white;
-        font-family: ${tokens.fonts.gill.family};
-        padding: 1rem;
-        text-align: center;
-      }
-
-      .header__title {
-        color: currentColor;
-        display: block;
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-top: 10px;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      @media ${tokens.mq.desktop} {
-        .header__title {
-          margin-bottom: 10px;
-          margin-top: 0;
-        }
-      }
-
-      .header__title:hover,
-      .header__title:focus {
-        text-decoration: underline;
-      }
-
-      .header__item {
-        color: currentColor;
-        display: none;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      @media ${tokens.mq.desktop} {
-        .header__item {
-          display: inline-block;
-        }
-      }
-    `}</style>
+    <style jsx>{styles}</style>
 
     <Link href="/">
       <a className="header__title">Globus</a>

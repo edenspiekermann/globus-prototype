@@ -1,9 +1,6 @@
 import Product from '../product';
 
-import tokens from '../../data/tokens';
-
-const OFFSET_MOBILE = '0px';
-const OFFSET_DESKTOP = '10%';
+import tokens from '../../tokens';
 
 export default ({
   products,
@@ -11,7 +8,7 @@ export default ({
   inStock = true,
   hide = () => {},
   position = 'center',
-  coordinates,
+  coordinates
 }) => (
   <div
     className={`shopping-layer shopping-layer--position-${position}`}
@@ -33,7 +30,7 @@ export default ({
         height: 0;
         position: absolute;
         transform: translateX(-15px);
-        top: -39px;
+        top: -30px;
         width: 0;
       }
 
@@ -41,7 +38,7 @@ export default ({
         border-color: transparent transparent white transparent;
         border-width: 19px;
         left: ${coordinates.left}px;
-        top: -37px;
+        top: -28px;
       }
 
       .shopping-layer::before {
@@ -54,6 +51,7 @@ export default ({
         background-color: white;
         border: 1px solid black;
         left: 50%;
+        margin-top: 9px;
         max-width: 1400px;
         padding: 60px 35px 15px 35px;
         position: absolute;
@@ -63,7 +61,7 @@ export default ({
 
       @media ${tokens.mq.desktop} {
         .shopping-layer__overlay {
-          padding: 60px 60px 30px 60px;
+          padding: 40px 60px 30px 60px;
           width: 70%;
         }
       }
@@ -82,7 +80,7 @@ export default ({
         transform: translateX(-50%);
       }
 
-      @media ${tokens.mq.desktop} {
+      @media ${tokens.mq.tablet} {
         .shopping-layer__close {
           left: auto;
           right: 20px;
@@ -92,9 +90,7 @@ export default ({
 
       .shopping-layer__close:hover,
       .shopping-layer__close:focus {
-        background-color: black;
-        color: white;
-        cursor: pointer;
+        text-decoration: underline;
       }
 
       .shopping-layer__close::after {
@@ -210,7 +206,9 @@ export default ({
       </button>
 
       {!inStock && (
-        <p className="shopping-layer__not-in-stock">Das Produkt ist leider ausverkauft.</p>
+        <p className="shopping-layer__not-in-stock">
+          Das Produkt ist leider ausverkauft.
+        </p>
       )}
 
       {title && <strong className="shopping-layer__title">{title}</strong>}

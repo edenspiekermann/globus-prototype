@@ -5,11 +5,11 @@ import Button from '../input/button';
 import ShoppingLayer from '../shopping-layer';
 
 import productListData from '../../data/product-list';
-import tokens from '../../data/tokens';
+import tokens from '../../tokens';
 
 export default class extends React.Component {
   state = {
-    showShoppingLayer: false,
+    showShoppingLayer: false
   };
 
   toggleShoppingLayer(event) {
@@ -22,7 +22,7 @@ export default class extends React.Component {
 
       shoppingLayerPosition = {
         top: rect.top - bodyRect.top,
-        left: parseInt(rect.left + rect.width / 2, 10),
+        left: parseInt(rect.left + rect.width / 2, 10)
       };
     }
 
@@ -33,7 +33,16 @@ export default class extends React.Component {
   }
 
   render() {
-    const { title, text, type, price, button, image, color, background } = this.props;
+    const {
+      title,
+      text,
+      type,
+      price,
+      button,
+      image,
+      color,
+      background
+    } = this.props;
 
     return (
       <section className="product-summary">
@@ -45,13 +54,13 @@ export default class extends React.Component {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 0 40px 40px 40px;
           }
 
           @media ${tokens.mq.desktop} {
             .product-summary {
               flex-direction: row;
-              padding: 60px;
+              padding-top: 80px;
+              padding-bottom: 80px;
             }
           }
 
@@ -59,17 +68,16 @@ export default class extends React.Component {
             align-items: center;
             display: flex;
             flex-direction: column;
-            margin-left: -40px;
-            margin-right: -40px;
             order: 1;
+            width: 100%;
           }
 
           @media ${tokens.mq.desktop} {
             .product-summary__image-container {
-              margin-left: -120px;
-              margin-right: 0;
-              margin-top: 100px;
               order: 2;
+              width: calc(100% / 2);
+              margin-top: 80px;
+              transform: translateX(-7.5%);
             }
           }
 
@@ -79,41 +87,61 @@ export default class extends React.Component {
           }
 
           .product-summary__content {
-            max-width: 500px; // TODO
             order: 2;
             z-index: 2;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 20px;
+            padding-bottom: 40px;
           }
 
           @media ${tokens.mq.desktop} {
             .product-summary__content {
               order: 1;
+              width: calc(100% / 3);
+              min-width: 240px;
+              padding: 0;
+              transform: translateX(7.5%);
+              align-self: flex-start;
             }
           }
 
           .product-summary__title {
             font-family: ${tokens.fonts.founders.family};
-            font-size: 32px;
+            font-size: 2rem;
             font-weight: ${tokens.fonts.founders.weight.medium};
             line-height: 1;
             margin-bottom: 0;
             margin-top: 0;
           }
 
-          @media ${tokens.mq.desktop} {
+          @media ${tokens.mq.large} {
             .product-summary__title {
-              font-size: 56px;
+              font-size: 3.5rem;
             }
           }
 
           .product-summary__text {
             font-family: ${tokens.fonts.founders.family};
-            font-size: 20px;
-            line-height: ${24 / 20};
+            font-size: 1.25rem;
+            line-height: 1.25;
+          }
+
+          @media ${tokens.mq.desktop} {
+            .product-summary__text {
+              width: 80%; //@gustav TODO
+            }
+          }
+
+          @media ${tokens.mq.large} {
+            .product-summary__text {
+              font-size: calc(1.25rem * 1.125);
+            }
           }
 
           .product-summary__meta {
             font-family: ${tokens.fonts.founders.family};
-            font-size: 16px;
+            font-size: 1rem;
             line-height: ${20 / 16};
             opacity: 0.6;
           }
@@ -128,7 +156,11 @@ export default class extends React.Component {
         `}</style>
 
         <div className="product-summary__image-container">
-          <img src={image.url} alt={image.alt} className="product-summary__image" />
+          <img
+            src={image.url}
+            alt={image.alt}
+            className="product-summary__image"
+          />
           {button && (
             <div className="product-summary__button">
               <Button
@@ -160,12 +192,16 @@ export default class extends React.Component {
 
         <div className="product-summary__content">
           <h3 className="product-summary__title">{title}</h3>
-          <div className="product-summary__text">{text.map(_ => <p>{_}</p>)}</div>
+          <div className="product-summary__text">
+            {text.map(_ => <p>{_}</p>)}
+          </div>
 
           {(type || price) && (
             <p className="product-summary__meta">
               {type && <small className="product-summary__type">{type}</small>}
-              {price && <small className="product-summary__price">CHF {price}</small>}
+              {price && (
+                <small className="product-summary__price">CHF {price}</small>
+              )}
             </p>
           )}
         </div>

@@ -23,7 +23,7 @@ export default () => (
     <Header />
 
     <Intro {...introData[3]}>
-      <Edition {...editionData[1]} />
+      <Edition {...editionData[2]} />
     </Intro>
 
     <MainContent>
