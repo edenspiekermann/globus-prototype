@@ -13,8 +13,8 @@ export default ({ products, summary }) => (
           <ListicleItem {..._} index={index + 1} />
         </li>
       ))}
-
-      <Summary {...summary} />
     </ul>
+
+    <Summary {...summary} />
   </div>
 );

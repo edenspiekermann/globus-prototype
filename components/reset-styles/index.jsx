@@ -14,7 +14,6 @@ export default () => (
     }
 
     img {
-      height: auto;
       width: 100%;
     }
 
