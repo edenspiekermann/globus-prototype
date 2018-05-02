@@ -3,13 +3,13 @@ import css from 'styled-jsx/css';
 import tokens from '../../tokens';
 
 export default css`
-  .listicle {
+  .listicle__list {
     list-style: none;
     max-width: 1200px;
     padding: 0;
     margin: 0;
   }
-  
+
   .listicle__item {
     margin-bottom: 120px;
   }
@@ -27,6 +27,6 @@ export default css`
   }
 
   .listicle__item:last-child {
-    margin-bottom: 120px;  
+    margin-bottom: 120px;
   }
 `;

@@ -4,7 +4,6 @@ import BodyEnd from '../body-end';
 import Button from '../input/button';
 import ShoppingLayer from '../shopping-layer';
 
-import productListData from '../../data/product-list';
 import tokens from '../../tokens';
 
 export default class extends React.Component {
@@ -42,7 +41,7 @@ export default class extends React.Component {
       image,
       color,
       background,
-      shoppingLayer,
+      shoppingLayer
     } = this.props;
 
     return (
@@ -50,19 +49,41 @@ export default class extends React.Component {
         <style jsx>{`
           .product-summary {
             align-items: center;
-            background-color: ${background};
             color: ${color};
             display: flex;
             flex-direction: column;
+            flex: 0 0 100%;
             justify-content: center;
+            position: relative;
+          }
+
+          @media ${tokens.mq.phablet} {
+            .product-summary {
+              padding: 40px 20px;
+            }
+          }
+
+          @media ${tokens.mq.tablet} {
+            .product-summary {
+              margin-bottom: -80px;
+            }
           }
 
           @media ${tokens.mq.desktop} {
             .product-summary {
               flex-direction: row;
-              padding-top: 80px;
               padding-bottom: 80px;
+              padding-top: 80px;
             }
+          }
+
+          .product-summary::before {
+            background-color: ${background};
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 100vw;
           }
 
           .product-summary__image-container {
@@ -71,12 +92,13 @@ export default class extends React.Component {
             flex-direction: column;
             order: 1;
             width: 100%;
+            z-index: 2;
           }
 
           @media ${tokens.mq.desktop} {
             .product-summary__image-container {
               order: 2;
-              width: calc(100% / 2);
+              width: 50%;
               margin-top: 80px;
               transform: translateX(-7.5%);
             }
@@ -89,21 +111,21 @@ export default class extends React.Component {
 
           .product-summary__content {
             order: 2;
-            z-index: 2;
             padding-left: 5%;
             padding-right: 5%;
             padding-top: 20px;
             padding-bottom: 40px;
+            z-index: 3;
           }
 
           @media ${tokens.mq.desktop} {
             .product-summary__content {
-              order: 1;
-              width: calc(100% / 3);
+              align-self: flex-start;
               min-width: 240px;
+              order: 1;
               padding: 0;
               transform: translateX(7.5%);
-              align-self: flex-start;
+              width: 33.333%;
             }
           }
 
