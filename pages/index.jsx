@@ -19,17 +19,16 @@ export default () => (
       .index__title {
         color: black;
         font-family: ${tokens.fonts.gill.family};
-        font-size: 22px;
-        margin-bottom: 40px;
+        font-size: 24px;
+        margin-bottom: 48px;
         margin-top: 0;
         max-width: 200px;
-        text-align: center;
-        text-transform: uppercase;
+        font-weight: normal;
       }
 
       @media ${tokens.mq.desktop} {
         .index__title {
-          font-size: 34px;
+          font-size: 48px;
           max-width: none;
         }
       }
@@ -48,7 +47,6 @@ export default () => (
       .index__item {
         padding-bottom: 15px;
         padding-top: 15px;
-        text-align: center;
         width: 50%;
       }
 
@@ -75,33 +73,33 @@ export default () => (
       }
     `}</style>
 
-    <PageHead title="Verfügbare Templates" />
+    <PageHead title="Templates mit Beispiel-Content" />
 
     <div className="index">
-      <h1 className="index__title">Verfügbare Templates:</h1>
+      <h1 className="index__title">Templates Gefäßkomplex 1</h1>
 
       <ul className="index__list">
         <li className="index__item">
           <Link href="/thesis">
-            <a className="index__item-link">Thesis</a>
+            <a className="index__item-link">These 01: Flowershirts</a>
           </Link>
         </li>
 
         <li className="index__item">
           <Link href="/thesis-shoes">
-            <a className="index__item-link">Thesis + Shoes</a>
+            <a className="index__item-link">These 02: Cowboy-Boots</a>
           </Link>
         </li>
 
         <li className="index__item">
           <Link href="/listicle">
-            <a className="index__item-link">Listicle</a>
+            <a className="index__item-link">Listicle 01: 7 Gründe für mehr Kalifornien</a>
           </Link>
         </li>
 
         <li className="index__item">
           <Link href="/listicle-wine">
-            <a className="index__item-link">Listicle + Wine</a>
+            <a className="index__item-link">Listicle 02: 6 kalifornische Weine</a>
           </Link>
         </li>
       </ul>

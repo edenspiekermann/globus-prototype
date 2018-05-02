@@ -67,6 +67,7 @@ export default ({
         top: 0;
         width: 100vw;
         z-index: 5;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
       }
 
       @media ${tokens.mq.desktop} {
