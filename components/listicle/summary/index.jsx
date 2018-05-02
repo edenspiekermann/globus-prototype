@@ -48,19 +48,11 @@ export default class extends React.Component {
       <section className="summary">
         <style jsx>{`
           .summary {
-            align-items: center;
             color: ${color};
             display: flex;
             flex-direction: column;
             flex: 0 0 100%;
-            justify-content: center;
             position: relative;
-          }
-
-          @media ${tokens.mq.phablet} {
-            .summary {
-              padding: 40px 20px;
-            }
           }
 
           @media ${tokens.mq.tablet} {
@@ -73,7 +65,14 @@ export default class extends React.Component {
             .summary {
               flex-direction: row;
               padding-bottom: 80px;
+              padding-left: 20px;
               padding-top: 80px;
+            }
+          }
+
+          @media ${tokens.mq.large} {
+            .summary {
+              padding-left: 100px;
             }
           }
 
@@ -83,6 +82,7 @@ export default class extends React.Component {
             height: 100%;
             left: 0;
             position: absolute;
+            top: 0;
             width: 100vw;
           }
 

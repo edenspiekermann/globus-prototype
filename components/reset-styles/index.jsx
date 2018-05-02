@@ -10,11 +10,11 @@ export default () => (
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       margin: 0;
+      overflow-x: hidden;
       padding: 0;
     }
 
     img {
-      height: auto;
       width: 100%;
     }
 
