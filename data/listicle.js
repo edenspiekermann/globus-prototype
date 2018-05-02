@@ -162,11 +162,44 @@ export default [
         button: {
           url: '#',
           label: 'Wein kaufen'
+        },
+        shoppingLayer: {
+          title: '',
+          inStock: true,
+          products: [
+            {
+              image: {
+                url: '/static/images/wine-product_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Caymus Vineyars',
+              type: 'Zinfandel Napa Valley 2014',
+              price: '49.90'
+            },
+            {
+              image: {
+                url: '/static/images/wine-product_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Stag’s Leap Wine Cellars',
+              type: 'Chardonnay Karia Napa Valley 2015',
+              price: '39.90'
+            },
+            {
+              image: {
+                url: '/static/images/wine-product_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Ramey Wine Cellars',
+              type: 'Chardonnay Russian River Valley 2014',
+              price: '49.90'
+            }
+          ]
         }
       },
 
       {
-        title: 'Nachhaltigkeit als Lebensstil',
+        title: 'DER PRICKELNDE',
         text: [
           '«Ebenfalls von Caymus Vineyards stammt dieser traditionelle Cabernet Sauvignon. Ein kraftvoller, sehr opulenter Rotwein aus dem Napa Valley.»'
         ],
@@ -181,6 +214,39 @@ export default [
         button: {
           url: '#',
           label: 'Wein kaufen'
+        },
+        shoppingLayer: {
+          title: '',
+          inStock: true,
+          products: [
+            {
+              image: {
+                url: '/static/images/wine-product_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Caymus Vineyars',
+              type: 'Zinfandel Napa Valley 2014',
+              price: '49.90'
+            },
+            {
+              image: {
+                url: '/static/images/wine-product_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Stag’s Leap Wine Cellars',
+              type: 'Chardonnay Karia Napa Valley 2015',
+              price: '39.90'
+            },
+            {
+              image: {
+                url: '/static/images/wine-product_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Ramey Wine Cellars',
+              type: 'Chardonnay Russian River Valley 2014',
+              price: '49.90'
+            }
+          ]
         }
       },
 
@@ -198,6 +264,39 @@ export default [
         button: {
           url: '#',
           label: 'Wein kaufen'
+        },
+        shoppingLayer: {
+          title: '',
+          inStock: true,
+          products: [
+            {
+              image: {
+                url: '/static/images/wine-product_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Caymus Vineyars',
+              type: 'Zinfandel Napa Valley 2014',
+              price: '49.90'
+            },
+            {
+              image: {
+                url: '/static/images/wine-product_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Stag’s Leap Wine Cellars',
+              type: 'Chardonnay Karia Napa Valley 2015',
+              price: '39.90'
+            },
+            {
+              image: {
+                url: '/static/images/wine-product_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Ramey Wine Cellars',
+              type: 'Chardonnay Russian River Valley 2014',
+              price: '49.90'
+            }
+          ]
         }
       },
 
@@ -216,6 +315,39 @@ export default [
         button: {
           url: '#',
           label: 'Wein kaufen'
+        },
+        shoppingLayer: {
+          title: '',
+          inStock: true,
+          products: [
+            {
+              image: {
+                url: '/static/images/wine-product_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Ramey Wine Cellars',
+              type: 'Chardonnay Russian River Valley 2014',
+              price: '49.90'
+            },
+            {
+              image: {
+                url: '/static/images/wine-product_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Caymus Vineyars',
+              type: 'Zinfandel Napa Valley 2014',
+              price: '49.90'
+            },
+            {
+              image: {
+                url: '/static/images/wine-product_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Stag’s Leap Wine Cellars',
+              type: 'Chardonnay Karia Napa Valley 2015',
+              price: '39.90'
+            }
+          ]
         }
       },
 
@@ -234,6 +366,39 @@ export default [
         button: {
           url: '#',
           label: 'Wein kaufen'
+        },
+        shoppingLayer: {
+          title: '',
+          inStock: true,
+          products: [
+            {
+              image: {
+                url: '/static/images/wine-product_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Ramey Wine Cellars',
+              type: 'Chardonnay Russian River Valley 2014',
+              price: '49.90'
+            },
+            {
+              image: {
+                url: '/static/images/wine-product_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Caymus Vineyars',
+              type: 'Zinfandel Napa Valley 2014',
+              price: '49.90'
+            },
+            {
+              image: {
+                url: '/static/images/wine-product_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Stag’s Leap Wine Cellars',
+              type: 'Chardonnay Karia Napa Valley 2015',
+              price: '39.90'
+            }
+          ]
         }
       }
     ]
