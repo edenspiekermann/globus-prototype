@@ -67,62 +67,62 @@ export default [
     products: [
       {
         image: {
-          url: '/static/images/thesis_shoes_1.jpg',
+          url: '/static/images/cowboyboot_1.jpg',
           alt: 'Dummy image'
         },
-        title: 'Prime Shoes',
-        type: 'Schnürboots',
-        price: '179.00'
+        title: 'Keep',
+        type: 'Bikerstiefel',
+        price: '379.00'
       },
 
       {
         image: {
-          url: '/static/images/thesis_shoes_2.jpg',
+          url: '/static/images/cowboyboot_2.jpg',
           alt: 'Dummy image'
         },
-        title: 'Zadig & Voltaire',
-        type: 'Schnürboots',
-        price: '199.00'
-      },
-
-      {
-        image: {
-          url: '/static/images/thesis_shoes_3.jpg',
-          alt: 'Dummy image'
-        },
-        title: 'Ted Baker',
-        type: 'Schnürboots',
-        price: '149.00'
-      },
-
-      {
-        image: {
-          url: '/static/images/thesis_shoes_4.jpg',
-          alt: 'Dummy image'
-        },
-        title: 'H by Hudson',
+        title: 'Materia Prima',
         type: 'Stiefelette',
-        price: '139.00'
+        price: '469.00'
       },
 
       {
         image: {
-          url: '/static/images/thesis_shoes_5.jpg',
+          url: '/static/images/cowboyboot_3.jpg',
           alt: 'Dummy image'
         },
-        title: 'Timberland',
-        type: 'Sandale',
-        price: '179.00'
+        title: 'Materia Prima',
+        type: 'Stiefelette',
+        price: '449.00'
       },
 
       {
         image: {
-          url: '/static/images/thesis_shoes_2.jpg',
+          url: '/static/images/cowboyboot_4.jpg',
           alt: 'Dummy image'
         },
-        title: 'Zadig & Voltaire',
-        type: 'Schnürboots',
-        price: '199.00'
+        title: 'Keep',
+        type: 'Stiefelette',
+        price: '329.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/cowboyboot_5.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Keep',
+        type: 'Bikerstiefel',
+        price: '379.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/cowboyboot_6.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Coral Blue',
+        type: 'Bikerstiefel',
+        price: '239.00'
       }
     ]
   }
