@@ -1,42 +1,49 @@
+const sizes = {
+  phone: 380,
+  phablet: 650,
+  tablet: 768,
+  desktop: 960,
+  large: 1400
+};
+
 export default {
+  sizes,
+
   colors: {
-    grey: 'rgb(166, 166, 166)',
+    grey: 'rgb(166, 166, 166)'
   },
 
-  mq: {
-    phone: 'screen and (min-width: 380px)',
-    phablet: 'screen and (min-width: 650px)',
-    tablet: 'screen and (min-width: 768px)',
-    desktop: 'screen and (min-width: 960px)',
-    large: 'screen and (min-width: 1400px)',
-  },
+  mq: Object.keys(sizes).reduce((acc, size) => {
+    acc[size] = `screen and (min-width: ${sizes[size]}px)`;
+    return acc;
+  }, {}),
 
   fonts: {
     domaine: {
       family: 'Domaine Display, serif',
       weight: {
-        semibold: 600,
-      },
+        semibold: 600
+      }
     },
 
     founders: {
       family: 'Founders Grotesk, sans-serif',
       weight: {
         regular: 400,
-        medium: 500,
-      },
+        medium: 500
+      }
     },
 
     gill: {
       family: 'Gill Sans, sans-serif',
       weight: {
-        regular: 400,
-      },
+        regular: 400
+      }
     },
 
     icon: {
-      family: 'Globus Icon',
-    },
+      family: 'Globus Icon'
+    }
   },
 
   mixins: {
@@ -46,6 +53,6 @@ export default {
       overflow: hidden;
       clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
       clip: rect(1px, 1px, 1px, 1px);
-    `,
-  },
+    `
+  }
 };

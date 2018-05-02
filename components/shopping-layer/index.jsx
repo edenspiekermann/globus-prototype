@@ -1,3 +1,5 @@
+import ScrollLock from 'react-scrolllock';
+
 import Product from '../product';
 
 import tokens from '../../tokens';
@@ -14,12 +16,19 @@ export default ({
     className={`shopping-layer shopping-layer--position-${position}`}
     style={{ top: coordinates.top }}
   >
+    {window && window.innerWidth < tokens.sizes.desktop && <ScrollLock />}
+
     <style jsx>{`
       .shopping-layer {
-        position: absolute;
-        transform: translateY(60px);
-        width: 100%;
         z-index: 5;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer {
+          position: absolute;
+          transform: translateY(60px);
+          width: 100%;
+        }
       }
 
       .shopping-layer::after,
@@ -32,6 +41,7 @@ export default ({
         transform: translateX(-15px);
         top: -30px;
         width: 0;
+        z-index: 5;
       }
 
       .shopping-layer::after {
@@ -49,43 +59,61 @@ export default ({
 
       .shopping-layer__overlay {
         background-color: white;
-        border: 1px solid black;
-        left: 50%;
-        margin-top: 9px;
-        max-width: 1400px;
-        padding: 60px 35px 15px 35px;
-        position: absolute;
-        transform: translateX(-50%);
-        width: 100%;
+        height: 100vh;
+        left: 0;
+        overflow: auto;
+        padding: 60px 20px 15px 20px;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 5;
       }
 
       @media ${tokens.mq.desktop} {
         .shopping-layer__overlay {
+          border: 1px solid black;
+          left: 50%;
+          margin-top: 9px;
+          max-width: 1400px;
           padding: 40px 60px 30px 60px;
+          position: absolute;
+          transform: translateX(-50%);
           width: 70%;
+        }
+      }
+
+      .shopping-layer__close-container {
+        background-color: white;
+        left: 0;
+        padding: 10px 20px;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        z-index: 12;
+      }
+
+      @media ${tokens.mq.desktop} {
+        .shopping-layer__close-container {
+          background-color: transparent;
+          left: auto;
+          position: absolute;
+          right: 0;
+          top: 10px;
+          width: auto;
         }
       }
 
       .shopping-layer__close {
         background: transparent;
         border: 0;
+        display: inline-block;
         font-family: ${tokens.fonts.gill.family};
         font-size: 14px;
-        left: 50%;
         letter-spacing: 0.5px;
         padding: 5px 25px 1px 10px;
-        position: absolute;
+        position: relative;
         text-transform: uppercase;
-        top: 20px;
-        transform: translateX(-50%);
-      }
-
-      @media ${tokens.mq.tablet} {
-        .shopping-layer__close {
-          left: auto;
-          right: 20px;
-          transform: none;
-        }
       }
 
       .shopping-layer__close:hover,
@@ -142,23 +170,23 @@ export default ({
 
       .shopping-layer__product-nav-prev,
       .shopping-layer__product-nav-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(calc(-50% - 50px));
+        display: none;
       }
 
-      .shopping-layer__product-nav-prev {
-        left: -28px;
+      @media ${tokens.mq.desktop} {
+        .shopping-layer__product-nav-prev,
+        .shopping-layer__product-nav-next {
+          display: block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(calc(-50% - 50px));
+        }
       }
 
       @media ${tokens.mq.desktop} {
         .shopping-layer__product-nav-prev {
           left: -35px;
         }
-      }
-
-      .shopping-layer__product-nav-next {
-        right: -28px;
       }
 
       @media ${tokens.mq.desktop} {
@@ -188,22 +216,14 @@ export default ({
           width: 33.3333%;
         }
       }
-
-      .shopping-layer__product-item:last-child {
-        display: none;
-      }
-
-      @media ${tokens.mq.desktop} {
-        .shopping-layer__product-item:last-child {
-          display: block;
-        }
-      }
     `}</style>
 
     <div className="shopping-layer__overlay">
-      <button className="shopping-layer__close" onClick={() => hide()}>
-        Schließen
-      </button>
+      <div className="shopping-layer__close-container">
+        <button className="shopping-layer__close" onClick={() => hide()}>
+          Schließen
+        </button>
+      </div>
 
       {!inStock && (
         <p className="shopping-layer__not-in-stock">

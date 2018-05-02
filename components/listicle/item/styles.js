@@ -9,7 +9,7 @@ export default css`
 
   @media ${tokens.mq.desktop} {
     .listicle-item:first-child {
-      padding-top: 120px; 
+      padding-top: 120px;
     }
   }
 
@@ -180,7 +180,7 @@ export default css`
     display: inline-flex;
     position: relative;
     transform: translateY(-55%);
-    z-index: 20;
+    z-index: 3;
   }
 
   .listicle-item__text {
@@ -196,7 +196,7 @@ export default css`
     .listicle-item--right .listicle-item__meta {
       width: 80%;
     }
-    
+
     .listicle-item--right .listicle-item__text,
     .listicle-item--right .listicle-item__meta {
         margin-left: 20%;
