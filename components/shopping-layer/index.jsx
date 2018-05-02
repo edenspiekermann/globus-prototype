@@ -30,7 +30,7 @@ export default ({
         height: 0;
         position: absolute;
         transform: translateX(-15px);
-        top: -39px;
+        top: -30px;
         width: 0;
       }
 
@@ -38,7 +38,7 @@ export default ({
         border-color: transparent transparent white transparent;
         border-width: 19px;
         left: ${coordinates.left}px;
-        top: -37px;
+        top: -28px;
       }
 
       .shopping-layer::before {
@@ -51,6 +51,7 @@ export default ({
         background-color: white;
         border: 1px solid black;
         left: 50%;
+        margin-top: 9px;
         padding: 60px 35px 15px 35px;
         position: absolute;
         transform: translateX(-50%);
