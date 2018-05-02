@@ -5,11 +5,11 @@ import tokens from '../../../tokens';
 export default css`
   .intro-title {
     font-family: ${tokens.fonts.founders.family};
-    // see https://www.smashingmagazine.com/2016/05/fluid-typography/
     font-size: calc(2.5rem + ((42 * (100vw - 400px)) / 1600));
     font-weight: ${tokens.fonts.founders.weight.medium};
     line-height: 0.875;
     margin-bottom: 20px;
+    max-width: 1200px;
   }
 
   @media ${tokens.mq.phone} {
@@ -20,24 +20,11 @@ export default css`
     }
   }
 
-  @media ${tokens.mq.phablet} {
-    .intro-title {
-      max-width: 50%;
-    }
-  }
-
   @media ${tokens.mq.tablet} {
     .intro-title {
       margin-bottom: 60px;
       font-size: calc(4rem + ((42 * (100vw - 400px)) / 1600));
-      max-width: 50%;
       hyphens: inherit;
-    }
-  }
-
-  @media ${tokens.mq.desktop} {
-    .intro-title {
-      max-width: 80%;
     }
   }
 
