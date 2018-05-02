@@ -8,7 +8,6 @@ const IMAGE_SIZE_LARGE = '45%';
 export default css`
   .intro {
     margin-bottom: 80px;
-    overflow-x: hidden;
     position: relative;
   }
 
@@ -23,7 +22,7 @@ export default css`
       padding-bottom: 10%;
       margin-bottom: 5%;
     }
-    
+
     .intro--reversed {
       margin-bottom: 10%;
     }
@@ -72,7 +71,6 @@ export default css`
 
   .intro__image-container {
     margin: -280px 5% 20px 20%;
-    overflow-y: hidden;
     z-index: 1;
   }
 

@@ -4,7 +4,6 @@ import tokens from '../../../tokens';
 
 export default css`
   .intro-image {
-    max-height: 100%;
     object-fit: contain;
     width: 75%;
   }
