@@ -5,7 +5,6 @@ import BodyEnd from '../../body-end';
 import Button from '../../input/button';
 import ShoppingLayer from '../../shopping-layer';
 
-import productListData from '../../../data/product-list';
 import styles from './styles';
 
 export default class extends React.Component {
@@ -44,7 +43,8 @@ export default class extends React.Component {
       location,
       price,
       button,
-      badge
+      badge,
+      shoppingLayer
     } = this.props;
 
     return (
@@ -82,10 +82,8 @@ export default class extends React.Component {
                 <BodyEnd onBodyClick={() => this.toggleShoppingLayer()}>
                   <ShoppingLayer
                     hide={event => this.toggleShoppingLayer(event)}
-                    products={productListData[0].products.slice(0, 3)}
-                    title="Das könnte Ihnen auch gefallen"
-                    inStock={false}
                     coordinates={this.state.shoppingLayerPosition}
+                    {...shoppingLayer}
                   />
                 </BodyEnd>
               )}

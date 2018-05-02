@@ -41,7 +41,8 @@ export default class extends React.Component {
       button,
       image,
       color,
-      background
+      background,
+      shoppingLayer,
     } = this.props;
 
     return (
@@ -179,10 +180,8 @@ export default class extends React.Component {
                 <BodyEnd onBodyClick={() => this.toggleShoppingLayer()}>
                   <ShoppingLayer
                     hide={() => this.toggleShoppingLayer()}
-                    products={productListData[0].products.slice(0, 3)}
-                    title="Das könnte Ihnen auch gefallen"
-                    inStock={false}
                     coordinates={this.state.shoppingLayerPosition}
+                    {...shoppingLayer}
                   />
                 </BodyEnd>
               )}
