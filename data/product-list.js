@@ -3,62 +3,62 @@ export default [
     products: [
       {
         image: {
-          url: '/static/images/product_1.jpg',
+          url: '/static/images/flowershirt_1.jpg',
           alt: 'Dummy image'
         },
-        title: 'PS By Paul Smith',
-        type: 'Hemd Regular Fit',
-        price: '179.00'
-      },
-
-      {
-        image: {
-          url: '/static/images/product_2.jpg',
-          alt: 'Dummy image'
-        },
-        title: 'Zadig & Voltaire',
-        type: 'Hemd Regular Fit',
-        price: '199.00'
-      },
-
-      {
-        image: {
-          url: '/static/images/product_3.jpg',
-          alt: 'Dummy image'
-        },
-        title: 'Ted Baker',
+        title: 'TED BAKER',
         type: 'Hemd Slim Fit',
         price: '149.00'
       },
 
       {
         image: {
-          url: '/static/images/product_4.jpg',
+          url: '/static/images/flowershirt_2.jpg',
           alt: 'Dummy image'
         },
-        title: 'Polo Ralph Lauren',
+        title: 'POLO RALPH LAUREN',
         type: 'Hemd Regular Fit',
         price: '139.00'
       },
 
       {
         image: {
-          url: '/static/images/product_1.jpg',
+          url: '/static/images/flowershirt_3.jpg',
           alt: 'Dummy image'
         },
-        title: 'PS By Paul Smith',
-        type: 'Hemd Regular Fit',
-        price: '179.00'
+        title: 'GLOBUS STUDIO',
+        type: 'T-Shirt',
+        price: '49.00'
       },
 
       {
         image: {
-          url: '/static/images/product_5.jpg',
+          url: '/static/images/flowershirt_4.jpg',
           alt: 'Dummy image'
         },
-        title: 'Blue Lemon',
+        title: 'GLOBUS',
         type: 'Hemd Regular Fit',
-        price: '179.00'
+        price: '79.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/flowershirt_5.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'SCOTCH&SODA',
+        type: 'Hemd Regular Fit',
+        price: '99.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/flowershirt_6.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'SCOTCH&SODA',
+        type: 'Hemd Regular Fit',
+        price: '119.00'
       }
     ]
   },
