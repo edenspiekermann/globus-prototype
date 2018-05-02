@@ -13,14 +13,14 @@ export default class extends React.Component {
   };
 
   toggleShoppingLayer(event) {
-    let position;
+    let shoppingLayerPosition = { top: null, left: null };
 
     if (event) {
       const { target } = event.nativeEvent;
       const rect = target.getBoundingClientRect();
       const bodyRect = document.body.getBoundingClientRect();
 
-      position = {
+      shoppingLayerPosition = {
         top: rect.top - bodyRect.top,
         left: parseInt(rect.left + rect.width / 2, 10)
       };
@@ -28,7 +28,7 @@ export default class extends React.Component {
 
     this.setState({
       showShoppingLayer: !this.state.showShoppingLayer,
-      shoppingLayerPosition: position
+      shoppingLayerPosition,
     });
   }
 
@@ -176,7 +176,7 @@ export default class extends React.Component {
               </Button>
 
               {this.state.showShoppingLayer && (
-                <BodyEnd>
+                <BodyEnd onBodyClick={() => this.toggleShoppingLayer()}>
                   <ShoppingLayer
                     hide={() => this.toggleShoppingLayer()}
                     products={productListData[0].products.slice(0, 3)}
