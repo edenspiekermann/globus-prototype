@@ -32,25 +32,15 @@ export default ({
           .intro__image-container {
             background-image: linear-gradient(
               to bottom,
-              ${color} 65%,
+              ${color} 85%,
               transparent 0
             );
-            height: 100%;
             left: 0;
             margin: 0;
+            max-height: 100%;
             position: absolute;
             top: 0;
             width: 100%;
-          }
-        }
-
-        @media ${tokens.mq.large} {
-          .intro__image-container {
-            background-image: linear-gradient(
-              to bottom,
-              ${color} 80%,
-              transparent 0
-            );
           }
         }
       `}</style>
