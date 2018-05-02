@@ -1,10 +1,10 @@
 import React from 'react';
 
-import BodyEnd from '../body-end';
-import Button from '../input/button';
-import ShoppingLayer from '../shopping-layer';
+import BodyEnd from '../../body-end';
+import Button from '../../input/button';
+import ShoppingLayer from '../../shopping-layer';
 
-import tokens from '../../tokens';
+import tokens from '../../../tokens';
 
 export default class extends React.Component {
   state = {
@@ -45,9 +45,9 @@ export default class extends React.Component {
     } = this.props;
 
     return (
-      <section className="product-summary">
+      <section className="summary">
         <style jsx>{`
-          .product-summary {
+          .summary {
             align-items: center;
             color: ${color};
             display: flex;
@@ -58,26 +58,26 @@ export default class extends React.Component {
           }
 
           @media ${tokens.mq.phablet} {
-            .product-summary {
+            .summary {
               padding: 40px 20px;
             }
           }
 
           @media ${tokens.mq.tablet} {
-            .product-summary {
+            .summary {
               margin-bottom: -80px;
             }
           }
 
           @media ${tokens.mq.desktop} {
-            .product-summary {
+            .summary {
               flex-direction: row;
               padding-bottom: 80px;
               padding-top: 80px;
             }
           }
 
-          .product-summary::before {
+          .summary::before {
             background-color: ${background};
             content: '';
             height: 100%;
@@ -86,7 +86,7 @@ export default class extends React.Component {
             width: 100vw;
           }
 
-          .product-summary__image-container {
+          .summary__image-container {
             align-items: center;
             display: flex;
             flex-direction: column;
@@ -96,7 +96,7 @@ export default class extends React.Component {
           }
 
           @media ${tokens.mq.desktop} {
-            .product-summary__image-container {
+            .summary__image-container {
               order: 2;
               width: 50%;
               margin-top: 80px;
@@ -104,12 +104,12 @@ export default class extends React.Component {
             }
           }
 
-          .product-summary__button {
+          .summary__button {
             transform: translateY(-50%);
             z-index: 5;
           }
 
-          .product-summary__content {
+          .summary__content {
             order: 2;
             padding-left: 5%;
             padding-right: 5%;
@@ -119,7 +119,7 @@ export default class extends React.Component {
           }
 
           @media ${tokens.mq.desktop} {
-            .product-summary__content {
+            .summary__content {
               align-self: flex-start;
               min-width: 240px;
               order: 1;
@@ -129,7 +129,7 @@ export default class extends React.Component {
             }
           }
 
-          .product-summary__title {
+          .summary__title {
             font-family: ${tokens.fonts.founders.family};
             font-size: 2rem;
             font-weight: ${tokens.fonts.founders.weight.medium};
@@ -139,53 +139,50 @@ export default class extends React.Component {
           }
 
           @media ${tokens.mq.large} {
-            .product-summary__title {
+            .summary__title {
               font-size: 3.5rem;
             }
           }
 
-          .product-summary__text {
+          .summary__text {
             font-family: ${tokens.fonts.founders.family};
             font-size: 1.25rem;
             line-height: 1.25;
           }
 
           @media ${tokens.mq.desktop} {
-            .product-summary__text {
+            .summary__text {
               width: 80%; //@gustav TODO
             }
           }
 
           @media ${tokens.mq.large} {
-            .product-summary__text {
+            .summary__text {
               font-size: calc(1.25rem * 1.125);
             }
           }
 
-          .product-summary__meta {
+          .summary__meta {
             font-family: ${tokens.fonts.founders.family};
             font-size: 1rem;
             line-height: ${20 / 16};
             opacity: 0.6;
           }
 
-          .product-summary__type {
+          .summary__type {
             display: block;
           }
 
-          .product-summary__price {
+          .summary__price {
             display: block;
           }
         `}</style>
 
-        <div className="product-summary__image-container">
-          <img
-            src={image.url}
-            alt={image.alt}
-            className="product-summary__image"
-          />
+        <div className="summary__image-container">
+          <img src={image.url} alt={image.alt} className="summary__image" />
+
           {button && (
-            <div className="product-summary__button">
+            <div className="summary__button">
               <Button
                 href={button.url}
                 look="window-condensed"
@@ -211,18 +208,14 @@ export default class extends React.Component {
           )}
         </div>
 
-        <div className="product-summary__content">
-          <h3 className="product-summary__title">{title}</h3>
-          <div className="product-summary__text">
-            {text.map(_ => <p>{_}</p>)}
-          </div>
+        <div className="summary__content">
+          <h3 className="summary__title">{title}</h3>
+          <div className="summary__text">{text.map(_ => <p>{_}</p>)}</div>
 
           {(type || price) && (
-            <p className="product-summary__meta">
-              {type && <small className="product-summary__type">{type}</small>}
-              {price && (
-                <small className="product-summary__price">CHF {price}</small>
-              )}
+            <p className="summary__meta">
+              {type && <small className="summary__type">{type}</small>}
+              {price && <small className="summary__price">CHF {price}</small>}
             </p>
           )}
         </div>

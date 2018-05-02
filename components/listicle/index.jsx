@@ -1,4 +1,4 @@
-import ProductSummary from '../product-summary';
+import Summary from './summary';
 import ListicleItem from './item';
 
 import styles from './styles';
@@ -14,7 +14,7 @@ export default ({ products, summary }) => (
         </li>
       ))}
 
-      <ProductSummary {...summary} />
+      <Summary {...summary} />
     </ul>
   </div>
 );
