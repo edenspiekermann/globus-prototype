@@ -141,7 +141,8 @@ export default class extends React.Component {
               order: 1;
               padding: 0;
               transform: translateX(7.5%);
-              width: 50%;
+              width: 33.333%;
+              min-width: 480px;
             }
           }
 
