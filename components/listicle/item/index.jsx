@@ -29,7 +29,7 @@ export default class extends React.Component {
 
     this.setState({
       showShoppingLayer: !this.state.showShoppingLayer,
-      shoppingLayerPosition,
+      shoppingLayerPosition
     });
   }
 

@@ -15,7 +15,7 @@ export default class extends React.PureComponent {
       'click',
       event => onBodyClickCallback(event.target, this.props),
       {
-        once: true,
+        once: true
       }
     );
 
