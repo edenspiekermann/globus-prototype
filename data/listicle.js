@@ -21,7 +21,7 @@ export default [
 
     products: [
       {
-        title: 'Logomania',
+        title: 'LOGOMANIA',
         text: [
           'Die Logomania ist noch immer auf dem Vormarsch. Modelabels wie Calvin Klein oder Champion setzen auf den grossflächigen Print des eigenen Namens. Klicken Sie sich durch die coolsten Logo-Sweater & Logo-Accessoires!'
         ],
@@ -32,6 +32,39 @@ export default [
         button: {
           url: '#',
           label: 'Shop the style'
+        },
+        shoppingLayer: {
+          title: '',
+          inStock: true,
+          products: [
+            {
+              image: {
+                url: '/static/images/logomania_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Calvin Klein',
+              type: 'Bikini Oberteil',
+              price: '79.90'
+            },
+            {
+              image: {
+                url: '/static/images/logomania_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'FILA',
+              type: 'Athleisure-langarm Shirt',
+              price: '89.90'
+            },
+            {
+              image: {
+                url: '/static/images/logomania_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'FILA',
+              type: 'Gürteltasche',
+              price: '19.90'
+            }
+          ]
         }
       },
 
@@ -59,11 +92,42 @@ export default [
           url: '/static/images/listicle_3.jpg',
           alt: 'Dicke Soundbox'
         },
-        price: '149.90',
-        location: 'Zinfandel, Napa Valley 2015',
         button: {
           url: '#',
-          label: 'Box kaufen'
+          label: 'Bluetooth-Box kaufen'
+        },
+        shoppingLayer: {
+          title: '',
+          inStock: true,
+          products: [
+            {
+              image: {
+                url: '/static/images/speakers_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'JBL Harman',
+              type: 'Bluetooth Lautsprecher',
+              price: '279.00'
+            },
+            {
+              image: {
+                url: '/static/images/speakers_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'JBL Harman',
+              type: 'Bluetooth Lautsprecher',
+              price: '179.00'
+            },
+            {
+              image: {
+                url: '/static/images/speakers_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'JBL Harman',
+              type: 'Bluetooth Lautsprecher',
+              price: '69.90'
+            }
+          ]
         }
       },
 
@@ -78,6 +142,43 @@ export default [
         image: {
           url: '/static/images/listicle_4.jpg',
           alt: 'Mud-Treatment Cremes'
+        },
+        button: {
+          url: '#',
+          label: 'Treatments shoppen'
+        },
+        shoppingLayer: {
+          title: 'Das könnten Ihnen auch gefallen',
+          inStock: false,
+          products: [
+            {
+              image: {
+                url: '/static/images/glamglow_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Glamglow',
+              type: 'THIRSTYMUD Hydrating Treatment',
+              price: '19.90'
+            },
+            {
+              image: {
+                url: '/static/images/glamglow_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Glamglow',
+              type: 'GRAVITYMUD FirmingTreatment',
+              price: '19.90'
+            },
+            {
+              image: {
+                url: '/static/images/glamglow_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Glamglow',
+              type: 'YOUTHMUD Tinglexfoliate Treatment',
+              price: '59.90'
+            }
+          ]
         }
       },
 
@@ -94,6 +195,39 @@ export default [
         button: {
           url: '#',
           label: 'Shop the look'
+        },
+        shoppingLayer: {
+          title: '',
+          inStock: true,
+          products: [
+            {
+              image: {
+                url: '/static/images/athleisure_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'NOKA’OI',
+              type: 'Athleisure-langarm Shirt',
+              price: '239.90'
+            },
+            {
+              image: {
+                url: '/static/images/athleisure_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'CASALL',
+              type: 'Athleisure-Top',
+              price: '59.90'
+            },
+            {
+              image: {
+                url: '/static/images/athleisure_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'BIRKENSTOCK',
+              type: 'Sandale',
+              price: '99.90'
+            }
+          ]
         }
       },
 
@@ -110,7 +244,40 @@ export default [
         },
         button: {
           url: '#',
-          label: 'Shop the bike'
+          label: 'Velo shoppen'
+        },
+        shoppingLayer: {
+          title: 'Das könnten Ihnen auch gefallen',
+          inStock: false,
+          products: [
+            {
+              image: {
+                url: '/static/images/bike_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'MARTONE',
+              type: 'Herrenvelo',
+              price: '1290.00'
+            },
+            {
+              image: {
+                url: '/static/images/bike_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Thousand',
+              type: 'Fahrradhandschuhe',
+              price: '49.90'
+            },
+            {
+              image: {
+                url: '/static/images/bike_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'BROOKS ENGLAND',
+              type: 'Fahrradpumpe',
+              price: '69.90'
+            }
+          ]
         }
       },
 
@@ -122,6 +289,43 @@ export default [
         image: {
           url: '/static/images/listicle_7.jpg',
           alt: 'Kakteen an Felsen, Stillleben'
+        },
+        button: {
+          url: '#',
+          label: 'Kakteen shoppen'
+        },
+        shoppingLayer: {
+          title: '',
+          inStock: true,
+          products: [
+            {
+              image: {
+                url: '/static/images/kaktus_1.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Globus',
+              type: 'Deko Kaktus',
+              price: '59.90'
+            },
+            {
+              image: {
+                url: '/static/images/kaktus_2.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'Sunnylife',
+              type: 'Aufblasbarer Kaktus',
+              price: '69.90'
+            },
+            {
+              image: {
+                url: '/static/images/kaktus_3.jpg',
+                alt: 'Dummy image'
+              },
+              title: 'NATURAL LIFE',
+              type: 'Dekoschale',
+              price: '19.90'
+            }
+          ]
         }
       }
     ]
