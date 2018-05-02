@@ -79,6 +79,7 @@ export default ({
           position: absolute;
           transform: translateX(-50%);
           width: 70%;
+          height: auto;
         }
       }
 
