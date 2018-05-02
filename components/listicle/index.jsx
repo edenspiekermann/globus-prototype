@@ -1,11 +1,9 @@
 import ProductSummary from '../product-summary';
 import ListicleItem from './item';
 
-import productSummaryData from '../../data/product-summary';
-
 import styles from './styles';
 
-export default ({ products }) => (
+export default ({ products, summary }) => (
   <div className="listicle">
     <ul className="listicle__list">
       <style jsx>{styles}</style>
@@ -16,7 +14,7 @@ export default ({ products }) => (
         </li>
       ))}
 
-      <ProductSummary {...productSummaryData} />
+      <ProductSummary {...summary} />
     </ul>
   </div>
 );
