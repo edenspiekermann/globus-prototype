@@ -76,7 +76,7 @@ export default () => (
     <PageHead title="Templates mit Beispiel-Content" />
 
     <div className="index">
-      <h1 className="index__title">Templates mit Beispiel-Content</h1>
+      <h1 className="index__title">Templates Gefäßkomplex 1</h1>
 
       <ul className="index__list">
         <li className="index__item">
