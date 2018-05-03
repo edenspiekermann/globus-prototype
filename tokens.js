@@ -3,7 +3,9 @@ const sizes = {
   phablet: 650,
   tablet: 768,
   desktop: 960,
-  large: 1400
+  large: 1400,
+  xlarge: 2000,
+  xxlarge: 2200
 };
 
 export default {
