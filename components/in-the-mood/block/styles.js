@@ -9,12 +9,14 @@ export default css`
     width: 100%;
   }
 
-  .in-the-mood-block--padded {
-    padding: 40px;
+  .in-the-mood-block--padded .in-the-mood-block__image-container,
+  .in-the-mood-block--padded .in-the-mood-block__video-container {
+    padding: 40px 80px;
   }
 
   @media ${tokens.mq.tablet} {
-    .in-the-mood-block--padded {
+    .in-the-mood-block--padded .in-the-mood-block__image-container,
+    .in-the-mood-block--padded .in-the-mood-block__video-container {
       padding: 120px;
     }
   }

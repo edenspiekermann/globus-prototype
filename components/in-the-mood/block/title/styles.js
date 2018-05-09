@@ -7,10 +7,11 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     margin-bottom: 0;
     margin-top: 0;
-    z-index: 2;
+    position: relative;
+    z-index: 3;
   }
 
-  @media ${tokens.mq.desktop} {
+  @media ${tokens.mq.tablet} {
     .title {
       position: absolute;
       top: 0;
@@ -23,7 +24,7 @@ export default css`
     position: relative;
   }
 
-  @media ${tokens.mq.desktop} {
+  @media ${tokens.mq.tablet} {
     .title--standalone.title--center {
       transform: translateX(-50%);
     }
@@ -66,7 +67,15 @@ export default css`
   .title--left,
   .title--right {
     margin-top: -120px;
-    width: 50%;
+    width: 80%;
+  }
+
+  @media ${tokens.mq.tablet} {
+    .title--left,
+    .title--right {
+      margin-top: 0;
+      width: 50%;
+    }
   }
 
   .title--left {
@@ -88,7 +97,7 @@ export default css`
     width: 100%;
   }
 
-  @media ${tokens.mq.desktop} {
+  @media ${tokens.mq.tablet} {
     .title--center {
       left: 50%;
       top: 0;
@@ -96,7 +105,7 @@ export default css`
     }
   }
 
-  @media ${tokens.mq.desktop} {
+  @media ${tokens.mq.tablet} {
     .title--center-overlay-right {
       right: -180px;
       text-align: right;

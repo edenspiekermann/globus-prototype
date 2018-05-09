@@ -21,5 +21,9 @@ export default () => (
     small {
       font-size: inherit;
     }
+
+    video {
+      max-width: 100%;
+    }
   `}</style>
 );

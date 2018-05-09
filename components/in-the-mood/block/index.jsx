@@ -38,7 +38,11 @@ export default ({
     )}
 
     {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-    {video && <video src={video.url} />}
+    {video && (
+      <div className="in-the-mood-block__video-container">
+        <video src={video.url} autoPlay muted />
+      </div>
+    )}
 
     {title && <BlockTitle {...title} standalone={!image} />}
 

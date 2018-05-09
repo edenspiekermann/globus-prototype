@@ -119,6 +119,16 @@ export default {
     {
       blocks: [
         {
+          video: {
+            url: '/static/videos/GLOBUS_COACHELLA_h264.mp4'
+          }
+        }
+      ]
+    },
+
+    {
+      blocks: [
+        {
           title: {
             label: 'Valley Life'
           },
