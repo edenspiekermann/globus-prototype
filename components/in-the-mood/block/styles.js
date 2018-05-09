@@ -21,7 +21,7 @@ export default css`
     }
   }
 
-  .in-the-mood-block__image-container {
+  .in-the-mood-block__inner-media-container {
     position: relative;
   }
 

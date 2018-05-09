@@ -25,22 +25,34 @@ export default ({
 
     {image && (
       <div className="in-the-mood-block__image-container">
-        <img src={image.url} alt={image.alt} />
+        <div className="in-the-mood-block__inner-media-container">
+          <img src={image.url} alt={image.alt} />
 
-        {button && (
-          <div className="in-the-mood-block__button-container">
-            <Button href={button.url} look="window-condensed">
-              {button.label}
-            </Button>
-          </div>
-        )}
+          {button && (
+            <div className="in-the-mood-block__button-container">
+              <Button href={button.url} look="window-condensed">
+                {button.label}
+              </Button>
+            </div>
+          )}
+        </div>
       </div>
     )}
 
-    {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
     {video && (
       <div className="in-the-mood-block__video-container">
-        <video src={video.url} autoPlay muted />
+        <div className="in-the-mood-block__inner-media-container">
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+          <video src={video.url} autoPlay muted />
+
+          {button && (
+            <div className="in-the-mood-block__button-container">
+              <Button href={button.url} look="window-condensed">
+                {button.label}
+              </Button>
+            </div>
+          )}
+        </div>
       </div>
     )}
 
