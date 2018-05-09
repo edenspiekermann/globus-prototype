@@ -18,4 +18,16 @@ export default css`
       padding: 120px;
     }
   }
+
+  .in-the-mood-block__image-container {
+    position: relative;
+  }
+
+  .in-the-mood-block__button-container {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateY(50%) translateX(-50%);
+    z-index: 2;
+  }
 `;
