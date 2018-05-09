@@ -116,6 +116,7 @@ export default class extends React.Component {
                 src={video.url}
                 autoPlay
                 muted
+                loop
                 className="in-the-mood-block__video"
               />
 
