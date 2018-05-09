@@ -26,6 +26,40 @@ export default {
           button: {
             label: 'Shop the look',
             url: '#'
+          },
+
+          shoppingLayer: {
+            title: '',
+            inStock: true,
+            products: [
+              {
+                image: {
+                  url: '/static/images/logomania_3.jpg',
+                  alt: 'Dummy image'
+                },
+                title: 'Calvin Klein',
+                type: 'Bikini Oberteil',
+                price: '79.90'
+              },
+              {
+                image: {
+                  url: '/static/images/logomania_2.jpg',
+                  alt: 'Dummy image'
+                },
+                title: 'FILA',
+                type: 'Athleisure-langarm Shirt',
+                price: '89.90'
+              },
+              {
+                image: {
+                  url: '/static/images/logomania_1.jpg',
+                  alt: 'Dummy image'
+                },
+                title: 'FILA',
+                type: 'Gürteltasche',
+                price: '19.90'
+              }
+            ]
           }
         },
 
