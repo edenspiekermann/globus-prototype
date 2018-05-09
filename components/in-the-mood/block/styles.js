@@ -4,6 +4,7 @@ import tokens from '../../../tokens';
 
 export default css`
   .in-the-mood-block {
+    height: 100%;
     position: relative;
   }
 
