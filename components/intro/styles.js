@@ -13,18 +13,37 @@ export default css`
 
   @media ${tokens.mq.desktop} {
     .intro {
-      margin-bottom: 180px;
+      margin-bottom: 15%;
     }
   }
 
   @media ${tokens.mq.large} {
     .intro {
-      padding-bottom: 10%;
-      margin-bottom: 5%;
+      margin-bottom: 15%;
     }
 
     .intro--reversed {
-      margin-bottom: 10%;
+      margin-bottom: 25%;
+    }
+  }
+
+  @media ${tokens.mq.xlarge} {
+    .intro {
+      margin-bottom: 20%;
+    }
+    
+    .intro--reversed {
+      margin-bottom: 30%;
+    }
+  }
+
+  @media ${tokens.mq.xxlarge} {
+    .intro {
+      margin-bottom: 25%;
+    }
+    
+    .intro--reversed {
+      margin-bottom: 35%;
     }
   }
 

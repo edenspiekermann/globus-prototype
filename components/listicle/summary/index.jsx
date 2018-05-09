@@ -81,14 +81,7 @@ export default class extends React.Component {
             .summary {
               flex-direction: row;
               padding-bottom: 80px;
-              padding-left: 20px;
               padding-top: 80px;
-            }
-          }
-
-          @media ${tokens.mq.large} {
-            .summary {
-              padding-left: 100px;
             }
           }
 
@@ -116,7 +109,7 @@ export default class extends React.Component {
               order: 2;
               width: 50%;
               margin-top: 80px;
-              transform: translateX(-7.5%);
+              flex: 1;
             }
           }
 
@@ -140,9 +133,8 @@ export default class extends React.Component {
               min-width: 240px;
               order: 1;
               padding: 0;
-              transform: translateX(7.5%);
+              transform: translateX(30%);
               width: 33.333%;
-              min-width: 480px;
             }
           }
 
@@ -158,6 +150,7 @@ export default class extends React.Component {
           @media ${tokens.mq.large} {
             .summary__title {
               font-size: 3.5rem;
+              min-width: 400px;
             }
           }
 

@@ -8,6 +8,12 @@ export default css`
     width: 75%;
   }
 
+  @media ${tokens.mq.phablet} {
+    .intro-image--reversed {
+      width: 50%;
+    }
+  }
+
   @media ${tokens.mq.desktop} {
     .intro-image {
       width: 40%;
