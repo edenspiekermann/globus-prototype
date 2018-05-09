@@ -100,8 +100,13 @@ export default css`
     width: 100%;
   }
 
+  .title--center-overlay-right {
+    margin-bottom: -60px;
+  }
+
   @media ${tokens.mq.tablet} {
     .title--center-overlay-right {
+      margin-bottom: 0;
       position: absolute;
       right: -180px;
       text-align: right;

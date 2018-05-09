@@ -223,7 +223,7 @@ export default {
 
           button: {
             label: 'Shop the look',
-            url: ''
+            url: '#'
           },
 
           style: {
