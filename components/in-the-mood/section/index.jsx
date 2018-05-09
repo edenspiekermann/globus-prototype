@@ -2,9 +2,17 @@ import Block from '../block';
 
 import styles from './styles';
 
-export default ({ blocks }) => (
-  <section className="in-the-mood-section">
+export default ({ blocks, collapse }) => (
+  <section
+    className={`in-the-mood-section ${
+      collapse ? 'in-the-mood-section--collapse' : ''
+    }`}
+  >
     <style jsx>{styles}</style>
-    {blocks.map(_ => <Block {..._} />)}
+    {blocks.map(_ => (
+      <div className="in-the-mood-section__container">
+        <Block {..._} />
+      </div>
+    ))}
   </section>
 );

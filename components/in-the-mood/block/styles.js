@@ -4,19 +4,7 @@ import tokens from '../../../tokens';
 
 export default css`
   .in-the-mood-block {
-    line-height: 0;
     position: relative;
-    width: 100%;
-  }
-
-  .in-the-mood-block + .in-the-mood-block {
-    margin-top: 60px;
-  }
-
-  @media ${tokens.mq.tablet} {
-    .in-the-mood-block + .in-the-mood-block {
-      margin-top: 0;
-    }
   }
 
   .in-the-mood-block--padded .in-the-mood-block__image-container,

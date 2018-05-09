@@ -179,6 +179,7 @@ export default {
     },
 
     {
+      collapse: true,
       blocks: [
         {
           image: {
