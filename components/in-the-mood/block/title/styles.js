@@ -7,61 +7,101 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     margin-bottom: 0;
     margin-top: 0;
-    position: absolute;
-    top: 40px;
     z-index: 2;
   }
 
+  @media ${tokens.mq.desktop} {
+    .title {
+      position: absolute;
+      top: 0;
+    }
+  }
+
   .title--standalone {
+    padding-left: 40px;
+    padding-right: 40px;
     position: relative;
   }
 
-  .title--standalone.title--center {
-    transform: translateX(-50%);
+  @media ${tokens.mq.desktop} {
+    .title--standalone.title--center {
+      transform: translateX(-50%);
+    }
   }
 
   .title--large {
-    font-size: 192px;
-    line-height: ${160 / 192};
+    font-size: 64px;
+    line-height: ${56 / 64};
+  }
+
+  @media ${tokens.mq.tablet} {
+    .title--large {
+      font-size: 192px;
+      line-height: ${160 / 192};
+    }
   }
 
   .title--medium {
-    font-size: 96px;
+    font-size: 48px;
     line-height: 1;
   }
 
+  @media ${tokens.mq.tablet} {
+    .title--medium {
+      font-size: 96px;
+    }
+  }
+
   .title--small {
-    font-size: 80px;
+    font-size: 48px;
     line-height: 1;
+  }
+
+  @media ${tokens.mq.tablet} {
+    .title--small {
+      font-size: 80px;
+    }
   }
 
   .title--left,
   .title--right {
+    margin-top: -120px;
     width: 50%;
   }
 
   .title--left {
-    left: 40px;
+    left: 0;
+    margin-left: 40px;
   }
 
   .title--right {
-    right: 40px;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 40px;
+    right: 0;
     text-align: right;
   }
 
   .title--center {
-    left: 50%;
     max-width: 1200px;
     text-align: center;
-    top: 0;
-    transform: translateX(-50%) translateY(-50%);
     width: 100%;
   }
 
-  .title--center-overlay-right {
-    right: -180px;
-    text-align: right;
-    top: 50%;
-    transform: translateY(-50%);
+  @media ${tokens.mq.desktop} {
+    .title--center {
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  @media ${tokens.mq.desktop} {
+    .title--center-overlay-right {
+      right: -180px;
+      text-align: right;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 `;

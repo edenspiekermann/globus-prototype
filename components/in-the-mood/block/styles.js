@@ -4,11 +4,18 @@ import tokens from '../../../tokens';
 
 export default css`
   .in-the-mood-block {
+    line-height: 0;
     position: relative;
     width: 100%;
   }
 
   .in-the-mood-block--padded {
-    padding: 120px;
+    padding: 40px;
+  }
+
+  @media ${tokens.mq.tablet} {
+    .in-the-mood-block--padded {
+      padding: 120px;
+    }
   }
 `;

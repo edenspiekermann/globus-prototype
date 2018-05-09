@@ -7,11 +7,13 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     font-size: 24px;
     line-height: ${30 / 24};
+    padding: 40px;
   }
 
   @media ${tokens.mq.tablet} {
     .content {
       max-width: 25%;
+      padding: 0;
       position: absolute;
       top: 40px;
     }
@@ -23,6 +25,11 @@ export default css`
 
   .content--right {
     right: 40px;
-    text-align: right;
+  }
+
+  @media ${tokens.mq.tablet} {
+    .content--right {
+      text-align: right;
+    }
   }
 `;
