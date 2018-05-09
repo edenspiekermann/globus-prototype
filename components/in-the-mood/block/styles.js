@@ -32,4 +32,10 @@ export default css`
     transform: translateY(50%) translateX(-50%);
     z-index: 2;
   }
+
+  .in-the-mood-block__video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;

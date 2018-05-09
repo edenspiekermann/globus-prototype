@@ -121,6 +121,10 @@ export default {
         {
           video: {
             url: '/static/videos/GLOBUS_COACHELLA_h264.mp4'
+          },
+
+          style: {
+            backgroundColor: 'black'
           }
         }
       ]

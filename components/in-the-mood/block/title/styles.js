@@ -102,6 +102,7 @@ export default css`
 
   @media ${tokens.mq.tablet} {
     .title--center-overlay-right {
+      position: absolute;
       right: -180px;
       text-align: right;
       top: 50%;

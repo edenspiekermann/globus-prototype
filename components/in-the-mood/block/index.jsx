@@ -43,7 +43,12 @@ export default ({
       <div className="in-the-mood-block__video-container">
         <div className="in-the-mood-block__inner-media-container">
           {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-          <video src={video.url} autoPlay muted />
+          <video
+            src={video.url}
+            autoPlay
+            muted
+            className="in-the-mood-block__video"
+          />
 
           {button && (
             <div className="in-the-mood-block__button-container">
