@@ -6,6 +6,7 @@ module.exports = {
       '/listicle-wine': { page: '/listicle-wine' },
       '/thesis-shoes': { page: '/thesis-shoes' },
       '/thesis': { page: '/thesis' },
+      '/in-the-mood': { page: '/in-the-mood' }
     };
-  },
+  }
 };
