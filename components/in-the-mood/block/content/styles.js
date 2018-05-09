@@ -7,15 +7,16 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     font-size: 24px;
     line-height: ${30 / 24};
-    padding: 40px;
+    padding: 20px 40px;
   }
 
   @media ${tokens.mq.tablet} {
     .content {
-      max-width: 25%;
+      max-width: 600px;
       padding: 0;
       position: absolute;
       top: 40px;
+      width: 60%;
     }
   }
 
@@ -37,7 +38,7 @@ export default css`
     margin-top: 0;
   }
 
-  content__paragraph:last-child {
+  .content__paragraph:last-child {
     margin-bottom: 0;
   }
 `;

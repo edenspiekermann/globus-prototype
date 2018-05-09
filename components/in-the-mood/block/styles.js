@@ -17,7 +17,7 @@ export default css`
   @media ${tokens.mq.tablet} {
     .in-the-mood-block--padded .in-the-mood-block__image-container,
     .in-the-mood-block--padded .in-the-mood-block__video-container {
-      padding: 120px;
+      padding: 120px 60px;
     }
   }
 

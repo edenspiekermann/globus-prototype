@@ -19,15 +19,11 @@ export default css`
   }
 
   .title--standalone {
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 40px;
     padding-right: 40px;
-    position: relative;
-  }
-
-  @media ${tokens.mq.tablet} {
-    .title--standalone.title--center {
-      transform: translateX(-50%);
-    }
+    position: static;
   }
 
   .title--large {
@@ -94,15 +90,14 @@ export default css`
   .title--center {
     max-width: 1200px;
     text-align: center;
-    width: 100%;
   }
 
-  @media ${tokens.mq.tablet} {
-    .title--center {
-      left: 50%;
-      top: 0;
-      transform: translateX(-50%) translateY(-50%);
-    }
+  .title--center:not(.title--standalone) {
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
   }
 
   @media ${tokens.mq.tablet} {
