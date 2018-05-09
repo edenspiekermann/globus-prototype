@@ -32,4 +32,12 @@ export default css`
       text-align: right;
     }
   }
+
+  .content__paragraph:first-child {
+    margin-top: 0;
+  }
+
+  content__paragraph:last-child {
+    margin-bottom: 0;
+  }
 `;
