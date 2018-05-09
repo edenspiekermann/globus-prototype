@@ -16,7 +16,13 @@ export default css`
   }
 
   .in-the-mood-section + .in-the-mood-section {
-    margin-top: 120px;
+    margin-top: 60px;
+  }
+
+  @media ${tokens.mq.tablet} {
+    .in-the-mood-section + .in-the-mood-section {
+      margin-top: 120px;
+    }
   }
 
   .in-the-mood-section__container {
