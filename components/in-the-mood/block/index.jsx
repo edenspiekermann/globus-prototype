@@ -8,7 +8,7 @@ export default ({
   button,
   title,
   content,
-  style = { padded: false, backgroundColor: false },
+  style = { padded: false, backgroundColor: 'transparent' },
   image,
   video
 }) => (

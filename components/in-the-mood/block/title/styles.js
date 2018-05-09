@@ -62,8 +62,8 @@ export default css`
 
   .title--left,
   .title--right {
-    margin-top: -120px;
-    width: 80%;
+    margin-top: -60px;
+    width: 60%;
   }
 
   @media ${tokens.mq.tablet} {
