@@ -10,14 +10,56 @@ export default css`
     position: relative;
     z-index: 3;
     align-self: center;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .title--large {
+    padding: 30px;
+    margin-top: -80px;
   }
 
   @media ${tokens.mq.tablet} {
-    .title {
+    .title--large {
       position: absolute;
-      top: 0;
+      top: 30px;
+      padding: 0;
+      margin-top: 0;
+    }
+    
+    .title--large.title--center {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    
+    .title--large.title--right {
+      right: 30px;
+      max-width: 50%;
+      text-align: right;
+    }
+    
+    .title--large.title--left {
+      right: 30px;
+      max-width: 50%;
+      text-align: left;
     }
   }
+
+  @media ${tokens.mq.desktop} {
+      .title--large {
+        top: 60px;
+      }
+      
+      .title--large.title--right {
+        right: 60px;
+      }
+      
+      .title--large.title--left {
+        right: 60px;
+      }
+    }
 
   .title--standalone {
     margin-left: auto;
@@ -45,20 +87,31 @@ export default css`
   }
 
   .title--large {
-    font-size: 64px;
-    line-height: ${56 / 64};
+    font-size: 80px;
+    line-height: 0.875;
   }
 
   @media ${tokens.mq.tablet} {
     .title--large {
+      font-size: 96px;
+    }
+  }
+
+  @media ${tokens.mq.desktop} {
+    .title--large {
+      font-size: 128px;
+    }
+  }
+
+  @media ${tokens.mq.large} {
+    .title--large {
       font-size: 192px;
-      line-height: ${160 / 192};
     }
   }
 
   .title--medium {
     font-size: 48px;
-    line-height: 1;
+    line-height: 0.875;
   }
 
   @media ${tokens.mq.tablet} {
@@ -69,7 +122,7 @@ export default css`
 
   .title--small {
     font-size: 48px;
-    line-height: 1;
+    line-height: 0.875;
   }
 
   @media ${tokens.mq.phablet} {
@@ -79,6 +132,19 @@ export default css`
   }
 
   @media ${tokens.mq.desktop} {
+    .title--left {
+      text-align: left;
+    }
+
+    .title--right {
+      text-align: right;
+    }
+
+    .title--center {
+      text-align: center;
+      max-width: 1800px;
+    }
+    
     .title--small {
       font-size: 64px;
     }
@@ -106,19 +172,6 @@ export default css`
     .title--small.title--right {
       transform: translateX(200px);
     }
-  }
-
-  .title--left {
-    text-align: left;
-  }
-
-  .title--right {
-    text-align: right;
-  }
-
-  .title--center {
-    text-align: center;
-    max-width: 1800px;
   }
 
 `;

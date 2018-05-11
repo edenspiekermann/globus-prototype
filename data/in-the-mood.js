@@ -16,7 +16,7 @@ export default {
     },
 
     {
-      collapse: true,
+      collapse: false,
       blocks: [
         {
           image: {

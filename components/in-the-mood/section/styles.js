@@ -8,6 +8,22 @@ export default css`
     flex-direction: column;
   }
 
+  .in-the-mood-section:last-child {
+    margin-bottom: 80px;
+  }
+
+  @media ${tokens.mq.tablet} {
+    .in-the-mood-section:last-child {
+      margin-bottom: 160px;
+    }
+  }
+
+  @media ${tokens.mq.large} {
+    .in-the-mood-section:last-child {
+      margin-bottom: 240px;
+    }
+  }
+
   @media ${tokens.mq.desktop} {
     .in-the-mood-section {
       flex-direction: row;
