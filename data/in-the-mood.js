@@ -16,6 +16,7 @@ export default {
     },
 
     {
+      collapse: true,
       blocks: [
         {
           image: {
@@ -129,15 +130,6 @@ export default {
     {
       blocks: [
         {
-          title: {
-            label:
-              'Ziersteine, Strass und Glitzer rücken den Fuss in den Fokus.',
-            align: 'center-overlay-right',
-            size: 'small'
-          }
-        },
-
-        {
           image: {
             url: '/static/images/california_sandals.png',
             alt: ''
@@ -145,6 +137,16 @@ export default {
 
           style: {
             padded: true
+          }
+        }, {
+          title: {
+            label:
+              'Ziersteine, Strass und Glitzer rücken den Fuss in den Fokus.',
+            align: 'left',
+            size: 'small',
+            style: {
+              backgroundColor: '#F2B661'
+            }
           }
         }
       ]
@@ -179,7 +181,6 @@ export default {
     },
 
     {
-      collapse: true,
       blocks: [
         {
           image: {

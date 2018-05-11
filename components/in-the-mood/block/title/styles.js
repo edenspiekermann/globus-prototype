@@ -9,6 +9,7 @@ export default css`
     margin-top: 0;
     position: relative;
     z-index: 3;
+    align-self: center;
   }
 
   @media ${tokens.mq.tablet} {
@@ -21,9 +22,26 @@ export default css`
   .title--standalone {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 30px;
     position: static;
+  }
+
+  @media ${tokens.mq.phablet} {
+    .title--standalone {
+      padding: 60px;
+    }
+  }
+
+  @media ${tokens.mq.tablet} {
+    .title--standalone {
+      padding: 120px;
+    }
+  }
+
+  @media ${tokens.mq.large} {
+    .title--standalone {
+      padding: 160px;
+    }
   }
 
   .title--large {
@@ -54,64 +72,53 @@ export default css`
     line-height: 1;
   }
 
-  @media ${tokens.mq.tablet} {
+  @media ${tokens.mq.phablet} {
     .title--small {
-      font-size: 80px;
+      font-size: 56px;
     }
   }
 
-  .title--left,
-  .title--right {
-    margin-top: -60px;
-    width: 60%;
+  @media ${tokens.mq.desktop} {
+    .title--small {
+      font-size: 64px;
+    }
+    
+    .title--small.title--left {
+      padding-left: 0;
+      transform: translateX(-80px);
+    }
+    
+    .title--small.title--right {
+      padding-right: 0;
+      transform: translateX(80px);
+    }
   }
 
-  @media ${tokens.mq.tablet} {
-    .title--left,
-    .title--right {
-      margin-top: 0;
-      width: 50%;
+  @media ${tokens.mq.large} {
+    .title--small {
+      font-size: 80px;
+    }
+    
+    .title--small.title--left {
+      transform: translateX(-200px);
+    }
+    
+    .title--small.title--right {
+      transform: translateX(200px);
     }
   }
 
   .title--left {
-    left: 0;
-    margin-left: 40px;
+    text-align: left;
   }
 
   .title--right {
-    align-self: flex-end;
-    margin-left: auto;
-    margin-right: 40px;
-    right: 0;
     text-align: right;
   }
 
   .title--center {
-    max-width: 1200px;
     text-align: center;
+    max-width: 1800px;
   }
 
-  .title--center:not(.title--standalone) {
-    left: 50%;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%) translateY(-50%);
-    width: 100%;
-  }
-
-  .title--center-overlay-right {
-    margin-bottom: -60px;
-  }
-
-  @media ${tokens.mq.tablet} {
-    .title--center-overlay-right {
-      margin-bottom: 0;
-      position: absolute;
-      right: -180px;
-      text-align: right;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
 `;

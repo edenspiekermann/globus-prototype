@@ -8,7 +8,7 @@ export default css`
     flex-direction: column;
   }
 
-  @media ${tokens.mq.tablet} {
+  @media ${tokens.mq.desktop} {
     .in-the-mood-section {
       flex-direction: row;
       flex-wrap: nowrap;
@@ -16,33 +16,27 @@ export default css`
   }
 
   .in-the-mood-section + .in-the-mood-section {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
   @media ${tokens.mq.tablet} {
     .in-the-mood-section + .in-the-mood-section {
-      margin-top: 120px;
+      margin-top: 160px;
     }
+  }
+
+  @media ${tokens.mq.large} {
+    .in-the-mood-section + .in-the-mood-section {
+      margin-top: 240px;
+    }
+  }
+
+  .in-the-mood-section + .in-the-mood-section--collapse {
+    margin-top: 0;
   }
 
   .in-the-mood-section__container {
     line-height: 0;
     width: 100%;
-  }
-
-  .in-the-mood-section__container + .in-the-mood-section__container {
-    margin-top: 60px;
-  }
-
-  .in-the-mood-section--collapse
-    .in-the-mood-section__container
-    + .in-the-mood-section__container {
-    margin-top: 0;
-  }
-
-  @media ${tokens.mq.tablet} {
-    .in-the-mood-section__container + .in-the-mood-section__container {
-      margin-top: 0;
-    }
   }
 `;

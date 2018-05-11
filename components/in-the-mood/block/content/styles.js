@@ -6,31 +6,54 @@ export default css`
   .content {
     font-family: ${tokens.fonts.founders.family};
     font-size: 24px;
-    line-height: ${30 / 24};
-    padding: 20px 40px;
+    line-height: 1.25;
+    padding: 30px 30px 60px 30px;
   }
 
-  @media ${tokens.mq.tablet} {
+  @media ${tokens.mq.desktop} {
     .content {
-      max-width: 600px;
+      max-width: 160px;
       padding: 0;
+      font-size: 20px;
       position: absolute;
-      top: 40px;
+      top: 30px;
       width: 60%;
     }
   }
 
+  @media ${tokens.mq.large} {
+    .content {
+      max-width: 320px;
+      font-size: 24px;
+    }
+  }
+
   .content--left {
-    left: 40px;
+    left: 30px;
   }
 
   .content--right {
-    right: 40px;
+    right: 30px;
   }
 
-  @media ${tokens.mq.tablet} {
+  @media ${tokens.mq.desktop} {
     .content--right {
       text-align: right;
+    }
+  }
+
+  @media ${tokens.mq.large} {
+    .content--left,
+    .content--right {
+      top: 60px;
+    }
+    
+    .content--right {
+      right: 60px;
+    }
+    
+    .content--left {
+      left: 60px;
     }
   }
 

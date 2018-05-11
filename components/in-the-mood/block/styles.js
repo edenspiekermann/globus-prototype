@@ -8,15 +8,34 @@ export default css`
     position: relative;
   }
 
+  @media ${tokens.mq.desktop} {
+    .in-the-mood-block {
+      display: flex;
+    }
+  }
+
+  .in-the-mood-block__image-container,
+  .in-the-mood-block__video-container {
+    width: 100%;
+    align-self: center;
+  }
+
   .in-the-mood-block--padded .in-the-mood-block__image-container,
   .in-the-mood-block--padded .in-the-mood-block__video-container {
-    padding: 40px 80px;
+    padding: 60px;
   }
 
   @media ${tokens.mq.tablet} {
     .in-the-mood-block--padded .in-the-mood-block__image-container,
     .in-the-mood-block--padded .in-the-mood-block__video-container {
-      padding: 120px 60px;
+      padding: 120px;
+    }
+  }
+
+  @media ${tokens.mq.large} {
+    .in-the-mood-block--padded .in-the-mood-block__image-container,
+    .in-the-mood-block--padded .in-the-mood-block__video-container {
+      padding: 160px;
     }
   }
 
