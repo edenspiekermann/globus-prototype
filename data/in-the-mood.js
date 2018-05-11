@@ -172,15 +172,22 @@ export default {
           title: {
             label: 'Valley Life'
           },
+          
           image: {
             url: '/static/images/california_cactus-01.png',
             alt: 'California Cactus'
+          },
+
+          style: {
+            padded: true
           }
         }
       ]
     },
 
     {
+      collapse: true,
+
       blocks: [
         {
           image: {
@@ -215,6 +222,8 @@ export default {
     },
 
     {
+      collapse: true,
+      
       blocks: [
         {
           image: {
