@@ -22,7 +22,14 @@ export default css`
 
   .in-the-mood-block--padded .in-the-mood-block__image-container,
   .in-the-mood-block--padded .in-the-mood-block__video-container {
-    padding: 60px;
+    padding: 30px;
+  }
+
+  @media ${tokens.mq.phone} {
+    .in-the-mood-block--padded .in-the-mood-block__image-container,
+    .in-the-mood-block--padded .in-the-mood-block__video-container {
+      padding: 60px;
+    }
   }
 
   @media ${tokens.mq.tablet} {

@@ -60,7 +60,13 @@ export default css`
     line-height: 0.875;
     
     padding: 30px;
-    transform: translateY(-120px);
+    transform: translateY(-90px);
+  }
+
+  @media ${tokens.mq.phone} {
+    .title--large {
+      transform: translateY(-120px);
+    }
   }
 
   @media ${tokens.mq.phablet} {
