@@ -166,7 +166,7 @@ export default {
           },
 
           button: {
-            label: 'Make-Up ansehen',
+            label: 'Shop Make-Up',
             url: '#'
           },
 
