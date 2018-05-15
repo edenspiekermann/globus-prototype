@@ -5,9 +5,28 @@ import tokens from '../../../../tokens';
 export default css`
   .content {
     font-family: ${tokens.fonts.founders.family};
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.25;
-    padding: 30px 30px 60px 30px;
+    padding: 40px 30px 30px 30px;
+  }
+
+  @media ${tokens.mq.phone} {
+    .content {
+      font-size: 20px;
+      padding: 60px;
+    }
+  }
+
+  @media ${tokens.mq.phablet} {
+    .content {
+      font-size: 24px;
+    }
+  }
+
+  @media ${tokens.mq.tablet} {
+    .content {
+      padding: 60px 120px;
+    }
   }
 
   @media ${tokens.mq.desktop} {
