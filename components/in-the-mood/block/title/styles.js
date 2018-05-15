@@ -16,39 +16,45 @@ export default css`
 
   .title--large {
     padding: 30px;
-    margin-top: -80px;
+    transform: translateY(-135px);
   }
 
   @media ${tokens.mq.tablet} {
     .title--large {
       position: absolute;
-      top: 30px;
       padding: 0;
       margin-top: 0;
+      transform: none;
     }
     
     .title--large.title--center {
+      top: 65px;
       width: 100%;
       max-width: 100%;
       padding-left: 60px;
       padding-right: 60px;
     }
     
+    .title--large.title--left, 
+    .title--large.title--right {
+      top: 30px;
+      max-width: 50%;
+    }
+    
     .title--large.title--right {
       right: 30px;
-      max-width: 50%;
       text-align: right;
     }
     
     .title--large.title--left {
-      right: 30px;
-      max-width: 50%;
+      left: 30px;
       text-align: left;
     }
   }
 
   @media ${tokens.mq.desktop} {
-      .title--large {
+      .title--large.title--left, 
+      .title--large.title--right {
         top: 60px;
       }
       
@@ -57,7 +63,11 @@ export default css`
       }
       
       .title--large.title--left {
-        right: 60px;
+        left: 60px;
+      }
+    
+      .title--large.title--center {
+        top: 50px;
       }
     }
 
