@@ -8,7 +8,7 @@ export default {
             align: 'right'
           },
           image: {
-            url: '/static/images/california_chair-dress.png',
+            url: '/static/images/in-the-mood/california_chair-dress.png',
             alt: 'Under the desert sun'
           },
 
@@ -24,7 +24,7 @@ export default {
       blocks: [
         {
           image: {
-            url: '/static/images/california_clothes-01.png',
+            url: '/static/images/in-the-mood/california_clothes-01.png',
             alt: 'Kleider'
           },
 
@@ -39,7 +39,7 @@ export default {
             products: [
               {
                 image: {
-                  url: '/static/images/nachthemd_3.jpg',
+                  url: '/static/images/products/nachthemd_3.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'Globus Essentials',
@@ -48,7 +48,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/nachthemd_2.jpg',
+                  url: '/static/images/products/nachthemd_2.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'Globus Essentials',
@@ -57,7 +57,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/nachthemd_1.jpg',
+                  url: '/static/images/products/nachthemd_1.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'Globus Essentials',
@@ -85,7 +85,7 @@ export default {
       blocks: [
         {
           image: {
-            url: '/static/images/california_clothes-03.png',
+            url: '/static/images/in-the-mood/california_clothes-03.png',
             alt: 'California clothes'
           },
 
@@ -100,7 +100,7 @@ export default {
             products: [
               {
                 image: {
-                  url: '/static/images/desert-look_1.jpg',
+                  url: '/static/images/products/desert-look_1.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'POM',
@@ -109,7 +109,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/desert-look_2.jpg',
+                  url: '/static/images/products/desert-look_2.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'PRADA',
@@ -118,7 +118,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/desert-look_3.jpg',
+                  url: '/static/images/products/desert-look_3.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'GLOBUS ESSENTIALS',
@@ -161,7 +161,7 @@ export default {
           },
 
           image: {
-            url: '/static/images/california_make-up.png',
+            url: '/static/images/in-the-mood/california_make-up.png',
             alt: 'California Make-Up'
           },
 
@@ -176,7 +176,7 @@ export default {
             products: [
               {
                 image: {
-                  url: '/static/images/make-up_1.jpg',
+                  url: '/static/images/products/make-up_1.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'YSL',
@@ -185,7 +185,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/make-up_2.jpg',
+                  url: '/static/images/products/make-up_2.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'Clarins',
@@ -194,7 +194,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/make-up_3.jpg',
+                  url: '/static/images/products/make-up_3.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'Shiseido',
@@ -224,7 +224,7 @@ export default {
         
         {
           image: {
-            url: '/static/images/california_sandals.png',
+            url: '/static/images/in-the-mood/california_sandals.png',
             alt: ''
           },
           
@@ -239,7 +239,7 @@ export default {
             products: [
               {
                 image: {
-                  url: '/static/images/sandalen_1.jpg',
+                  url: '/static/images/products/sandalen_1.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'ALMA EN PENA',
@@ -248,7 +248,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/sandalen_2.jpg',
+                  url: '/static/images/products/sandalen_2.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'MICHAEL KORS',
@@ -257,7 +257,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/sandalen_3.jpg',
+                  url: '/static/images/products/sandalen_3.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'ALMA EN PENA',
@@ -299,7 +299,7 @@ export default {
           },
           
           image: {
-            url: '/static/images/california_cactus-01.png',
+            url: '/static/images/in-the-mood/california_cactus-01.png',
             alt: 'California Cactus'
           },
 
@@ -315,7 +315,7 @@ export default {
       blocks: [
         {
           image: {
-            url: '/static/images/california_lamps.png',
+            url: '/static/images/in-the-mood/california_lamps.png',
             alt: 'Ansammlung von Lampen'
           },
 
@@ -330,7 +330,7 @@ export default {
             products: [
               {
                 image: {
-                  url: '/static/images/lampen_1.jpg',
+                  url: '/static/images/products/lampen_1.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'Calvin Klein',
@@ -339,7 +339,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/lampen_2.jpg',
+                  url: '/static/images/products/lampen_2.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'FILA',
@@ -348,7 +348,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/lampen_3.jpg',
+                  url: '/static/images/products/lampen_3.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'FILA',
@@ -367,7 +367,7 @@ export default {
           },
 
           image: {
-            url: '/static/images/california_cactus-02.png',
+            url: '/static/images/in-the-mood/california_cactus-02.png',
             alt: 'Fotoset'
           },
 
@@ -384,7 +384,7 @@ export default {
       blocks: [
         {
           image: {
-            url: '/static/images/california_clothes-02.png',
+            url: '/static/images/in-the-mood/california_clothes-02.png',
             alt: ''
           },
 
@@ -399,7 +399,7 @@ export default {
             products: [
               {
                 image: {
-                  url: '/static/images/anzug_1.jpg',
+                  url: '/static/images/products/anzug_1.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'FIL NOIR',
@@ -408,7 +408,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/anzug_2.jpg',
+                  url: '/static/images/products/anzug_2.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'Michael Kors',
@@ -417,7 +417,7 @@ export default {
               },
               {
                 image: {
-                  url: '/static/images/anzug_3.jpg',
+                  url: '/static/images/products/anzug_3.jpg',
                   alt: 'Dummy image'
                 },
                 title: 'L.B.M. 1911',
