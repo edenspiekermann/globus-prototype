@@ -221,13 +221,13 @@ export default {
             }
           }
         },
-        
+
         {
           image: {
             url: '/static/images/in-the-mood/california_sandals.png',
             alt: ''
           },
-          
+
           button: {
             label: 'Sandalen shoppen',
             url: '#'
@@ -297,7 +297,7 @@ export default {
             label: 'Valley Life',
             align: 'center'
           },
-          
+
           image: {
             url: '/static/images/in-the-mood/california_cactus-01.png',
             alt: 'California Cactus'
