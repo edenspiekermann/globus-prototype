@@ -58,34 +58,33 @@ export default css`
   .title--large {
     font-size: 64px;
     line-height: 0.875;
-    
+    margin-top: -90px;
     padding: 30px;
-    transform: translateY(-90px);
   }
 
   @media ${tokens.mq.phone} {
     .title--large {
-      transform: translateY(-120px);
+      margin-top: -120px;
     }
   }
 
   @media ${tokens.mq.phablet} {
     .title--large {
       font-size: 80px;
-      transform: translateY(-135px);
+      margin-top: -135px;
     }
   }
 
   @media ${tokens.mq.tablet} {
     .title--large {
       font-size: 96px;
-      
+
       position: absolute;
       padding: 0;
       margin-top: 0;
       transform: none;
     }
-    
+
     .title--large.title--center {
       top: 65px;
       width: 100%;
@@ -93,18 +92,18 @@ export default css`
       padding-left: 60px;
       padding-right: 60px;
     }
-    
-    .title--large.title--left, 
+
+    .title--large.title--left,
     .title--large.title--right {
       top: 30px;
       max-width: 50%;
     }
-    
+
     .title--large.title--right {
       right: 30px;
       text-align: right;
     }
-    
+
     .title--large.title--left {
       left: 30px;
       text-align: left;
@@ -116,7 +115,7 @@ export default css`
       font-size: 128px;
     }
 
-    .title--large.title--left, 
+    .title--large.title--left,
     .title--large.title--right {
       top: 60px;
     }
@@ -166,16 +165,16 @@ export default css`
     }
   }
 
-  @media ${tokens.mq.desktop} {    
+  @media ${tokens.mq.desktop} {
     .title--small {
       font-size: 64px;
     }
-    
+
     .title--small.title--left {
       padding-left: 0;
       transform: translateX(-80px);
     }
-    
+
     .title--small.title--right {
       padding-right: 0;
       transform: translateX(80px);
@@ -186,11 +185,11 @@ export default css`
     .title--small {
       font-size: 80px;
     }
-    
+
     .title--small.title--left {
       transform: translateX(-200px);
     }
-    
+
     .title--small.title--right {
       transform: translateX(200px);
     }

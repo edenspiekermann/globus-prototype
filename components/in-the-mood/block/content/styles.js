@@ -7,13 +7,21 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     font-size: 16px;
     line-height: 1.25;
-    padding: 40px 30px 30px 30px;
+    padding: 0 30px 30px 30px;
+  }
+
+  .content--has-image-and-shoppinglayer {
+    padding-top: 40px;
   }
 
   @media ${tokens.mq.phone} {
     .content {
       font-size: 20px;
-      padding: 60px;
+      padding: 0 60px 60px 60px;
+    }
+
+    .content--has-image-and-shoppinglayer {
+      padding-top: 60px;
     }
   }
 
@@ -66,11 +74,11 @@ export default css`
     .content--right {
       top: 60px;
     }
-    
+
     .content--right {
       right: 60px;
     }
-    
+
     .content--left {
       left: 60px;
     }

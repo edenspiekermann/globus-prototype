@@ -133,7 +133,13 @@ export default class extends React.Component {
 
         {title && <BlockTitle {...title} standalone={!image} />}
 
-        {content && <BlockContent {...content} />}
+        {content && (
+          <BlockContent
+            {...content}
+            hasShoppingLayer={!!shoppingLayer}
+            blockHasImage={!!image}
+          />
+        )}
       </div>
     );
   }
