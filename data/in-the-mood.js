@@ -215,10 +215,7 @@ export default {
             label:
               'Ziersteine, Strass und Glitzer rücken den Fuss in den Fokus.',
             align: 'right',
-            size: 'small',
-            style: {
-              backgroundColor: '#F2B661'
-            }
+            size: 'small'
           }
         },
 
@@ -268,7 +265,8 @@ export default {
           },
 
           style: {
-            padded: true
+            padded: true,
+            backgroundColor: '#F2B661'
           }
         }
       ]
