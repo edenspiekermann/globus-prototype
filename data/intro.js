@@ -44,7 +44,7 @@ export default [
 
   {
     image: {
-      url: '/static/images/listicle/intro_4.png',
+      url: '/static/images/listicle/intro_4.jpg',
       alt: 'Wein'
     },
     number: '6',
