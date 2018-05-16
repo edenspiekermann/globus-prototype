@@ -20,7 +20,6 @@ export default {
     },
 
     {
-      collapse: false,
       blocks: [
         {
           image: {
@@ -81,7 +80,6 @@ export default {
     },
 
     {
-      collapse: false,
       blocks: [
         {
           image: {
@@ -150,7 +148,6 @@ export default {
     },
 
     {
-      collapse: false,
       blocks: [
         {
           content: {
@@ -208,7 +205,6 @@ export default {
     },
 
     {
-      collapse: false,
       blocks: [
         {
           title: {
@@ -273,7 +269,6 @@ export default {
     },
 
     {
-      collapse: false,
       blocks: [
         {
           video: {
@@ -288,7 +283,6 @@ export default {
     },
 
     {
-      collapse: false,
       blocks: [
         {
           title: {

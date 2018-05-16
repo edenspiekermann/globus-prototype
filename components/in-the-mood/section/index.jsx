@@ -2,7 +2,7 @@ import Block from '../block';
 
 import styles from './styles';
 
-export default ({ blocks, collapse }) => (
+export default ({ blocks, collapse = false }) => (
   <section
     className={`in-the-mood-section ${
       collapse ? 'in-the-mood-section--collapse' : ''
