@@ -8,6 +8,7 @@ export default css`
     font-size: 16px;
     line-height: 1.25;
     padding: 0 30px 30px 30px;
+    text-align: center;
   }
 
   .content--has-image-and-shoppinglayer {
@@ -27,24 +28,19 @@ export default css`
 
   @media ${tokens.mq.phablet} {
     .content {
-      font-size: 24px;
+      max-width: 160px;
+      padding: 0;
+      font-size: 16px;
+      position: absolute;
+      top: 30px;
+      width: 60%;
     }
   }
 
   @media ${tokens.mq.tablet} {
     .content {
-      padding: 60px 120px;
-    }
-  }
-
-  @media ${tokens.mq.desktop} {
-    .content {
-      max-width: 160px;
-      padding: 0;
+      max-width: 240px;
       font-size: 20px;
-      position: absolute;
-      top: 30px;
-      width: 60%;
     }
   }
 
@@ -63,7 +59,11 @@ export default css`
     right: 30px;
   }
 
-  @media ${tokens.mq.desktop} {
+  @media ${tokens.mq.phablet} {
+    .content--left {
+      text-align: left;
+    }
+    
     .content--right {
       text-align: right;
     }

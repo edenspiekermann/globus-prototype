@@ -15,10 +15,6 @@ export default css`
     }
   }
 
-  .in-the-mood-section + .in-the-mood-section {
-    padding-top: 80px;
-  }
-
   @media ${tokens.mq.tablet} {
     .in-the-mood-section + .in-the-mood-section {
       padding-top: 120px;
@@ -38,5 +34,12 @@ export default css`
   .in-the-mood-section__container {
     line-height: 0;
     width: 100%;
+    margin-bottom: 80px;
+  }
+
+  @media ${tokens.mq.tablet} {
+    .in-the-mood-section__container {
+      margin-bottom: inherit;
+    }
   }
 `;

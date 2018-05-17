@@ -142,8 +142,8 @@ export default css`
 
   /* Title Medium: Start */
   .title--medium {
-    font-size: 48px;
-    line-height: 0.875;
+    font-size: 42px;
+    line-height: 1;
   }
 
   @media ${tokens.mq.tablet} {
@@ -155,13 +155,13 @@ export default css`
 
   /* Title Small: Start */
   .title--small {
-    font-size: 40px;
-    line-height: 0.875;
+    font-size: 42px;
+    line-height: 1;
   }
 
-  @media ${tokens.mq.phablet} {
+  @media ${tokens.mq.tablet} {
     .title--small {
-      font-size: 56px;
+      font-size: 96px;
     }
   }
 
