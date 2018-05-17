@@ -261,8 +261,7 @@ export default {
           },
 
           style: {
-            padded: true,
-            backgroundColor: '#F2B661'
+            padded: true
           }
         }
       ]
