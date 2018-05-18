@@ -80,6 +80,8 @@ export default css`
     }
 
     .title--large.title--center {
+      font-size: 15vw;
+      
       top: 50px;
       width: 100%;
       max-width: 100%;
@@ -119,7 +121,7 @@ export default css`
     }
 
     .title--large.title--center {
-      top: 30px;
+      top: 0px;
     }
   }
   /* Title Large: End */
