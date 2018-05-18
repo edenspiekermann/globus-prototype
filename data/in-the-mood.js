@@ -461,7 +461,7 @@ export default [
       },
 
       {
-        collapse: false,
+        collapse: true,
         blocks: [
           {
             content: {
