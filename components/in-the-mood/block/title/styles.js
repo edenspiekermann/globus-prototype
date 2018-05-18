@@ -56,29 +56,23 @@ export default css`
 
   /* Title Large: Start */
   .title--large {
-    font-size: 64px;
+    font-size: 80px; //fallback
+    font-size: 20vw;
     line-height: 0.875;
-    margin-top: -90px;
+    margin-top: -15vw;
     padding: 30px;
-  }
-
-  @media ${tokens.mq.phone} {
-    .title--large {
-      margin-top: -120px;
-    }
   }
 
   @media ${tokens.mq.phablet} {
     .title--large {
-      font-size: 80px;
-      margin-top: -135px;
+      margin-top: -12.5vw;
     }
   }
 
   @media ${tokens.mq.tablet} {
     .title--large {
-      font-size: 96px;
-
+      font-size: 12.5vw;
+      
       position: absolute;
       padding: 0;
       margin-top: 0;
@@ -86,7 +80,7 @@ export default css`
     }
 
     .title--large.title--center {
-      top: 65px;
+      top: 50px;
       width: 100%;
       max-width: 100%;
       padding-left: 60px;
@@ -111,10 +105,6 @@ export default css`
   }
 
   @media ${tokens.mq.desktop} {
-    .title--large {
-      font-size: 128px;
-    }
-
     .title--large.title--left,
     .title--large.title--right {
       top: 60px;
@@ -129,13 +119,7 @@ export default css`
     }
 
     .title--large.title--center {
-      top: 50px;
-    }
-  }
-
-  @media ${tokens.mq.large} {
-    .title--large {
-      font-size: 192px;
+      top: 30px;
     }
   }
   /* Title Large: End */
