@@ -282,8 +282,8 @@ export default {
           },
 
           style: {
-            backgroundColor: 'tomato',
-            padded: true
+            backgroundColor: 'white',
+            padded: false
           }
         }
       ]
