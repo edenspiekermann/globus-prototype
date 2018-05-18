@@ -7,7 +7,7 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     font-size: 16px;
     line-height: 1.25;
-    padding: 0 30px 30px 30px;
+    padding: 30px;
     text-align: center;
   }
 
@@ -18,7 +18,7 @@ export default css`
   @media ${tokens.mq.phone} {
     .content {
       font-size: 20px;
-      padding: 0 60px 60px 60px;
+      padding: 30px 60px 60px 60px;
     }
 
     .content--has-image-and-shoppinglayer {

@@ -67,7 +67,7 @@ export default {
           }
         },
 
-        {
+        { 
           video: {
             url: '/static/videos/GLOBUS_COACHELLA_instagram.mp4'
           },
@@ -152,7 +152,7 @@ export default {
         {
           content: {
             content: [
-              'Clevere, unkomplizierte Produkte zaubern einen frischen Teint rund um ein natürliches Sommer­-Make­up — schillernde Highlights setzen Akzente'
+              'Clevere, unkomplizierte Produkte zaubern einen frischen Teint rund um ein natürliches Sommer-Make-Up — schillernde Highlights setzen Akzente'
             ],
             align: 'right'
           },
@@ -270,12 +270,20 @@ export default {
     {
       blocks: [
         {
+          content: {
+            content: [
+              'This is a caption text on a video tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.'
+            ],
+            align: 'left'
+          },
+          
           video: {
             url: '/static/videos/GLOBUS_COACHELLA_h264.mp4'
           },
 
           style: {
-            backgroundColor: 'black'
+            backgroundColor: 'tomato',
+            padded: true
           }
         }
       ]
