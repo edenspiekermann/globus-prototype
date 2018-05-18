@@ -16,18 +16,18 @@ export default css`
   }
 
   @media ${tokens.mq.tablet} {
-    .in-the-mood-section + .in-the-mood-section {
+    .in-the-mood-section {
       padding-top: 120px;
     }
   }
 
   @media ${tokens.mq.large} {
-    .in-the-mood-section + .in-the-mood-section {
+    .in-the-mood-section {
       padding-top: 160px;
     }
   }
 
-  .in-the-mood-section + .in-the-mood-section--collapse {
+  .in-the-mood-section--collapse {
     padding-top: 0;
   }
 

@@ -122,6 +122,13 @@ export default () => (
             </a>
           </Link>
         </li>
+        <li className="index__item">
+          <Link href="/in-the-mood-market">
+            <a className="index__item-link">
+              In the mood 02: Farmers Markets
+            </a>
+          </Link>
+        </li>
       </ul>
     </div>
   </Fragment>

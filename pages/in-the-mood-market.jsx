@@ -13,7 +13,7 @@ export default () => (
 
     <Header />
 
-    <InTheMood {...inTheMoodData[0]} />
+    <InTheMood {...inTheMoodData[1]} />
 
     <Footer />
   </Fragment>
