@@ -153,31 +153,26 @@ export default css`
 
   @media ${tokens.mq.desktop} {
     .title--small {
-      font-size: 64px;
+      font-size: 80px;
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 800px;
     }
 
     .title--small.title--left {
-      padding-left: 0;
-      transform: translateX(-80px);
+      transform: translateX(-60px);
+      margin-left: 0;
     }
 
     .title--small.title--right {
-      padding-right: 0;
-      transform: translateX(80px);
+      transform: translateX(60px);
+      margin-right: 0;
     }
   }
 
   @media ${tokens.mq.large} {
     .title--small {
-      font-size: 80px;
-    }
-
-    .title--small.title--left {
-      transform: translateX(-200px);
-    }
-
-    .title--small.title--right {
-      transform: translateX(200px);
+      font-size: 96px;
     }
   }
   /* Title Small: End */
