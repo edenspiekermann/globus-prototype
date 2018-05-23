@@ -3,7 +3,7 @@ export default [
     color: 'rgb(198, 193, 255)',
     byline: 'Globus Trends',
     image: {
-      url: '/static/images/intro_1.jpg',
+      url: '/static/images/thesis/intro_1.jpg',
       alt: 'Ein wunderschönes Blumen-Hemd'
     },
     title:
@@ -16,7 +16,7 @@ export default [
 
   {
     image: {
-      url: '/static/images/intro_3.jpg',
+      url: '/static/images/listicle/intro_3.jpg',
       alt: 'Wein'
     },
     number: '7',
@@ -32,7 +32,7 @@ export default [
     color: 'rgb(223, 240, 239)',
     byline: 'Globus Trends',
     image: {
-      url: '/static/images/intro_2.jpg',
+      url: '/static/images/thesis/intro_2.jpg',
       alt: 'Cowboy Stiefel'
     },
     title: 'Die besten Cowboy-Boots der Saison kommen aus Italien',
@@ -44,7 +44,7 @@ export default [
 
   {
     image: {
-      url: '/static/images/intro_4.png',
+      url: '/static/images/listicle/intro_4.jpg',
       alt: 'Wein'
     },
     number: '6',

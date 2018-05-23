@@ -19,7 +19,7 @@ export default () => (
       .index__title {
         color: black;
         font-family: ${tokens.fonts.gill.family};
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 48px;
         margin-top: 0;
         max-width: 200px;
@@ -44,6 +44,10 @@ export default () => (
         width: 100%;
       }
 
+      .index__list + .index__title {
+        margin-top: 60px;
+      }
+
       .index__item {
         padding-bottom: 15px;
         padding-top: 15px;
@@ -57,7 +61,7 @@ export default () => (
       .index__item-link {
         color: black;
         font-family: ${tokens.fonts.gill.family};
-        font-size: 24px;
+        font-size: 18px;
         text-decoration: none;
       }
 
@@ -93,13 +97,34 @@ export default () => (
 
         <li className="index__item">
           <Link href="/listicle">
-            <a className="index__item-link">Listicle 01: 7 Gründe für mehr Kalifornien</a>
+            <a className="index__item-link">
+              Listicle 01: 7 Gründe für mehr Kalifornien
+            </a>
           </Link>
         </li>
 
         <li className="index__item">
           <Link href="/listicle-wine">
-            <a className="index__item-link">Listicle 02: 6 kalifornische Weine</a>
+            <a className="index__item-link">
+              Listicle 02: 6 kalifornische Weine
+            </a>
+          </Link>
+        </li>
+      </ul>
+
+      <h1 className="index__title">Templates Gefäßkomplex 2</h1>
+
+      <ul className="index__list">
+        <li className="index__item">
+          <Link href="/in-the-mood">
+            <a className="index__item-link">
+              In the mood 01: Under the desert sun
+            </a>
+          </Link>
+        </li>
+        <li className="index__item">
+          <Link href="/in-the-mood-market">
+            <a className="index__item-link">In the mood 02: Farmers Markets</a>
           </Link>
         </li>
       </ul>

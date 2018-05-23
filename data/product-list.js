@@ -3,7 +3,7 @@ export default [
     products: [
       {
         image: {
-          url: '/static/images/flowershirt_1.jpg',
+          url: '/static/images/products/flowershirt_1.jpg',
           alt: 'Dummy image'
         },
         title: 'TED BAKER',
@@ -13,7 +13,7 @@ export default [
 
       {
         image: {
-          url: '/static/images/flowershirt_2.jpg',
+          url: '/static/images/products/flowershirt_2.jpg',
           alt: 'Dummy image'
         },
         title: 'POLO RALPH LAUREN',
@@ -23,7 +23,7 @@ export default [
 
       {
         image: {
-          url: '/static/images/flowershirt_3.jpg',
+          url: '/static/images/products/flowershirt_3.jpg',
           alt: 'Dummy image'
         },
         title: 'GLOBUS STUDIO',
@@ -33,7 +33,7 @@ export default [
 
       {
         image: {
-          url: '/static/images/flowershirt_4.jpg',
+          url: '/static/images/products/flowershirt_4.jpg',
           alt: 'Dummy image'
         },
         title: 'GLOBUS',
@@ -43,7 +43,7 @@ export default [
 
       {
         image: {
-          url: '/static/images/flowershirt_5.jpg',
+          url: '/static/images/products/flowershirt_5.jpg',
           alt: 'Dummy image'
         },
         title: 'SCOTCH&SODA',
@@ -53,7 +53,7 @@ export default [
 
       {
         image: {
-          url: '/static/images/flowershirt_6.jpg',
+          url: '/static/images/products/flowershirt_6.jpg',
           alt: 'Dummy image'
         },
         title: 'SCOTCH&SODA',
@@ -67,7 +67,7 @@ export default [
     products: [
       {
         image: {
-          url: '/static/images/cowboyboot_1.jpg',
+          url: '/static/images/products/cowboyboot_1.jpg',
           alt: 'Dummy image'
         },
         title: 'Keep',
@@ -77,7 +77,7 @@ export default [
 
       {
         image: {
-          url: '/static/images/cowboyboot_2.jpg',
+          url: '/static/images/products/cowboyboot_2.jpg',
           alt: 'Dummy image'
         },
         title: 'Materia Prima',
@@ -87,7 +87,7 @@ export default [
 
       {
         image: {
-          url: '/static/images/cowboyboot_3.jpg',
+          url: '/static/images/products/cowboyboot_3.jpg',
           alt: 'Dummy image'
         },
         title: 'Materia Prima',
@@ -97,7 +97,7 @@ export default [
 
       {
         image: {
-          url: '/static/images/cowboyboot_4.jpg',
+          url: '/static/images/products/cowboyboot_4.jpg',
           alt: 'Dummy image'
         },
         title: 'Keep',
@@ -107,7 +107,7 @@ export default [
 
       {
         image: {
-          url: '/static/images/cowboyboot_5.jpg',
+          url: '/static/images/products/cowboyboot_5.jpg',
           alt: 'Dummy image'
         },
         title: 'Keep',
@@ -117,7 +117,7 @@ export default [
 
       {
         image: {
-          url: '/static/images/cowboyboot_6.jpg',
+          url: '/static/images/products/cowboyboot_6.jpg',
           alt: 'Dummy image'
         },
         title: 'Coral Blue',

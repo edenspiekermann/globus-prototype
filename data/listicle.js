@@ -3,12 +3,12 @@ export default [
     summary: {
       background: 'rgb(58, 32, 64)',
       color: 'white',
-      title: 'Für alle Genießer:  die Weinkiste mit 6 kalifornischen Weinen',
+      title: 'Für alle Genießer: die Weinkiste mit 6 kalifornischen Weinen',
       text: [
         'Diese Zusammenstellung aus Kalifornien lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
       ],
       image: {
-        url: '/static/images/product-summary_1.jpg',
+        url: '/static/images/listicle/product-summary_1.jpg',
         alt: 'Dinge auf einem Regal'
       },
       price: '239.00',
@@ -26,7 +26,7 @@ export default [
           'Die Logomania ist noch immer auf dem Vormarsch. Modelabels wie Calvin Klein oder Champion setzen auf den grossflächigen Print des eigenen Namens. Klicken Sie sich durch die coolsten Logo-Sweater & Logo-Accessoires!'
         ],
         image: {
-          url: '/static/images/listicle_1.jpg',
+          url: '/static/images/listicle/listicle_1.jpg',
           alt: 'Logomania'
         },
         button: {
@@ -39,7 +39,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/logomania_3.jpg',
+                url: '/static/images/products/logomania_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'Calvin Klein',
@@ -48,7 +48,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/logomania_2.jpg',
+                url: '/static/images/products/logomania_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'FILA',
@@ -57,7 +57,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/logomania_1.jpg',
+                url: '/static/images/products/logomania_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'FILA',
@@ -76,7 +76,7 @@ export default [
         ],
         type: 'full',
         image: {
-          url: '/static/images/listicle_2.jpg',
+          url: '/static/images/listicle/listicle_2.jpg',
           alt: 'Viele leckere Gemüsekisten'
         },
         badge: 'Ab Mai 2018 im Sortiment'
@@ -89,7 +89,7 @@ export default [
           'Den Sound der kalifornischen Wüste können Sie jetzt auch zu Hause geniessen — oder unterwegs wo immer sie gerade sind.'
         ],
         image: {
-          url: '/static/images/listicle_3.jpg',
+          url: '/static/images/listicle/listicle_3.jpg',
           alt: 'Dicke Soundbox'
         },
         button: {
@@ -102,7 +102,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/speakers_1.jpg',
+                url: '/static/images/products/speakers_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'JBL Harman',
@@ -111,7 +111,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/speakers_2.jpg',
+                url: '/static/images/products/speakers_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'JBL Harman',
@@ -120,7 +120,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/speakers_3.jpg',
+                url: '/static/images/products/speakers_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'JBL Harman',
@@ -140,7 +140,7 @@ export default [
         type: 'right',
         badge: 'Ab Mai 2018 im Sortiment',
         image: {
-          url: '/static/images/listicle_4.jpg',
+          url: '/static/images/listicle/listicle_4.jpg',
           alt: 'Mud-Treatment Cremes'
         },
         button: {
@@ -153,7 +153,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/glamglow_1.jpg',
+                url: '/static/images/products/glamglow_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'Glamglow',
@@ -162,7 +162,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/glamglow_2.jpg',
+                url: '/static/images/products/glamglow_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'Glamglow',
@@ -171,7 +171,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/glamglow_3.jpg',
+                url: '/static/images/products/glamglow_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'Glamglow',
@@ -189,7 +189,7 @@ export default [
           'In Kombination mit auffälligen Accessoires erhält der Look ein Fashion­-Upgrade.'
         ],
         image: {
-          url: '/static/images/listicle_5.jpg',
+          url: '/static/images/listicle/listicle_5.jpg',
           alt: 'Modeshot'
         },
         button: {
@@ -202,7 +202,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/athleisure_1.jpg',
+                url: '/static/images/products/athleisure_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'NOKA’OI',
@@ -211,7 +211,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/athleisure_2.jpg',
+                url: '/static/images/products/athleisure_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'CASALL',
@@ -220,7 +220,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/athleisure_3.jpg',
+                url: '/static/images/products/athleisure_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'BIRKENSTOCK',
@@ -239,7 +239,7 @@ export default [
         ],
         type: 'right',
         image: {
-          url: '/static/images/listicle_6.jpg',
+          url: '/static/images/listicle/listicle_6.jpg',
           alt: 'Ein rotes Fahrrad'
         },
         button: {
@@ -252,7 +252,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/bike_1.jpg',
+                url: '/static/images/products/bike_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'MARTONE',
@@ -261,7 +261,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/bike_2.jpg',
+                url: '/static/images/products/bike_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'Thousand',
@@ -270,7 +270,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/bike_3.jpg',
+                url: '/static/images/products/bike_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'BROOKS ENGLAND',
@@ -287,7 +287,7 @@ export default [
           'Der Kaktus ist zur Modepflanze geworden und begegnet uns nicht nur in der kalifornischen Wüste, sondern auch auf Design-Blogs, Kunstmessen und in Lifestyle-Magazinen. Die Wüstenpflanzen brauchen nur wenig Aufmerksamkeit und sind praktisch in der Pflege.'
         ],
         image: {
-          url: '/static/images/listicle_7.jpg',
+          url: '/static/images/listicle/listicle_7.jpg',
           alt: 'Kakteen an Felsen, Stillleben'
         },
         button: {
@@ -300,7 +300,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/kaktus_1.jpg',
+                url: '/static/images/products/kaktus_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'Globus',
@@ -309,7 +309,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/kaktus_2.jpg',
+                url: '/static/images/products/kaktus_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'Sunnylife',
@@ -318,7 +318,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/kaktus_3.jpg',
+                url: '/static/images/products/kaktus_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'NATURAL LIFE',
@@ -336,12 +336,12 @@ export default [
     summary: {
       background: 'rgb(58, 32, 64)',
       color: 'white',
-      title: 'Für alle Genießer:  die Weinkiste mit 6 kalifornischen Weinen',
+      title: 'Für alle Genießer: die Weinkiste mit 6 kalifornischen Weinen',
       text: [
         'Diese Zusammenstellung aus Kalifornien lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
       ],
       image: {
-        url: '/static/images/product-summary_1.jpg',
+        url: '/static/images/listicle/product-summary_1.jpg',
         alt: 'Dinge auf einem Regal'
       },
       price: '239.00',
@@ -359,7 +359,7 @@ export default [
           '«Zinfandel gehört zu den wichtigsten Rebsorten Kaliforniens. Das Familienunternehmen Caymus Vineyards ist einer der führender Hersteller herausragender Rotweine in der Napa Valley Region.»'
         ],
         image: {
-          url: '/static/images/wine_1.jpg',
+          url: '/static/images/listicle/wine_1.jpg',
           alt: 'Logomania'
         },
         location: 'Zinfandel, Napa Valley 2015',
@@ -373,7 +373,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/wine-product_1.jpg',
+                url: '/static/images/products/wine-product_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'Caymus Vineyars',
@@ -382,7 +382,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/wine-product_2.jpg',
+                url: '/static/images/products/wine-product_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'Stag’s Leap Wine Cellars',
@@ -391,7 +391,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/wine-product_3.jpg',
+                url: '/static/images/products/wine-product_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'Ramey Wine Cellars',
@@ -412,7 +412,7 @@ export default [
         price: '49.90',
         badge: 'Ab Mai 2018 im Sortiment',
         image: {
-          url: '/static/images/wine_2.jpg',
+          url: '/static/images/listicle/wine_2.jpg',
           alt: 'Viele leckere Gemüsekisten'
         },
         button: {
@@ -425,7 +425,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/wine-product_1.jpg',
+                url: '/static/images/products/wine-product_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'Caymus Vineyars',
@@ -434,7 +434,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/wine-product_2.jpg',
+                url: '/static/images/products/wine-product_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'Stag’s Leap Wine Cellars',
@@ -443,7 +443,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/wine-product_3.jpg',
+                url: '/static/images/products/wine-product_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'Ramey Wine Cellars',
@@ -460,7 +460,7 @@ export default [
           '«Neu im Globus Sortiment ist der Cabernet Sauvignon von Stag’s Leap Wine Cellars aus dem Napa Valley. Dieser sensationelle Jahrgang ist finessenreich und elegant.»'
         ],
         image: {
-          url: '/static/images/wine_3.jpg',
+          url: '/static/images/listicle/wine_3.jpg',
           alt: 'Dicke Soundbox'
         },
         price: '49.90',
@@ -475,7 +475,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/wine-product_1.jpg',
+                url: '/static/images/products/wine-product_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'Caymus Vineyars',
@@ -484,7 +484,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/wine-product_2.jpg',
+                url: '/static/images/products/wine-product_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'Stag’s Leap Wine Cellars',
@@ -493,7 +493,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/wine-product_3.jpg',
+                url: '/static/images/products/wine-product_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'Ramey Wine Cellars',
@@ -513,7 +513,7 @@ export default [
         location: 'Zinfandel, Napa Valley 2015',
         price: '49.90',
         image: {
-          url: '/static/images/wine_4.jpg',
+          url: '/static/images/listicle/wine_4.jpg',
           alt: 'Mud-Treatment Cremes'
         },
         button: {
@@ -526,7 +526,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/wine-product_3.jpg',
+                url: '/static/images/products/wine-product_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'Ramey Wine Cellars',
@@ -535,7 +535,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/wine-product_1.jpg',
+                url: '/static/images/products/wine-product_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'Caymus Vineyars',
@@ -544,7 +544,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/wine-product_2.jpg',
+                url: '/static/images/products/wine-product_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'Stag’s Leap Wine Cellars',
@@ -564,7 +564,7 @@ export default [
         price: '49.90',
         badge: 'Ab Mai 2018 im Sortiment',
         image: {
-          url: '/static/images/wine_4.jpg',
+          url: '/static/images/listicle/wine_4.jpg',
           alt: 'Modeshot'
         },
         button: {
@@ -577,7 +577,7 @@ export default [
           products: [
             {
               image: {
-                url: '/static/images/wine-product_3.jpg',
+                url: '/static/images/products/wine-product_3.jpg',
                 alt: 'Dummy image'
               },
               title: 'Ramey Wine Cellars',
@@ -586,7 +586,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/wine-product_1.jpg',
+                url: '/static/images/products/wine-product_1.jpg',
                 alt: 'Dummy image'
               },
               title: 'Caymus Vineyars',
@@ -595,7 +595,7 @@ export default [
             },
             {
               image: {
-                url: '/static/images/wine-product_2.jpg',
+                url: '/static/images/products/wine-product_2.jpg',
                 alt: 'Dummy image'
               },
               title: 'Stag’s Leap Wine Cellars',

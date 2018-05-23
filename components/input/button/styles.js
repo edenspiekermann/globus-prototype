@@ -16,6 +16,8 @@ export default css`
     text-decoration: none;
     text-transform: uppercase;
     border: 1px solid black;
+    text-align: center;
+    white-space: nowrap;
   }
 
   @media ${tokens.mq.desktop} {
