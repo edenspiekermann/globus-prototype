@@ -45,7 +45,47 @@ export default {
     {
       products: {
         title: 'Whisky-Auswahl bei Globus',
-        products: []
+        products: [
+          {
+            image: {
+              url: '/static/images/products/flowershirt_1.jpg',
+              alt: 'Dummy image'
+            },
+            title: 'TED BAKER',
+            type: 'Hemd Slim Fit',
+            price: '149.00'
+          },
+
+          {
+            image: {
+              url: '/static/images/products/flowershirt_2.jpg',
+              alt: 'Dummy image'
+            },
+            title: 'POLO RALPH LAUREN',
+            type: 'Hemd Regular Fit',
+            price: '139.00'
+          },
+
+          {
+            image: {
+              url: '/static/images/products/flowershirt_3.jpg',
+              alt: 'Dummy image'
+            },
+            title: 'GLOBUS STUDIO',
+            type: 'T-Shirt',
+            price: '49.00'
+          },
+
+          {
+            image: {
+              url: '/static/images/products/flowershirt_4.jpg',
+              alt: 'Dummy image'
+            },
+            title: 'GLOBUS',
+            type: 'Hemd Regular Fit',
+            price: '79.00'
+          }
+        ]
       }
     },
 
