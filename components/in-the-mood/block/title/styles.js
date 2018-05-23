@@ -12,6 +12,7 @@ export default css`
     align-self: center;
     font-weight: 500;
     text-align: center;
+    z-index: 2;
   }
 
   .title--standalone {
@@ -72,7 +73,7 @@ export default css`
   @media ${tokens.mq.tablet} {
     .title--large {
       font-size: 12.5vw;
-      
+
       position: absolute;
       padding: 0;
       margin-top: 0;
@@ -81,7 +82,7 @@ export default css`
 
     .title--large.title--center {
       font-size: 15vw;
-      
+
       top: 50px;
       width: 100%;
       max-width: 100%;
