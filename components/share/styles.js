@@ -3,6 +3,10 @@ import css from 'styled-jsx/css';
 import tokens from '../../tokens';
 
 export default css`
+  .share-container--centered {
+    text-align: center;
+  }
+
   .share {
     color: currentColor;
     margin-left: 5px;

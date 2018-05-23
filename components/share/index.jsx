@@ -1,9 +1,9 @@
-import { Fragment } from 'react';
-
 import styles from './styles';
 
-export default () => (
-  <Fragment>
+export default ({ centered }) => (
+  <div
+    className={`share-container ${centered ? 'share-container--centered' : ''}`}
+  >
     <style jsx>{styles}</style>
 
     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -25,5 +25,5 @@ export default () => (
     <a href="#" className="share share--print">
       <span className="share__label">Ausdrucken</span>
     </a>
-  </Fragment>
+  </div>
 );
