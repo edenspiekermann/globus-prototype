@@ -148,11 +148,18 @@ export default {
     },
 
     {
+      embed: {
+        markup:
+          '<iframe src="https://www.google.com/maps/embed?pb=!4v1527083598506!6m8!1m7!1s5WiS3g94AvPaqtsu3BFkvA!2m2!1d53.51373468959984!2d-113.4859228764822!3f315.4146401773163!4f-5.627950264810863!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>'
+      }
+    },
+
+    {
       content: {
         blocks: [
           {
             content:
-              'Read more about whiskey lorem ipsum dolor sit amet and consecterur alea acti este kriekm bdejd oand dolor sit amet  and consecte iehedjdk lroem sbuqb bcdb ipsum sit amet  and consecta aorge.'
+              '<a href="https://en.wikipedia.org/wiki/Whisky">Read more</a> about whiskey lorem ipsum dolor sit amet and consecterur alea acti este kriekm bdejd oand dolor sit amet  and consecte iehedjdk lroem sbuqb bcdb ipsum sit amet  and consecta aorge.'
           }
         ]
       }

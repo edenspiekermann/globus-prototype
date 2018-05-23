@@ -12,7 +12,7 @@ export default css`
   .figure__caption {
     font-family: ${tokens.fonts.founders.family};
     font-size: 16px;
-    line-height: ${30 / 16};
+    line-height: 1.45;
     margin-top: 10px;
     width: 720px;
   }
@@ -20,5 +20,6 @@ export default css`
   .figure__author {
     display: block;
     font-size: 14px;
+    margin-top: 5px;
   }
 `;

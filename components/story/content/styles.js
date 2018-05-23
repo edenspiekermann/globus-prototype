@@ -9,4 +9,8 @@ export default css`
     line-height: ${32 / 24};
     max-width: 720px;
   }
+
+  .content a {
+    color: #a1a1b3;
+  }
 `;
