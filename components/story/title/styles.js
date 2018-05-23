@@ -15,14 +15,6 @@ export default css`
     text-align: center;
   }
 
-  .title__content::before {
-    content: '«';
-  }
-
-  .title__content::after {
-    content: '»';
-  }
-
   .title__byline {
     color: #a1a1b3;
     display: block;

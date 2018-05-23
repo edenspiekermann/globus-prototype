@@ -22,6 +22,7 @@ export default css`
     color: #a1a1b3;
     font-family: ${tokens.fonts.founders.family};
     font-size: 16px;
+    font-weight: ${tokens.fonts.founders.weight.medium};
     line-height: ${20 / 16};
     text-transform: uppercase;
   }

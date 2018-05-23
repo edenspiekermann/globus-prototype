@@ -7,9 +7,11 @@ export default css`
     align-items: center;
     display: flex;
     flex-direction: column;
+    max-width: 1120px;
   }
 
   .figure__caption {
+    color: #a1a1b3;
     font-family: ${tokens.fonts.founders.family};
     font-size: 16px;
     line-height: 1.45;
@@ -18,8 +20,8 @@ export default css`
   }
 
   .figure__author {
-    display: block;
     font-size: 14px;
+    margin-left: 15px;
     margin-top: 5px;
   }
 `;

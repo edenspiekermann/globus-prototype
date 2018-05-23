@@ -109,7 +109,7 @@ export default {
     {
       title: {
         byline: 'Kergommeaux during a recent visit to New York.',
-        content: 'I was very much a voice in the wilderness.'
+        content: '«I was very much a voice in the wilderness»'
       }
     },
 
