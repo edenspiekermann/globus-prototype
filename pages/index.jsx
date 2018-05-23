@@ -8,19 +8,11 @@ import tokens from '../tokens';
 export default () => (
   <Fragment>
     <style jsx>{`
-      .index {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-      }
-
       .index__title {
         color: black;
         font-family: ${tokens.fonts.gill.family};
         font-size: 20px;
-        margin-bottom: 48px;
+        margin-bottom: 10px;
         margin-top: 0;
         max-width: 200px;
         font-weight: normal;
@@ -28,16 +20,12 @@ export default () => (
 
       @media ${tokens.mq.desktop} {
         .index__title {
-          font-size: 48px;
+          font-size: 38px;
           max-width: none;
         }
       }
 
       .index__list {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -45,7 +33,7 @@ export default () => (
       }
 
       .index__list + .index__title {
-        margin-top: 60px;
+        margin-top: 40px;
       }
 
       .index__item {
@@ -67,7 +55,7 @@ export default () => (
 
       @media ${tokens.mq.desktop} {
         .index__item-link {
-          font-size: 34px;
+          font-size: 24px;
         }
       }
 
@@ -125,6 +113,18 @@ export default () => (
         <li className="index__item">
           <Link href="/in-the-mood-market">
             <a className="index__item-link">In the mood 02: Farmers Markets</a>
+          </Link>
+        </li>
+      </ul>
+
+      <h1 className="index__title">Templates Gefäßkomplex 3</h1>
+
+      <ul className="index__list">
+        <li className="index__item">
+          <Link href="/story">
+            <a className="index__item-link">
+              Story 01: Canadian Whisky's Long-Awaited Comeback
+            </a>
           </Link>
         </li>
       </ul>
