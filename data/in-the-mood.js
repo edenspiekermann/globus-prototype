@@ -71,7 +71,7 @@ export default [
             }
           },
 
-          { 
+          {
             video: {
               url: '/static/videos/GLOBUS_COACHELLA_instagram.mp4'
             },
@@ -438,7 +438,7 @@ export default [
       }
     ]
   },
-  
+
   // Farmers Market
   {
     sections: [
@@ -470,7 +470,7 @@ export default [
               ],
               align: 'left'
             },
-              
+
             image: {
               url: '/static/images/in-the-mood/market_bag.jpg',
               alt: 'Einkaufstasche'
@@ -516,7 +516,7 @@ export default [
             }
           },
 
-          { 
+          {
             image: {
               url: '/static/images/in-the-mood/market_olive-oil.jpg',
               alt: 'Olivenoel'
@@ -588,7 +588,7 @@ export default [
               url: '/static/images/in-the-mood/market_cheese.jpg',
               alt: 'Kaesestand'
             },
-            
+
             style: {
               padded: true
             },
@@ -694,7 +694,7 @@ export default [
               url: '/static/images/in-the-mood/market_table-cups.jpg',
               alt: 'Tassen auf Tisch'
             },
-            
+
             button: {
               label: 'Geschirr anzeigen',
               url: '#'
@@ -749,7 +749,7 @@ export default [
               url: '/static/images/in-the-mood/market_salmon.jpg',
               alt: 'Geraeucherter Lachs'
             },
-            
+
             style: {
               padded: true
             }
@@ -795,18 +795,17 @@ export default [
               alt: ''
             }
           },
-          
+
           {
             title: {
-              label:
-                'Großes Burger Revival in einer kunterbunten Farbpalette',
+              label: 'Großes Burger Revival in einer kunterbunten Farbpalette',
               align: 'left',
               size: 'small'
             }
           }
         ]
       },
-      
+
       {
         collapse: true,
         blocks: [
@@ -815,12 +814,12 @@ export default [
               url: '/static/images/in-the-mood/market_plates-wood.jpg',
               alt: ''
             },
-            
+
             button: {
               label: '***delicatessa Speisekarte',
               url: '#'
             },
-            
+
             style: {
               padded: true
             }

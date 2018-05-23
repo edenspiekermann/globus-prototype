@@ -124,9 +124,7 @@ export default () => (
         </li>
         <li className="index__item">
           <Link href="/in-the-mood-market">
-            <a className="index__item-link">
-              In the mood 02: Farmers Markets
-            </a>
+            <a className="index__item-link">In the mood 02: Farmers Markets</a>
           </Link>
         </li>
       </ul>
