@@ -8,7 +8,6 @@ export default css`
     margin-bottom: 0;
     margin-top: 0;
     position: relative;
-    z-index: 3;
     align-self: center;
     font-weight: 500;
     text-align: center;
