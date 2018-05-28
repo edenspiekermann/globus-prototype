@@ -468,7 +468,8 @@ export default [
               content: [
                 'Stilvoll, praktisch und nachhaltig. In unserer hippen Einkaufstasche finden vom Obst übers Gemüse bis zum aromatischen Olivenöl alle Markt-Trouvaillen ihren Platz.'
               ],
-              align: 'left'
+              align: 'left',
+              color: '#fff'
             },
 
             image: {
