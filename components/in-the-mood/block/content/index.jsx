@@ -1,4 +1,5 @@
 import styles from './styles';
+import tokens from '../../../../tokens';
 
 export default ({
   content,
@@ -17,8 +18,10 @@ export default ({
     <style jsx>{styles}</style>
 
     <style jsx>{`
-      .content__paragraph {
-        color: ${color};
+      @media ${tokens.mq.phablet} {
+        .content__paragraph {
+          color: ${color};
+        }
       }
     `}</style>
 
