@@ -488,30 +488,30 @@ export default [
               products: [
                 {
                   image: {
-                    url: '/static/images/products/nachthemd_3.jpg',
+                    url: '/static/images/products/bag_1.jpg',
                     alt: 'Dummy image'
                   },
-                  title: 'Globus Essentials',
-                  type: 'Nachthemd',
-                  price: '69.90'
+                  title: 'Apolis',
+                  type: 'Markttasche',
+                  price: '89.90'
                 },
                 {
                   image: {
-                    url: '/static/images/products/nachthemd_2.jpg',
+                    url: '/static/images/products/bag_2.jpg',
                     alt: 'Dummy image'
                   },
-                  title: 'Globus Essentials',
-                  type: 'Pyjama Oberteil',
-                  price: '49.90'
+                  title: 'STAR MELA',
+                  type: 'Shopper',
+                  price: '199.00'
                 },
                 {
                   image: {
-                    url: '/static/images/products/nachthemd_1.jpg',
+                    url: '/static/images/products/bag_3.jpg',
                     alt: 'Dummy image'
                   },
-                  title: 'Globus Essentials',
-                  type: 'Nachthemd',
-                  price: '69.90'
+                  title: 'Andersen',
+                  type: 'Korb Shopper Natura XXL',
+                  price: '249.00'
                 }
               ]
             }
@@ -529,35 +529,35 @@ export default [
             },
 
             shoppingLayer: {
-              title: '',
-              inStock: true,
+              title: 'Das könnten Ihnen auch gefallen',
+              inStock: false,
               products: [
                 {
                   image: {
-                    url: '/static/images/products/nachthemd_3.jpg',
+                    url: '/static/images/products/oliveoil_1.jpg',
                     alt: 'Dummy image'
                   },
-                  title: 'Globus Essentials',
-                  type: 'Nachthemd',
-                  price: '69.90'
+                  title: 'Mani',
+                  type: 'Olivenöl aus Griechenland',
+                  price: '19.90'
                 },
                 {
                   image: {
-                    url: '/static/images/products/nachthemd_2.jpg',
+                    url: '/static/images/products/oliveoil_2.jpg',
                     alt: 'Dummy image'
                   },
-                  title: 'Globus Essentials',
-                  type: 'Pyjama Oberteil',
-                  price: '49.90'
+                  title: 'Nicolas Alziari',
+                  type: 'Olivenöl Fruitée Douce',
+                  price: '29.90'
                 },
                 {
                   image: {
-                    url: '/static/images/products/nachthemd_1.jpg',
+                    url: '/static/images/products/oliveoil_3.jpg',
                     alt: 'Dummy image'
                   },
-                  title: 'Globus Essentials',
-                  type: 'Nachthemd',
-                  price: '69.90'
+                  title: 'il Boschetto',
+                  type: 'Extra Virgin Olive Oil Poggio Bianco ',
+                  price: '25.90'
                 }
               ]
             },
@@ -605,30 +605,30 @@ export default [
               products: [
                 {
                   image: {
-                    url: '/static/images/products/make-up_1.jpg',
+                    url: '/static/images/products/cheese_1.jpg',
                     alt: 'Dummy image'
                   },
-                  title: 'YSL',
-                  type: 'Mascara Vinyl Couture',
+                  title: '*** DELICATESSA',
+                  type: 'Raclettekäse geräuchert',
+                  price: '7.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/cheese_2.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: '*** DELICATESSA',
+                  type: 'Raclettekäse Paprika',
+                  price: '7.60'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/cheese_3.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Laguiole',
+                  type: 'Käsemesser-Set',
                   price: '49.90'
-                },
-                {
-                  image: {
-                    url: '/static/images/products/make-up_2.jpg',
-                    alt: 'Dummy image'
-                  },
-                  title: 'Clarins',
-                  type: 'Eclat Minute Huile…',
-                  price: '29.90'
-                },
-                {
-                  image: {
-                    url: '/static/images/products/make-up_3.jpg',
-                    alt: 'Dummy image'
-                  },
-                  title: 'Shiseido',
-                  type: 'Benefiance WrinkleResist24…',
-                  price: '89.90'
                 }
               ]
             }
@@ -651,7 +651,7 @@ export default [
             },
 
             button: {
-              label: 'Sommer-Bowle Zutaten',
+              label: 'Geschirr shoppen',
               url: '#'
             },
 
@@ -661,30 +661,30 @@ export default [
               products: [
                 {
                   image: {
-                    url: '/static/images/products/lampen_1.jpg',
+                    url: '/static/images/products/crockery_1.jpg',
                     alt: 'Dummy image'
                   },
-                  title: 'Calvin Klein',
-                  type: 'Bikini Oberteil',
-                  price: '79.90'
+                  title: 'BORDALLO PINHEIRO',
+                  type: 'Krug ERDBEERE',
+                  price: '69.90'
                 },
                 {
                   image: {
-                    url: '/static/images/products/lampen_2.jpg',
+                    url: '/static/images/products/crockery_2.jpg',
                     alt: 'Dummy image'
                   },
-                  title: 'FILA',
-                  type: 'Athleisure-langarm Shirt',
-                  price: '89.90'
+                  title: 'GLOBUS',
+                  type: 'Drinkspender',
+                  price: '34.90'
                 },
                 {
                   image: {
-                    url: '/static/images/products/lampen_3.jpg',
+                    url: '/static/images/products/crockery_3.jpg',
                     alt: 'Dummy image'
                   },
-                  title: 'FILA',
-                  type: 'Gürteltasche',
-                  price: '19.90'
+                  title: 'Henkel',
+                  type: 'Henkeltasse',
+                  price: '4.90'
                 }
               ]
             }
@@ -694,45 +694,6 @@ export default [
             image: {
               url: '/static/images/in-the-mood/market_table-cups.jpg',
               alt: 'Tassen auf Tisch'
-            },
-
-            button: {
-              label: 'Geschirr anzeigen',
-              url: '#'
-            },
-
-            shoppingLayer: {
-              title: '',
-              inStock: true,
-              products: [
-                {
-                  image: {
-                    url: '/static/images/products/lampen_1.jpg',
-                    alt: 'Dummy image'
-                  },
-                  title: 'Calvin Klein',
-                  type: 'Bikini Oberteil',
-                  price: '79.90'
-                },
-                {
-                  image: {
-                    url: '/static/images/products/lampen_2.jpg',
-                    alt: 'Dummy image'
-                  },
-                  title: 'FILA',
-                  type: 'Athleisure-langarm Shirt',
-                  price: '89.90'
-                },
-                {
-                  image: {
-                    url: '/static/images/products/lampen_3.jpg',
-                    alt: 'Dummy image'
-                  },
-                  title: 'FILA',
-                  type: 'Gürteltasche',
-                  price: '19.90'
-                }
-              ]
             }
           }
         ]
