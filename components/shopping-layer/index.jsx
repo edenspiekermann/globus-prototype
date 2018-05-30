@@ -117,6 +117,30 @@ export default ({
         position: relative;
         text-transform: uppercase;
       }
+      
+      .shopping-layer__products-link-container {
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .shopping-layer__products-link {
+        background-color: white;
+        color: black;
+        display: inline-block;
+        font-family: ${tokens.fonts.gill.family};
+        font-size: 14px;
+        font-weight: ${tokens.fonts.gill.weight.regular};
+        letter-spacing: 0.5px;
+        line-height: 1;
+        padding: 1em 1.25em 0.75em;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid black;
+        text-align: center;
+        white-space: nowrap;
+        width: auto;
+      }
 
       .shopping-layer__close:hover,
       .shopping-layer__close:focus {
@@ -261,6 +285,9 @@ export default ({
         >
           <path d="M1 0l16 16L1 32" stroke="#000" fill="none" />
         </svg>
+      </div>
+      <div className="shopping-layer__products-link-container">
+          <a href="#" className="shopping-layer__products-link">Alle Produkte ansehen</a>
       </div>
     </div>
   </div>

@@ -20,10 +20,4 @@ export default css`
     white-space: nowrap;
   }
 
-  @media ${tokens.mq.desktop} {
-    .button {
-      font-size: 16px;
-    }
-  }
-
 `;
