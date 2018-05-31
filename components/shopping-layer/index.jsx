@@ -117,13 +117,13 @@ export default ({
         position: relative;
         text-transform: uppercase;
       }
-      
+
       .shopping-layer__products-link-container {
         margin-top: 40px;
         width: 100%;
         text-align: center;
       }
-      
+
       .shopping-layer__products-link {
         background-color: white;
         color: black;
@@ -287,7 +287,9 @@ export default ({
         </svg>
       </div>
       <div className="shopping-layer__products-link-container">
-          <a href="#" className="shopping-layer__products-link">Alle Produkte ansehen</a>
+        <a href="#" className="shopping-layer__products-link">
+          Alle Produkte ansehen
+        </a>
       </div>
     </div>
   </div>
