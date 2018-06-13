@@ -2,13 +2,12 @@ import slugify from 'slugify';
 
 import Content from '../content';
 import Image from '../image';
-import Embed from '../embed';
 import Products from '../products';
 import Title from '../title';
 
 import styles from './styles';
 
-export default ({ content, image, products, title, embed, blockTitle }) => (
+export default ({ content, image, products, title, blockTitle }) => (
   <section
     className="block"
     id={blockTitle ? slugify(blockTitle).toLowerCase() : null}
@@ -19,6 +18,5 @@ export default ({ content, image, products, title, embed, blockTitle }) => (
     {image && <Image {...image} />}
     {content && <Content {...content} />}
     {products && <Products {...products} />}
-    {embed && <Embed {...embed} />}
   </section>
 );
