@@ -48,7 +48,6 @@ export default css`
 
   .in-the-mood-block__inner-media-container {
     position: relative;
-    z-index: 1;
   }
 
   .in-the-mood-block__button-container {

@@ -1,6 +1,7 @@
 import ScrollLock from 'react-scrolllock';
 
 import Product from '../product';
+import Button from '../input/button';
 
 import tokens from '../../tokens';
 
@@ -116,6 +117,12 @@ export default ({
         padding: 5px 25px 1px 10px;
         position: relative;
         text-transform: uppercase;
+      }
+
+      .shopping-layer__products-link-container {
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
       }
 
       .shopping-layer__close:hover,
@@ -261,6 +268,11 @@ export default ({
         >
           <path d="M1 0l16 16L1 32" stroke="#000" fill="none" />
         </svg>
+      </div>
+      <div className="shopping-layer__products-link-container">
+        <Button href="#" look="window-condensed">
+          Alle Produkte ansehen
+        </Button>
       </div>
     </div>
   </div>
