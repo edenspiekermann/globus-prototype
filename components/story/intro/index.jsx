@@ -4,7 +4,10 @@ export default ({ title, published, content, image }) => (
   <header className="intro">
     <style jsx>{styles}</style>
 
-    <img src={image.url} alt={image.alt} className="intro__image" />
+    <div className="intro__image-container">
+      <img src={image.url} alt={image.alt} className="intro__image" />
+    </div>
+
     <h1 className="intro__title">{title}</h1>
 
     <div className="intro__meta">

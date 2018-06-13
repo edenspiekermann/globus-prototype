@@ -16,6 +16,7 @@ export default css`
     line-height: ${140 / 160};
     margin: -100px 40px 40px 40px;
     text-align: center;
+    z-index: 10;
   }
 
   .intro__meta {
@@ -36,5 +37,24 @@ export default css`
     font-size: 32px;
     line-height: ${36 / 32};
     max-width: 720px;
+  }
+
+  .intro__image-container {
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+  }
+
+  .intro__image-container:before {
+    background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.15),
+      transparent
+    );
+    bottom: 0;
+    content: '';
+    height: 20%;
+    position: absolute;
+    width: 100%;
   }
 `;

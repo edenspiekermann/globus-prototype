@@ -1,7 +1,7 @@
 export default {
   intro: {
     image: {
-      url: '/static/images/story/story_01.jpg',
+      url: '/static/images/story/story-image_01-wide.jpg',
       alt: ''
     },
 
@@ -16,7 +16,7 @@ export default {
   blocks: [
     {
       image: {
-        url: '/static/images/story/story_05.jpg',
+        url: '/static/images/story/story-image_05.jpg',
         alt: '',
         caption:
           'The Eau Claire Distillery opened in 1881 in Turner Valley, Alberta.',
@@ -128,7 +128,7 @@ export default {
 
     {
       image: {
-        url: '/static/images/story/story_03.jpg',
+        url: '/static/images/story/story-image_03.jpg',
         caption: 'Samples in a blending room at Alberta Distillers.',
         author: 'Bryce Meyer for The New York Times'
       }
@@ -136,7 +136,7 @@ export default {
 
     {
       image: {
-        url: '/static/images/story/story_02.jpg',
+        url: '/static/images/story/story-image_02.jpg',
         caption:
           'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
         author: 'Aaron Vincent Elkaim for The New York Times'
