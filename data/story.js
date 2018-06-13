@@ -7,7 +7,6 @@ export default {
 
     title: 'Canadian Whisky’s Long-Awaited Comeback',
     published: '22. October 2018',
-    category: 'Local Heroes',
 
     content: [
       'There was a time, in the decades after Prohibition, when Canadian whisky was all the rage in America, when a bottle of Crown Royal sat on the bar cart of any serious imbiber. Text und Fotos von Clay Risen'

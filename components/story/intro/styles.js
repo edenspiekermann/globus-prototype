@@ -27,15 +27,8 @@ export default css`
     text-transform: uppercase;
   }
 
-  .intro__meta-category,
   .intro__meta-published {
     display: inline-block;
-  }
-
-  .intro__meta-category + .intro__meta-published::before {
-    content: '—';
-    margin-left: 5px;
-    margin-right: 5px;
   }
 
   .intro__content {

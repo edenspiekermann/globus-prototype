@@ -1,6 +1,6 @@
 import styles from './styles';
 
-export default ({ title, published, category, content, image }) => (
+export default ({ title, published, content, image }) => (
   <header className="intro">
     <style jsx>{styles}</style>
 
@@ -8,7 +8,6 @@ export default ({ title, published, category, content, image }) => (
     <h1 className="intro__title">{title}</h1>
 
     <div className="intro__meta">
-      <p className="intro__meta-category">{category}</p>
       <p className="intro__meta-published">{published}</p>
     </div>
 
