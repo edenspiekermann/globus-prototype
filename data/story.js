@@ -25,7 +25,6 @@ export default {
     },
 
     {
-      blockTitle: 'Navigation 1',
       content: {
         blocks: [
           {
@@ -89,7 +88,6 @@ export default {
     },
 
     {
-      blockTitle: 'Navigation 2',
       content: {
         blocks: [
           {
@@ -129,7 +127,6 @@ export default {
     },
 
     {
-      blockTitle: 'Navigation 3',
       image: {
         url: '/static/images/story/story_03.jpg',
         caption: 'Samples in a blending room at Alberta Distillers.',

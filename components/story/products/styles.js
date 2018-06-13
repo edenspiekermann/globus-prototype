@@ -14,7 +14,7 @@ export default css`
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin: 0 40px;
+    margin: 0 20px;
     padding: 0;
   }
 
