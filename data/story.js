@@ -7,16 +7,17 @@ export default {
 
     title: 'Canadian Whisky’s Long-Awaited Comeback',
     published: '22. October 2018',
+    authors: 'Text Max Mustermann, Fotos Laura Marling',
 
     content: [
-      'There was a time, in the decades after Prohibition, when Canadian whisky was all the rage in America, when a bottle of Crown Royal sat on the bar cart of any serious imbiber. Text und Fotos von Clay Risen'
+      'There was a time, in the decades after Prohibition, when Canadian whisky was all the rage in America, when a bottle of Crown Royal sat on the bar cart of any serious.'
     ]
   },
 
   blocks: [
     {
       image: {
-        url: '/static/images/story/story-image_05.jpg',
+        url: '/static/images/story/story-image_02.jpg',
         alt: '',
         caption:
           'The Eau Claire Distillery opened in 1881 in Turner Valley, Alberta.',
@@ -29,7 +30,8 @@ export default {
         blocks: [
           {
             content:
-              'But by the time the renaissance in whiskey making and drinking began in the early 2000s, the Canadian product had long ago been dismissed as bland and bottom-shelf.'
+              'But by the time the renaissance in whiskey making and drinking began in the early 2000s, the Canadian product had long ago been dismissed as bland and bottom-shelf.',
+            theme: 'intro'
           },
 
           {

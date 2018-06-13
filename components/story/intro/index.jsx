@@ -1,6 +1,6 @@
 import styles from './styles';
 
-export default ({ title, published, content, image }) => (
+export default ({ title, published, authors, content, image }) => (
   <header className="intro">
     <style jsx>{styles}</style>
 
@@ -10,12 +10,13 @@ export default ({ title, published, content, image }) => (
 
     <h1 className="intro__title">{title}</h1>
 
-    <div className="intro__meta">
-      <p className="intro__meta-published">{published}</p>
-    </div>
-
     <div className="intro__content">
       {content.map(_ => <p className="intro__content-paragraph">{_}</p>)}
+    </div>
+
+    <div className="intro__meta">
+      <p className="intro__meta-published">{published}</p>
+      <p className="intro__meta-authors">{authors}</p>
     </div>
   </header>
 );

@@ -13,15 +13,9 @@ export default css`
   .figure__caption {
     color: #a1a1b3;
     font-family: ${tokens.fonts.founders.family};
-    font-size: 16px;
-    line-height: 1.45;
+    font-size: 20px;
+    line-height: ${30 / 20};
     margin-top: 10px;
-    width: 720px;
-  }
-
-  .figure__author {
-    font-size: 14px;
-    margin-left: 15px;
-    margin-top: 5px;
+    width: 100%;
   }
 `;

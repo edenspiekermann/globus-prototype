@@ -22,14 +22,26 @@ export default css`
   .intro__meta {
     color: #a1a1b3;
     font-family: ${tokens.fonts.founders.family};
-    font-size: 16px;
-    font-weight: ${tokens.fonts.founders.weight.medium};
-    line-height: ${20 / 16};
-    text-transform: uppercase;
+    margin-bottom: 120px;
+    text-align: center;
   }
 
   .intro__meta-published {
     display: inline-block;
+    font-size: 16px;
+    font-weight: ${tokens.fonts.founders.weight.medium};
+    line-height: ${20 / 16};
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+
+  .intro__meta-authors {
+    font-size: 20px;
+    font-weight: ${tokens.fonts.founders.weight.regular};
+    line-height: ${30 / 20};
+    margin-bottom: 0;
+    margin-top: 5px;
   }
 
   .intro__content {
@@ -37,6 +49,8 @@ export default css`
     font-size: 32px;
     line-height: ${36 / 32};
     max-width: 720px;
+    margin-bottom: 80px;
+    margin-top: 80px;
   }
 
   .intro__image-container {

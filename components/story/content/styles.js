@@ -10,7 +10,9 @@ export default css`
     max-width: 720px;
   }
 
-  .content a {
-    color: #a1a1b3;
+  .content__paragraph--theme-intro {
+    font-size: 32px;
+    font-weight: ${tokens.fonts.founders.weight.medium};
+    line-height: ${40 / 32};
   }
 `;
