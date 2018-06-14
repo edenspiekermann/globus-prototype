@@ -20,8 +20,8 @@ export default class Cards extends React.Component {
   previous() {
     let prevCard = this.state.activeCard - 1;
 
-    if (prevCard - 1 < 0) {
-      prevCard = this.props.cards.length;
+    if (prevCard < 0) {
+      prevCard = this.props.cards.length - 1;
     }
 
     this.setState({ activeCard: prevCard });
