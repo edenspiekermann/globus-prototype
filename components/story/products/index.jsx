@@ -20,9 +20,7 @@ export default ({ title, products }) => (
         </ul>
 
         <div className="product-list__all">
-          <Button href="#">
-            Alle Whiskys ansehen
-          </Button>
+          <Button href="#">Alle Whiskys ansehen</Button>
         </div>
       </>
     )}

@@ -1,6 +1,13 @@
 import styles from './styles';
 
-export default ({ title, published, authors, content, image, contentImage }) => (
+export default ({
+  title,
+  published,
+  authors,
+  content,
+  image,
+  contentImage
+}) => (
   <header className="intro">
     <style jsx>{styles}</style>
 
