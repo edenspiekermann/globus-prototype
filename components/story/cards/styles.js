@@ -6,6 +6,7 @@ export default css`
   .cards {
     background-color: #ffecb3;
     float: left;
+    height: 500px;
     margin-bottom: 60px;
     margin-left: -200px;
     margin-right: 60px;
