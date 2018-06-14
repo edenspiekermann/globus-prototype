@@ -5,27 +5,43 @@ import tokens from '../../../tokens';
 export default css`
   .cards {
     background-color: #ffecb3;
-    float: left;
-    height: 500px;
-    margin-bottom: 60px;
-    margin-left: -200px;
-    margin-right: 60px;
-    padding: 50px;
+    margin-bottom: 40px;
+    padding: 20px 20px 40px 40px;
     position: relative;
-    width: 380px;
+    width: 100%;
+  }
+
+  @media ${tokens.mq.desktop} {
+    .cards {
+      float: left;
+      height: 500px;
+      margin-bottom: 60px;
+      margin-left: -200px;
+      margin-right: 60px;
+      padding: 50px;
+      width: 380px;
+    }
   }
 
   .cards__category {
-    bottom: -25px;
+    bottom: 0;
     font-family: ${tokens.fonts.founders.family};
-    font-size: 48px;
+    font-size: 34px;
     line-height: 1;
-    left: 25px;
+    left: 15px;
     margin-bottom: 0;
     margin-top: 0;
     position: absolute;
     transform: rotate(-90deg);
     transform-origin: bottom left;
+  }
+
+  @media ${tokens.mq.desktop} {
+    .cards__category {
+      bottom: -25px;
+      font-size: 48px;
+      left: 25px;
+    }
   }
 
   .cards__controls {
@@ -40,6 +56,10 @@ export default css`
     border: 2px solid #000;
     cursor: pointer;
     padding: 9px 15px 7px 15px;
+  }
+
+  .cards__controls-control:active {
+    transform: translateY(2px);
   }
 
   .cards__controls-control + .cards__controls-control {

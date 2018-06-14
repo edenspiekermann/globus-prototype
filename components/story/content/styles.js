@@ -7,8 +7,16 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     font-size: 24px;
     line-height: ${32 / 24};
-    margin-top: 60px;
     max-width: 720px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media ${tokens.mq.desktop} {
+    .content {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .content__grid {

@@ -2,6 +2,8 @@ import styles from './styles';
 
 export default ({ items }) => (
   <div className="gallery">
+    <style jsx>{styles}</style>
+
     {items.map(_ => {
       const {
         url,
@@ -14,8 +16,6 @@ export default ({ items }) => (
 
       return (
         <figure className={`figure ${portrait ? 'figure--portrait' : ''}`}>
-          <style jsx>{styles}</style>
-
           <img src={url} alt={alt} className="figure__image" />
 
           {caption && (
