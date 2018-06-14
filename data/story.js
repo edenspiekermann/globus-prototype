@@ -155,28 +155,87 @@ export default {
     },
 
     {
-      image: {
-        url: '/static/images/story/story-image_03.jpg',
-        caption: 'Samples in a blending room at Alberta Distillers.',
-        author: 'Bryce Meyer for The New York Times'
-      }
-    },
-
-    {
-      image: {
-        url: '/static/images/story/story-image_02.jpg',
-        caption:
-          'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
-        author: 'Aaron Vincent Elkaim for The New York Times'
-      }
-    },
-
-    {
-      content: {
-        blocks: [
+      gallery: {
+        items: [
           {
-            content:
-              '<a href="https://en.wikipedia.org/wiki/Whisky">Read more</a> about whiskey lorem ipsum dolor sit amet and consecterur alea acti este kriekm bdejd oand dolor sit amet  and consecte iehedjdk lroem sbuqb bcdb ipsum sit amet  and consecta aorge.'
+            url: '/static/images/story/story-image_02.jpg',
+            caption: 'Samples in a blending room at Alberta Distillers.',
+            captionPosition: 'top-left',
+            author: 'Bryce Meyer for The New York Times'
+          },
+
+          {
+            url: '/static/images/story/story-image_03.jpg',
+            caption:
+              'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
+            captionPosition: 'bottom-right',
+            author: 'Aaron Vincent Elkaim for The New York Times'
+          },
+
+          {
+            url: '/static/images/story/story-image_04.jpg',
+            caption:
+              'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
+            captionPosition: 'bottom-right',
+            author: 'Aaron Vincent Elkaim for The New York Times'
+          },
+
+          {
+            url: '/static/images/story/story-image_05.jpg',
+            caption:
+              'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
+            captionPosition: 'bottom-left',
+            author: 'Aaron Vincent Elkaim for The New York Times',
+            portrait: true
+          },
+
+          {
+            url: '/static/images/story/story-image_06.jpg'
+          },
+
+          {
+            url: '/static/images/story/story-image_07.jpg',
+            caption:
+              'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
+            captionPosition: 'top-right',
+            author: 'Aaron Vincent Elkaim for The New York Times'
+          },
+
+          {
+            url: '/static/images/story/story-image_08.jpg',
+            caption:
+              'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
+            captionPosition: 'bottom-left',
+            author: 'Aaron Vincent Elkaim for The New York Times'
+          },
+
+          {
+            url: '/static/images/story/story-image_09.jpg',
+            caption:
+              'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
+            captionPosition: 'bottom-right',
+            author: 'Aaron Vincent Elkaim for The New York Times'
+          },
+
+          {
+            url: '/static/images/story/story-image_10.jpg',
+            caption:
+              'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
+            captionPosition: 'top-left',
+            author: 'Aaron Vincent Elkaim for The New York Times'
+          },
+
+          {
+            url: '/static/images/story/story-image_11.jpg',
+            portrait: true
+          },
+
+          {
+            url: '/static/images/story/story-image_12.jpg',
+            caption:
+              'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
+            captionPosition: 'top-right',
+            author: 'Aaron Vincent Elkaim for The New York Times'
           }
         ]
       }

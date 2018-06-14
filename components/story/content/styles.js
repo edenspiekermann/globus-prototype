@@ -7,6 +7,7 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     font-size: 24px;
     line-height: ${32 / 24};
+    margin-top: 60px;
     max-width: 720px;
   }
 

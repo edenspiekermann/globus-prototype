@@ -71,4 +71,18 @@ export default css`
     position: absolute;
     width: 100%;
   }
+
+  .intro__content-image-container {
+    margin-bottom: 60px;
+    max-width: 1120px;
+  }
+
+  .intro__content-image-caption {
+    color: #a1a1b3;
+    font-family: ${tokens.fonts.founders.family};
+    font-size: 20px;
+    line-height: ${30 / 20};
+    margin-top: 10px;
+    width: 100%;
+  }
 `;

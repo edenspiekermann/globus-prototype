@@ -5,6 +5,9 @@ export default css`
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+  }
+
+  .block + .block {
+    margin-top: 60px;
   }
 `;

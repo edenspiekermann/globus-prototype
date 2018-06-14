@@ -21,4 +21,9 @@ export default css`
   .product-list__list-item + .product-list__list-item {
     margin-left: 20px;
   }
+
+  .product-list__all {
+    margin-top: 60px;
+    text-align: center;
+  }
 `;

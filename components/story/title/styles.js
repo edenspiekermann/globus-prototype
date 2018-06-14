@@ -5,6 +5,7 @@ import tokens from '../../../tokens';
 export default css`
   .title {
     font-family: ${tokens.fonts.founders.family};
+    max-width: 1120px;
   }
 
   .title__content {

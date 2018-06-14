@@ -1,16 +1,16 @@
 import Content from '../content';
-import Image from '../image';
+import Gallery from '../gallery';
 import Products from '../products';
 import Title from '../title';
 
 import styles from './styles';
 
-export default ({ content, image, products, title }) => (
+export default ({ content, gallery, products, title }) => (
   <section className="block">
     <style jsx>{styles}</style>
 
     {title && <Title {...title} />}
-    {image && <Image {...image} />}
+    {gallery && <Gallery {...gallery} />}
     {content && <Content {...content} />}
     {products && <Products {...products} />}
   </section>
