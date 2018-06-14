@@ -11,20 +11,18 @@ export default {
 
     content: [
       'There was a time, in the decades after Prohibition, when Canadian whisky was all the rage in America, when a bottle of Crown Royal sat on the bar cart of any serious.'
-    ]
+    ],
+
+    contentImage: {
+      url: '/static/images/story/story-image_02.jpg',
+      alt: '',
+      caption:
+        'The Eau Claire Distillery opened in 1881 in Turner Valley, Alberta.',
+      author: 'Andy Haslam for The New York Times'
+    }
   },
 
   blocks: [
-    {
-      image: {
-        url: '/static/images/story/story-image_02.jpg',
-        alt: '',
-        caption:
-          'The Eau Claire Distillery opened in 1881 in Turner Valley, Alberta.',
-        author: 'Andy Haslam for The New York Times'
-      }
-    },
-
     {
       content: {
         blocks: [
@@ -170,13 +168,6 @@ export default {
         caption:
           'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
         author: 'Aaron Vincent Elkaim for The New York Times'
-      }
-    },
-
-    {
-      embed: {
-        markup:
-          '<iframe src="https://www.google.com/maps/embed?pb=!4v1527083598506!6m8!1m7!1s5WiS3g94AvPaqtsu3BFkvA!2m2!1d53.51373468959984!2d-113.4859228764822!3f315.4146401773163!4f-5.627950264810863!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0"></iframe>'
       }
     },
 
