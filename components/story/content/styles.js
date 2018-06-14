@@ -10,6 +10,10 @@ export default css`
     max-width: 720px;
   }
 
+  .content__grid {
+    display: flex;
+  }
+
   .content__paragraph--theme-intro {
     font-size: 32px;
     font-weight: ${tokens.fonts.founders.weight.medium};

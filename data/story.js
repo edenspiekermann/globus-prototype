@@ -38,7 +38,35 @@ export default {
             content:
               'It’s a story that Davin de Kergommeaux, a whiskey writer in Ottawa, knows all too well. When he published his book “Canadian Whisky: The Portable Expert” in 2012, it was the first serious guide to the category in decades — not that anyone noticed. He would give seminars at whiskey festivals and be lucky if a few dozen people showed up.'
           }
-        ]
+        ],
+
+        cards: {
+          cards: [
+            {
+              title: 'Angel’s share',
+              content: [
+                'Der «Anteil der Engel», so wird der Verlust des Faßvolumens genannt.',
+                'Da die Fäßer nicht 100% luftdicht sind, verdunstet durch diese ein geringer Anteil (ca. 2% pro Jahr der Lagerung). Jedes Jahr werden geschätzt 100 Millionen Liter den Engel zugute kommen.'
+              ]
+            },
+
+            {
+              title: 'Lässig in Leinen',
+              content: [
+                'Machen Sie während der warmen Monate leichte Hemden, Hosen und Vestons aus Leinen zu besonders anziehenden Begleitern.'
+              ]
+            },
+
+            {
+              title: 'Markt-Trouvaillen',
+              content: [
+                'Zum rezenten Hartkäse ein Glas Mostarda aus Äpfeln oder Birnen? Oder aromatische Olivenöle für sommerliche Küchenkreationen? Erntefrisch verarbeitet, vereinen das eingelegte Gemüse, die feinen Brotaufstriche und die würzigen Sughi mit frischen Kräutern das ganze Spektrum sommerlicher Aromen.'
+              ]
+            }
+          ],
+
+          category: 'Whisky Basics'
+        }
       }
     },
 
