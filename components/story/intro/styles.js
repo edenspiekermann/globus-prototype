@@ -173,7 +173,7 @@ export default css`
     }
   }
 
-  @media ${tokens.mq.large} {
+  @media ${tokens.mq.desktopLarge} {
     .intro__content-image-caption {
       padding-left: 0;
       padding-right: 0;

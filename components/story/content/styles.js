@@ -8,8 +8,15 @@ export default css`
     font-size: 24px;
     line-height: ${32 / 24};
     max-width: 720px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media ${tokens.mq.phablet} {
+    .content {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 
   @media ${tokens.mq.desktop} {
