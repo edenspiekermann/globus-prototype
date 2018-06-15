@@ -6,10 +6,16 @@ export default css`
   .content {
     font-family: ${tokens.fonts.founders.family};
     font-size: 24px;
-    line-height: ${32 / 24};
+    line-height: 1.25;
     max-width: 720px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  @media ${tokens.mq.phone} {
+    .content {
+      line-height: 1.5;
+    }
   }
 
   @media ${tokens.mq.phablet} {
@@ -33,6 +39,12 @@ export default css`
   .content__paragraph--theme-intro {
     font-size: 32px;
     font-weight: ${tokens.fonts.founders.weight.medium};
-    line-height: ${40 / 32};
+    line-height: 1.125;
+  }
+
+  @media ${tokens.mq.phone} {
+    .content__paragraph--theme-intro {
+      line-height: 1.25;
+    } 
   }
 `;

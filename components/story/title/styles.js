@@ -6,8 +6,8 @@ export default css`
   .title {
     font-family: ${tokens.fonts.founders.family};
     max-width: 1120px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media ${tokens.mq.desktop} {
@@ -19,15 +19,21 @@ export default css`
 
   .title__content {
     display: block;
-    font-size: 50px;
+    font-size: 64px;
     font-weight: ${tokens.fonts.founders.weight.medium};
-    line-height: 1;
+    line-height: 0.875;
     text-align: center;
+  }
+
+  @media ${tokens.mq.tablet} {
+    .title__content {
+      font-size: 96px;
+    }
   }
 
   @media ${tokens.mq.desktop} {
     .title__content {
-      font-size: 96px;
+      font-size: 128px;
     }
   }
 
