@@ -34,7 +34,7 @@ export default {
 
           {
             content:
-              'It’s a story that Davin de Kergommeaux, a whiskey writer in Ottawa, knows all too well. When he published his book “Canadian Whisky: The Portable Expert” in 2012, it was the first serious guide to the category in decades — not that anyone noticed. He would give seminars at whiskey festivals and be lucky if a few dozen people showed up.'
+              'It’s a story that Davin de Kergommeaux, a whiskey writer in Ottawa, knows all too well. When he published his book “Canadian Whisky: The Portable Expert” in 2012, it was the first serious guide to the category in decades — not that anyone noticed. He would give seminars at whiskey festivals and be lucky if a few dozen people showed up. And while most American whiskey must by law be aged in charred, new oak  That’s starting to change. Canadian whiskys are winning awards and fans as drinkers curious about the next development in whiskey turn their eyes north. In October, Mr. de Kergommeaux published a fully revised and greatly expanded edition of his book, and he is once again on the festival circuit, getting a much different reception.'
           }
         ],
 

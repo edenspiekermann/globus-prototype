@@ -10,12 +10,12 @@ export default css`
   }
 
   .block + .block {
-    margin-top: 20px;
+    margin-top: 64px;
   }
 
   @media ${tokens.mq.desktop} {
     .block + .block {
-      margin-top: 60px;
+      margin-top: 128px;
     }
   }
 `;
