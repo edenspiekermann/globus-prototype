@@ -8,6 +8,7 @@ export default css`
     max-width: 1120px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
   }
 
   @media ${tokens.mq.desktop} {
@@ -19,15 +20,23 @@ export default css`
 
   .title__content {
     display: block;
-    font-size: 64px;
+    font-size: 48px;
+    hyphens: auto;
     font-weight: ${tokens.fonts.founders.weight.medium};
     line-height: 0.875;
     text-align: center;
   }
 
+  @media ${tokens.mq.phablet} {
+    .title__content {
+      font-size: 64px;
+    }
+  }
+
   @media ${tokens.mq.tablet} {
     .title__content {
       font-size: 96px;
+      hyphens: none;
     }
   }
 
