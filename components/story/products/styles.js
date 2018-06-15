@@ -7,15 +7,18 @@ export default css`
     font-family: ${tokens.fonts.founders.family};
     font-weight: ${tokens.fonts.founders.weight.medium};
     font-size: 32px;
-    line-height: 1.25;
+    line-height: 1;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media ${tokens.mq.desktop} {
     .product-list__title {
       font-size: 32px;
+      margin-bottom: 48px;
     }
   }
 
