@@ -39,7 +39,15 @@ export default class Cards extends React.Component {
 
         <div className="cards__cards">
           <ul className="cards__cards-track">
-            {cards.map((_, i) => <Card key={i} index={i} cardsLength={cards.length} activeCard={this.state.activeCard} {..._} />)}
+            {cards.map((_, i) => (
+              <Card
+                key={i}
+                index={i}
+                cardsLength={cards.length}
+                activeCard={this.state.activeCard}
+                {..._}
+              />
+            ))}
           </ul>
 
           <div className="cards__controls">

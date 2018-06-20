@@ -197,7 +197,7 @@ export default {
             author: 'Aaron Vincent Elkaim for The New York Times',
             portrait: true,
             style: {
-              backgroundColor: 'black',
+              backgroundColor: 'black'
             }
           },
 
@@ -241,7 +241,7 @@ export default {
             url: '/static/images/story/story-image_11.jpg',
             portrait: true,
             style: {
-              backgroundColor: 'black',
+              backgroundColor: 'black'
             }
           },
 
