@@ -8,42 +8,45 @@ import tokens from '../tokens';
 export default () => (
   <Fragment>
     <style jsx>{`
+      .index {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 40px;
+      }
+
       .index__title {
         color: black;
         font-family: ${tokens.fonts.gill.family};
         font-size: 20px;
         margin-bottom: 10px;
         margin-top: 0;
-        max-width: 200px;
         font-weight: normal;
       }
 
       @media ${tokens.mq.desktop} {
         .index__title {
-          font-size: 38px;
-          max-width: none;
+          font-size: 26px;
         }
       }
 
       .index__list {
+        border-left: 1px solid #d2d2d2;
         list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
+        margin: 0 0 0 5px;
+        padding: 0 0 0 20px;
       }
 
       .index__list + .index__title {
-        margin-top: 40px;
+        margin-top: 45px;
       }
 
       .index__item {
-        padding-bottom: 15px;
-        padding-top: 15px;
-        width: 50%;
-      }
-
-      .index__item + .index__item {
-        border-top: 1px solid #e4e4e4;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        width: 100%;
       }
 
       .index__item-link {
@@ -51,12 +54,6 @@ export default () => (
         font-family: ${tokens.fonts.gill.family};
         font-size: 18px;
         text-decoration: none;
-      }
-
-      @media ${tokens.mq.desktop} {
-        .index__item-link {
-          font-size: 24px;
-        }
       }
 
       .index__item-link:hover,
@@ -68,66 +65,68 @@ export default () => (
     <PageHead title="Templates mit Beispiel-Content" />
 
     <div className="index">
-      <h1 className="index__title">Templates Gefäßkomplex 1</h1>
+      <div className="index__container">
+        <h1 className="index__title">Templates Gefäßkomplex 1</h1>
 
-      <ul className="index__list">
-        <li className="index__item">
-          <Link href="/thesis">
-            <a className="index__item-link">These 01: Flowershirts</a>
-          </Link>
-        </li>
+        <ul className="index__list">
+          <li className="index__item">
+            <Link href="/thesis">
+              <a className="index__item-link">These 01: Flowershirts</a>
+            </Link>
+          </li>
 
-        <li className="index__item">
-          <Link href="/thesis-shoes">
-            <a className="index__item-link">These 02: Cowboy-Boots</a>
-          </Link>
-        </li>
+          <li className="index__item">
+            <Link href="/thesis-shoes">
+              <a className="index__item-link">These 02: Cowboy-Boots</a>
+            </Link>
+          </li>
 
-        <li className="index__item">
-          <Link href="/listicle">
-            <a className="index__item-link">
-              Listicle 01: 7 Gründe für mehr Kalifornien
-            </a>
-          </Link>
-        </li>
+          <li className="index__item">
+            <Link href="/listicle">
+              <a className="index__item-link">
+                Listicle 01: 7 Gründe für mehr Kalifornien
+              </a>
+            </Link>
+          </li>
 
-        <li className="index__item">
-          <Link href="/listicle-wine">
-            <a className="index__item-link">
-              Listicle 02: 6 kalifornische Weine
-            </a>
-          </Link>
-        </li>
-      </ul>
+          <li className="index__item">
+            <Link href="/listicle-wine">
+              <a className="index__item-link">
+                Listicle 02: 6 kalifornische Weine
+              </a>
+            </Link>
+          </li>
+        </ul>
 
-      <h1 className="index__title">Templates Gefäßkomplex 2</h1>
+        <h1 className="index__title">Templates Gefäßkomplex 2</h1>
 
-      <ul className="index__list">
-        <li className="index__item">
-          <Link href="/in-the-mood">
-            <a className="index__item-link">
-              In the mood 01: Under the desert sun
-            </a>
-          </Link>
-        </li>
-        <li className="index__item">
-          <Link href="/in-the-mood-market">
-            <a className="index__item-link">In the mood 02: Farmers Markets</a>
-          </Link>
-        </li>
-      </ul>
+        <ul className="index__list">
+          <li className="index__item">
+            <Link href="/in-the-mood">
+              <a className="index__item-link">
+                In the mood 01: Under the desert sun
+              </a>
+            </Link>
+          </li>
+          <li className="index__item">
+            <Link href="/in-the-mood-market">
+              <a className="index__item-link">In the mood 02: Farmers Markets</a>
+            </Link>
+          </li>
+        </ul>
 
-      <h1 className="index__title">Templates Gefäßkomplex 3</h1>
+        <h1 className="index__title">Templates Gefäßkomplex 3</h1>
 
-      <ul className="index__list">
-        <li className="index__item">
-          <Link href="/story">
-            <a className="index__item-link">
-              Story 01: Canadian Whisky's Long-Awaited Comeback
-            </a>
-          </Link>
-        </li>
-      </ul>
+        <ul className="index__list">
+          <li className="index__item">
+            <Link href="/story">
+              <a className="index__item-link">
+                Story 01: Canadian Whisky's Long-Awaited Comeback
+              </a>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   </Fragment>
 );
