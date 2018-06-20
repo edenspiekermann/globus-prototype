@@ -18,6 +18,10 @@ export default () => (
       width: 100%;
     }
 
+    figure {
+      margin: 0;
+    }
+
     small {
       font-size: inherit;
     }

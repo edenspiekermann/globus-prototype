@@ -3,6 +3,7 @@ const sizes = {
   phablet: 650,
   tablet: 768,
   desktop: 960,
+  desktopLarge: 1200,
   large: 1400,
   xlarge: 2000,
   xxlarge: 2200
