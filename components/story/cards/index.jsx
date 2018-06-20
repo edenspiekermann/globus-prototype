@@ -28,11 +28,29 @@ export default class Cards extends React.Component {
     this.setState({ activeCard: prevCard });
   }
 
+  handleTouchStart(event) {
+    this._touchStartX = event.touches[0].clientX;
+  }
+
+  handleTouchEnd(event) {
+    const touchEndX = event.touches[0].clientX;
+
+    if (touchEndX <= this._touchStartX) {
+      this.next();
+    } else {
+      this.previous();
+    }
+  }
+
   render() {
     const { cards, category } = this.props;
 
     return (
-      <div className="cards">
+      <div
+        className="cards"
+        onTouchStart={event => this.handleTouchStart(event)}
+        onTouchEnd={event => this.handleTouchEnd(event)}
+      >
         <style jsx>{styles}</style>
 
         <h2 className="cards__category">{category}</h2>
