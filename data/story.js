@@ -45,21 +45,30 @@ export default {
               content: [
                 'Der «Anteil der Engel», so wird der Verlust des Faßvolumens genannt.',
                 'Da die Fäßer nicht 100% luftdicht sind, verdunstet durch diese ein geringer Anteil (ca. 2% pro Jahr der Lagerung). Jedes Jahr werden geschätzt 100 Millionen Liter den Engel zugute kommen.'
-              ]
+              ],
+              style: {
+                backgroundColor: '#ffecb3'
+              }
             },
 
             {
               title: 'Lässig in Leinen',
               content: [
                 'Machen Sie während der warmen Monate leichte Hemden, Hosen und Vestons aus Leinen zu besonders anziehenden Begleitern.'
-              ]
+              ],
+              style: {
+                backgroundColor: '#ffecb3'
+              }
             },
 
             {
               title: 'Markt-Trouvaillen',
               content: [
                 'Zum rezenten Hartkäse ein Glas Mostarda aus Äpfeln oder Birnen? Oder aromatische Olivenöle für sommerliche Küchenkreationen? Erntefrisch verarbeitet, vereinen das eingelegte Gemüse, die feinen Brotaufstriche und die würzigen Sughi mit frischen Kräutern das ganze Spektrum sommerlicher Aromen.'
-              ]
+              ],
+              style: {
+                backgroundColor: '#ffecb3'
+              }
             }
           ],
 

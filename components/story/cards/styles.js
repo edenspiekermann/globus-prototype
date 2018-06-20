@@ -4,22 +4,13 @@ import tokens from '../../../tokens';
 
 export default css`
   .cards {
-    background-color: #ffecb3;
     margin-bottom: 64px;
-    padding: 20px 20px 60px 20px;
     position: relative;
     width: 100%;
   }
 
-  @media ${tokens.mq.phone} {
-    .cards {
-      padding: 20px 40px 40px 40px;
-    }
-  }
-
   @media ${tokens.mq.phablet} {
     .cards {
-      padding: 20px 60px 60px 60px;
       margin-top: 32px;
       margin-bottom: 80px;
     }
@@ -33,7 +24,6 @@ export default css`
       margin-bottom: 60px;
       margin-left: -200px;
       margin-right: 60px;
-      padding: 50px;
       width: 380px;
     }
   }
@@ -69,10 +59,10 @@ export default css`
       bottom: -32px;
       left: 24px;
       width: 500px;
-      
+
       margin-top: 0;
       margin-bottom: 0;
-      
+
       text-align: left;
       position: absolute;
       transform: rotate(-90deg);
@@ -107,39 +97,14 @@ export default css`
     width: 24px;
   }
 
+  .cards__cards {
+    height: 100%;
+  }
+
   .cards__cards-track {
+    height: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-
-  .cards__card:not(.cards__card--is-active) {
-    display: none;
-  }
-
-  .cards__card-title {
-    font-family: ${tokens.fonts.founders.family};
-    font-size: 20px;
-    font-weight: ${tokens.fonts.founders.weight.medium};
-    line-height: 1.25;
-    letter-spacing: 0.5px;
-    margin-bottom: 16px;
-    margin-top: 0;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .cards__card-counter {
-    opacity: 0.2;
-    display: block;
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin-top: 16px;
-  }
-
-  .cards__card-content {
-    font-family: ${tokens.fonts.founders.family};
-    font-size: 20px;
-    line-height: 1.5;
   }
 `;

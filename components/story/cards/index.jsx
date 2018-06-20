@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './card';
 
 import styles from './styles';
 
@@ -38,29 +39,7 @@ export default class Cards extends React.Component {
 
         <div className="cards__cards">
           <ul className="cards__cards-track">
-            {cards.map((_, i) => (
-              <li
-                key={i}
-                className={`cards__card ${
-                  i === this.state.activeCard ? 'cards__card--is-active' : ''
-                }`}
-              >
-                <h3 className="cards__card-title">
-                  {_.title}{' '}
-                  <small className="cards__card-counter">
-                    {i + 1} / {cards.length}
-                  </small>
-                </h3>
-
-                <div className="cards__card-content">
-                  {/* eslint-disable react/no-danger */}
-                  {_.content.map((p, pi) => (
-                    <p key={pi} dangerouslySetInnerHTML={{ __html: p }} />
-                  ))}
-                  {/* eslint-enable react/no-danger */}
-                </div>
-              </li>
-            ))}
+            {cards.map((_, i) => <Card key={i} index={i} cardsLength={cards.length} activeCard={this.state.activeCard} {..._} />)}
           </ul>
 
           <div className="cards__controls">
