@@ -121,6 +121,7 @@ export default css`
     font-size: 0;
     line-height: 0;
     position: relative;
+    width: 100%;
   }
 
   .intro__image-container:before {
@@ -141,6 +142,24 @@ export default css`
   @media ${tokens.mq.desktop} {
     .intro__image-container:before {
       height: 25%;
+    }
+  }
+
+  .intro__image {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  @media ${tokens.mq.phablet} {
+    .intro__image {
+      height: 350px;
+    }
+  }
+
+  @media ${tokens.mq.desktop} {
+    .intro__image {
+      height: auto;
+      object-fit: contain;
     }
   }
 
