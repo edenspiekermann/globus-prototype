@@ -186,7 +186,10 @@ export default {
               'Ray Daniel, the head bartender at Char No. 5 in Toronto, prefers to use Canadian whisky in his cocktails because of its range of flavors.',
             captionPosition: 'bottom-left',
             author: 'Aaron Vincent Elkaim for The New York Times',
-            portrait: true
+            portrait: true,
+            style: {
+              backgroundColor: 'black',
+            }
           },
 
           {
@@ -227,7 +230,10 @@ export default {
 
           {
             url: '/static/images/story/story-image_11.jpg',
-            portrait: true
+            portrait: true,
+            style: {
+              backgroundColor: 'black',
+            }
           },
 
           {
