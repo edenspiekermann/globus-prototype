@@ -13,7 +13,6 @@ export default css`
     margin-left: 5px;
     margin-right: 5px;
     text-decoration: none;
-    ma
   }
 
   .share::before {
