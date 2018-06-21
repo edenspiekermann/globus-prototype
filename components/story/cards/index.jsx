@@ -29,13 +29,13 @@ export default class Cards extends React.Component {
   }
 
   handleTouchStart(event) {
-    this._touchStartX = event.touches[0].clientX;
+    this.touchStartX = event.touches[0].clientX;
   }
 
   handleTouchEnd(event) {
-    const touchEndX = event.touches[0].clientX;
+    const touchEndX = event.changedTouches[0].clientX;
 
-    if (touchEndX <= this._touchStartX) {
+    if (touchEndX <= this.touchStartX) {
       this.next();
     } else {
       this.previous();
