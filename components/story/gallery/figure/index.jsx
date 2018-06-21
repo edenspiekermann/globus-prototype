@@ -25,7 +25,9 @@ export default ({
         }
       `}</style>
 
-      <img src={url} alt={alt} className="figure__image" />
+      <div className="figure__image-container">
+        <img src={url} alt={alt} className="figure__image" />
+      </div>
 
       {caption && (
         <figcaption

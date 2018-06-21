@@ -22,13 +22,19 @@ export default css`
   }
 
   .figure--portrait {
-    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .figure--portrait .figure__image-container {
+    flex: 1;
+    position: relative;
+    width: 100%;
   }
 
   .figure--portrait .figure__image {
-    height: 100%;
-    max-width: 100%;
-    width: auto;
+    max-width: 400px;
   }
 
   .figure__caption {
