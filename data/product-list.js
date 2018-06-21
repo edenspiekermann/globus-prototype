@@ -195,62 +195,62 @@ export default [
     products: [
       {
         image: {
-          url: '/static/images/products/cowboyboot_1.jpg',
+          url: '/static/images/products/schmoren_4.jpg',
           alt: 'Dummy image'
         },
-        title: 'Keep',
-        type: 'Bikerstiefel',
-        price: '379.00'
+        title: 'Le Creuset',
+        type: 'Bratpfanne',
+        price: '219.00'
       },
 
       {
         image: {
-          url: '/static/images/products/cowboyboot_2.jpg',
+          url: '/static/images/products/schmoren_3.jpg',
           alt: 'Dummy image'
         },
-        title: 'Materia Prima',
-        type: 'Stiefelette',
-        price: '469.00'
+        title: 'Römertopf',
+        type: 'Römertopf aus Ton',
+        price: '42.90'
       },
 
       {
         image: {
-          url: '/static/images/products/cowboyboot_3.jpg',
+          url: '/static/images/products/schmoren_2.jpg',
           alt: 'Dummy image'
         },
-        title: 'Materia Prima',
-        type: 'Stiefelette',
-        price: '449.00'
+        title: 'Le Creuset',
+        type: 'Bräter',
+        price: '299.00'
       },
 
       {
         image: {
-          url: '/static/images/products/cowboyboot_4.jpg',
+          url: '/static/images/products/schmoren_6.jpg',
           alt: 'Dummy image'
         },
-        title: 'Keep',
-        type: 'Stiefelette',
-        price: '329.00'
+        title: 'Le Creuset',
+        type: 'Bräter SIGNATURE',
+        price: '299.90'
       },
 
       {
         image: {
-          url: '/static/images/products/cowboyboot_5.jpg',
+          url: '/static/images/products/schmoren_1.jpg',
           alt: 'Dummy image'
         },
-        title: 'Keep',
-        type: 'Bikerstiefel',
-        price: '379.00'
-      },
-
-      {
-        image: {
-          url: '/static/images/products/cowboyboot_6.jpg',
-          alt: 'Dummy image'
-        },
-        title: 'Coral Blue',
-        type: 'Bikerstiefel',
+        title: 'Le Creuset',
+        type: 'Tajine',
         price: '239.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/schmoren_5.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Rösle',
+        type: 'Kochtopf MA CHALET',
+        price: '319.00'
       }
     ]
   }
