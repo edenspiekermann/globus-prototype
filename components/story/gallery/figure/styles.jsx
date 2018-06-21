@@ -39,6 +39,7 @@ export default css`
 
   .figure__caption {
     font-family: ${tokens.fonts.founders.family};
+    color: #a1a1b3;
     font-size: 16px;
     margin-top: 15px;
     padding-left: 20px;
