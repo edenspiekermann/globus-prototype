@@ -80,6 +80,18 @@ export default () => (
               <a className="index__item-link">These 02: Cowboy-Boots</a>
             </Link>
           </li>
+          
+          <li className="index__item">
+            <Link href="/thesis-logomania">
+              <a className="index__item-link">These 03: Logomania</a>
+            </Link>
+          </li>
+          
+          <li className="index__item">
+            <Link href="/thesis-schmoren">
+              <a className="index__item-link">These 04: Schmoren</a>
+            </Link>
+          </li>
 
           <li className="index__item">
             <Link href="/listicle">
@@ -111,6 +123,16 @@ export default () => (
           <li className="index__item">
             <Link href="/in-the-mood-market">
               <a className="index__item-link">In the mood 02: Farmers Markets</a>
+            </Link>
+          </li>
+          <li className="index__item">
+            <Link href="/in-the-mood-smartcity">
+              <a className="index__item-link">In the mood 03: Smart City</a>
+            </Link>
+          </li>
+          <li className="index__item">
+            <Link href="/in-the-mood-studio">
+              <a className="index__item-link">In the mood 04: Globus Studio</a>
             </Link>
           </li>
         </ul>

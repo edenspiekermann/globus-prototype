@@ -19,15 +19,27 @@ export default css`
     .in-the-mood-section {
       padding-top: 120px;
     }
+    
+    .in-the-mood-section:first-child {
+      padding-top: 80px;
+    }
   }
 
   @media ${tokens.mq.large} {
     .in-the-mood-section {
       padding-top: 160px;
     }
+    
+    .in-the-mood-section:first-child {
+      padding-top: 100px;
+    }
   }
 
   .in-the-mood-section--collapse {
+    padding-top: 0;
+  }
+
+  .in-the-mood-section--collapse:first-child {
     padding-top: 0;
   }
 
