@@ -5,18 +5,18 @@ import tokens from '../../../../tokens';
 export default css`
   .card {
     height: 100%;
-    padding: 20px 20px 60px 20px;
+    padding: 48px 24px;
   }
 
   @media ${tokens.mq.phone} {
     .card {
-      padding: 20px 40px 40px 40px;
+      padding: 40px 40px 40px 40px;
     }
   }
 
   @media ${tokens.mq.phablet} {
     .card {
-      padding: 20px 60px 60px 60px;
+      padding: 48px;
     }
   }
 
@@ -55,4 +55,5 @@ export default css`
     font-size: 20px;
     line-height: 1.5;
   }
+
 `;

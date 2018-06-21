@@ -5,8 +5,8 @@ import tokens from '../../../tokens';
 export default css`
   .content {
     font-family: ${tokens.fonts.founders.family};
-    font-size: 24px;
-    line-height: 1.25;
+    font-size: 20px;
+    line-height: 1.5;
     max-width: 720px;
     padding-left: 20px;
     padding-right: 20px;
@@ -14,7 +14,7 @@ export default css`
 
   @media ${tokens.mq.phone} {
     .content {
-      line-height: 1.5;
+      font-size: 24px;
     }
   }
 
@@ -37,14 +37,14 @@ export default css`
   }
 
   .content__paragraph--theme-intro {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: ${tokens.fonts.founders.weight.medium};
-    line-height: 1.125;
+    line-height: 1.25;
   }
 
   @media ${tokens.mq.phone} {
     .content__paragraph--theme-intro {
-      line-height: 1.25;
+      font-size: 32px;
     } 
   }
 `;

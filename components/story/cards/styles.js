@@ -11,7 +11,6 @@ export default css`
 
   @media ${tokens.mq.phablet} {
     .cards {
-      margin-top: 32px;
       margin-bottom: 80px;
     }
   }
@@ -36,31 +35,30 @@ export default css`
     text-align: center;
     line-height: 1;
     left: 15px;
-    margin-top: -38px;
-    margin-bottom: 32px;
+    margin-top: 0;
+    margin-bottom: -12px;
   }
 
   @media ${tokens.mq.phablet} {
     .cards__category {
       font-size: 48px;
-      margin-top: -48px;
+      margin-bottom: -16px;
     }
   }
 
   @media ${tokens.mq.desktop} {
     .cards__category {
       font-size: 64px;
-      margin-top: -56px;
+      margin-bottom: -24px;
     }
   }
 
   @media ${tokens.mq.desktopLarge} {
     .cards__category {
       bottom: -32px;
-      left: 24px;
+      left: 20px;
       width: 500px;
 
-      margin-top: 0;
       margin-bottom: 0;
 
       text-align: left;
