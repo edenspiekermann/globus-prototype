@@ -27,6 +27,7 @@ export default css`
 
   .figure--portrait .figure__image {
     height: 100%;
+    max-width: 100%;
     width: auto;
   }
 
