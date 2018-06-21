@@ -22,13 +22,13 @@ export default css`
 
   .in-the-mood-block--padded .in-the-mood-block__image-container,
   .in-the-mood-block--padded .in-the-mood-block__video-container {
-    padding: 30px;
+    padding: 0;
   }
 
   @media ${tokens.mq.phone} {
     .in-the-mood-block--padded .in-the-mood-block__image-container,
     .in-the-mood-block--padded .in-the-mood-block__video-container {
-      padding: 60px;
+      padding: 0;
     }
   }
 

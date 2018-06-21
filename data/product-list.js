@@ -125,5 +125,133 @@ export default [
         price: '239.00'
       }
     ]
+  },
+  
+  {
+    products: [
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_1.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Keep',
+        type: 'Bikerstiefel',
+        price: '379.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_2.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Materia Prima',
+        type: 'Stiefelette',
+        price: '469.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_3.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Materia Prima',
+        type: 'Stiefelette',
+        price: '449.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_4.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Keep',
+        type: 'Stiefelette',
+        price: '329.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_5.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Keep',
+        type: 'Bikerstiefel',
+        price: '379.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_6.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Coral Blue',
+        type: 'Bikerstiefel',
+        price: '239.00'
+      }
+    ]
+  },
+  
+  {
+    products: [
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_1.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Keep',
+        type: 'Bikerstiefel',
+        price: '379.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_2.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Materia Prima',
+        type: 'Stiefelette',
+        price: '469.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_3.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Materia Prima',
+        type: 'Stiefelette',
+        price: '449.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_4.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Keep',
+        type: 'Stiefelette',
+        price: '329.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_5.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Keep',
+        type: 'Bikerstiefel',
+        price: '379.00'
+      },
+
+      {
+        image: {
+          url: '/static/images/products/cowboyboot_6.jpg',
+          alt: 'Dummy image'
+        },
+        title: 'Coral Blue',
+        type: 'Bikerstiefel',
+        price: '239.00'
+      }
+    ]
   }
 ];

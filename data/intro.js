@@ -54,5 +54,33 @@ export default [
       'Mit vielen Winzern verbindet ihn nicht nur eine langjährige Geschäftsbeziehung, sondern auch eine tiefe Freundschaft.'
     ],
     reversed: true
+  },
+  
+  {
+    color: 'rgb(242, 218, 97)',
+    byline: 'Globus Trends',
+    image: {
+      url: '/static/images/thesis/logo-pulli.jpg',
+      alt: 'Logopulli'
+    },
+    title: 'Party like it’s 1999: Diese Pullover bringen pure Lebensfreude in den Herbst',
+    text: [
+      'Die Strickpullis und Sweatshirts der Saison sind nicht zu übersehen. Prägnante Tierapplikationen, extraweite XXL-Ärmel und Knallfarben erfordern ein wenig Mut – der aber belohnt wird. Denn Kenzo, MSGM & Co. beweisen, dass farbenfrohe Mode an tristen Tagen zwar nicht die Welt, aber die Laune retten kann.',
+      'Diese Pullover setzen neue Standards im Segment der Statement-Sweater.'
+    ]
+  },
+  
+  {
+    color: 'rgb(184, 217, 184)',
+    byline: 'Globus Trends',
+    image: {
+      url: '/static/images/thesis/schmoren.jpg',
+      alt: 'Logopulli'
+    },
+    title: 'Zurück zum ehrlichen Kochen: Schmoren ist der Food-Trend der Stunde',
+    text: [
+      'Sous Vide und Modernist Cuisine ist ja schön und gut: Mit diesen Schmortöpfen und Brätern lebt die ehrliche Kunst der altbewährten Gerichte wieder auf: Anbraten, aufsetzen, lange köcheln lassen. Braten, Coq au Vin, Ragout und mehr. Soulfood  für den Herbst und Winter – straight from  the pot.',
+      'Ob formvollendete Klassiker oder funktionale neue Designs. Die Töpfe überzeugen mit einer exzellenten  Wärmespeicherung, sind für jede Herdart geeignet und Backofen-fest.'
+    ]
   }
 ];

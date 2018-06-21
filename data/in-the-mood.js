@@ -789,5 +789,486 @@ export default [
         ]
       }
     ]
+  }, 
+  
+  // Smart City
+  {
+    sections: [
+      {
+        blocks: [
+          {
+            title: {
+              label: 'Smart City',
+              align: 'center'
+            },
+            
+            image: {
+              url: '/static/images/in-the-mood/smartcity-01.jpg',
+              alt: 'Einkaufstasche'
+            },
+
+            style: {
+              padded: true
+            }
+          }
+        ]
+      },
+      
+      {
+        collapse: true,
+        blocks: [
+          {
+            title: {
+              label:
+                'Ein Casual Twist für die Klassiker —  Trenchcoat, Blazer und Bomberjacke bringen neue Nuancen ',
+              align: 'center',
+              size: 'medium'
+            }
+          }
+        ]
+      },
+
+      {
+        collapse: false,
+        blocks: [
+          {
+            image: {
+              url: '/static/images/in-the-mood/smartcity-02.jpg',
+              alt: ''
+            }
+          },
+
+          {
+            image: {
+              url: '/static/images/in-the-mood/smartcity-03.jpg',
+              alt: ''
+            },
+
+            button: {
+              label: 'Shop the Look',
+              url: '#'
+            },
+
+            shoppingLayer: {
+              title: 'Das könnten Ihnen auch gefallen',
+              inStock: false,
+              products: [
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_1.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Mani',
+                  type: 'Olivenöl aus Griechenland',
+                  price: '19.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_2.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Nicolas Alziari',
+                  type: 'Olivenöl Fruitée Douce',
+                  price: '29.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_3.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'il Boschetto',
+                  type: 'Extra Virgin Olive Oil Poggio Bianco ',
+                  price: '25.90'
+                }
+              ]
+            }
+          }
+        ]
+      },
+
+      {
+        collapse: true,
+        blocks: [
+          {
+            image: {
+              url: '/static/images/in-the-mood/smartcity-04.jpg',
+              alt: ''
+            },
+            
+            style: {
+              padded: true
+            }
+          }
+        ]
+      },
+
+      {
+        collapse: true,
+        blocks: [
+          {
+            image: {
+              url: '/static/images/in-the-mood/smartcity-05.jpg',
+              alt: ''
+            },
+            
+            style: {
+              padded: false
+            }
+          },
+
+          {
+            image: {
+              url: '/static/images/in-the-mood/smartcity-06.jpg',
+              alt: ''
+            },
+
+            button: {
+              label: 'Shop the Look',
+              url: '#'
+            },
+
+            shoppingLayer: {
+              title: 'Das könnten Ihnen auch gefallen',
+              inStock: false,
+              products: [
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_1.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Mani',
+                  type: 'Olivenöl aus Griechenland',
+                  price: '19.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_2.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Nicolas Alziari',
+                  type: 'Olivenöl Fruitée Douce',
+                  price: '29.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_3.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'il Boschetto',
+                  type: 'Extra Virgin Olive Oil Poggio Bianco ',
+                  price: '25.90'
+                }
+              ]
+            }
+          }
+        ]
+      },
+
+      {
+        collapse: true,
+        blocks: [
+          {
+            image: {
+              url: '/static/images/in-the-mood/smartcity-09.jpg',
+              alt: ''
+            },
+            
+            style: {
+              padded: true
+            },
+
+            button: {
+              label: 'Shop the Look',
+              url: '#'
+            },
+
+            shoppingLayer: {
+              title: 'Das könnten Ihnen auch gefallen',
+              inStock: false,
+              products: [
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_1.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Mani',
+                  type: 'Olivenöl aus Griechenland',
+                  price: '19.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_2.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Nicolas Alziari',
+                  type: 'Olivenöl Fruitée Douce',
+                  price: '29.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_3.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'il Boschetto',
+                  type: 'Extra Virgin Olive Oil Poggio Bianco ',
+                  price: '25.90'
+                }
+              ]
+            }
+          }
+        ]
+      },
+    ]
+  },
+  
+  // Globus Studio
+  {
+    sections: [
+      {
+        collapse: true,
+        blocks: [
+          {
+            title: {
+              label: 'Globus Studio',
+              align: 'left'
+            },
+            video: {
+              url: '/static/videos/studio-01.mp4'
+            },
+
+            style: {
+              padded: false
+            }
+          }
+        ]
+      },
+
+      {
+        collapse: true,
+        blocks: [
+          {
+            image: {
+              url: '/static/images/in-the-mood/studio-01.jpg',
+              alt: ''
+            },
+            
+            style: {
+              padded: true
+            }
+          },
+
+          {
+            image: {
+              url: '/static/images/in-the-mood/studio-02.jpg',
+              alt: ''
+            },
+
+            button: {
+              label: 'Shop the Look',
+              url: '#'
+            },
+
+            shoppingLayer: {
+              title: 'Das könnten Ihnen auch gefallen',
+              inStock: false,
+              products: [
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_1.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Mani',
+                  type: 'Olivenöl aus Griechenland',
+                  price: '19.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_2.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Nicolas Alziari',
+                  type: 'Olivenöl Fruitée Douce',
+                  price: '29.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_3.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'il Boschetto',
+                  type: 'Extra Virgin Olive Oil Poggio Bianco ',
+                  price: '25.90'
+                }
+              ]
+            }
+          }
+        ]
+      },
+      
+      {
+        collapse: true,
+        blocks: [
+          {
+            image: {
+              url: '/static/images/in-the-mood/studio-03.jpg',
+              alt: ''
+            },
+
+            button: {
+              label: 'Sandalen shoppen',
+              url: '#'
+            },
+
+            shoppingLayer: {
+              title: '',
+              inStock: true,
+              products: [
+                {
+                  image: {
+                    url: '/static/images/products/sandalen_1.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'ALMA EN PENA',
+                  type: 'Sandale',
+                  price: '129.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/sandalen_2.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'MICHAEL KORS',
+                  type: 'Sandale',
+                  price: '169.00'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/sandalen_3.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'ALMA EN PENA',
+                  type: 'Sandale',
+                  price: '139.00'
+                }
+              ]
+            }
+          },
+          
+          {
+            title: {
+              label:
+                'Um dolor sit amet, consetetur sadipscing elitr, sed diam.',
+              align: 'left',
+              size: 'small'
+            }
+          }
+        ]
+      },
+      
+      {
+        collapse: true,
+        blocks: [
+          {
+            video: {
+              url: '/static/videos/studio-03.mp4'
+            }
+          }
+        ]
+      },
+      
+      {
+        collapse: true,
+        blocks: [
+          {
+            image: {
+              url: '/static/images/in-the-mood/studio-06.jpg',
+              alt: ''
+            },
+            
+            style: {
+              padded: true,
+              backgroundColor: '#1F292A'
+            }
+          },
+        ]
+      },
+
+      {
+        collapse: true,
+        blocks: [
+          {
+            video: {
+              url: '/static/videos/studio-02.mp4'
+            },
+
+            style: {
+              padded: true
+            }
+          }
+        ]
+      },
+
+      {
+        collapse: true,
+        blocks: [
+          {
+            image: {
+              url: '/static/images/in-the-mood/studio-04.jpg',
+              alt: ''
+            },
+            
+            style: {
+              padded: true
+            }
+          },
+
+          {
+            image: {
+              url: '/static/images/in-the-mood/studio-05.jpg',
+              alt: ''
+            },
+
+            button: {
+              label: 'Shop the Look',
+              url: '#'
+            },
+
+            shoppingLayer: {
+              title: 'Das könnten Ihnen auch gefallen',
+              inStock: false,
+              products: [
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_1.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Mani',
+                  type: 'Olivenöl aus Griechenland',
+                  price: '19.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_2.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'Nicolas Alziari',
+                  type: 'Olivenöl Fruitée Douce',
+                  price: '29.90'
+                },
+                {
+                  image: {
+                    url: '/static/images/products/oliveoil_3.jpg',
+                    alt: 'Dummy image'
+                  },
+                  title: 'il Boschetto',
+                  type: 'Extra Virgin Olive Oil Poggio Bianco ',
+                  price: '25.90'
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
   }
 ];

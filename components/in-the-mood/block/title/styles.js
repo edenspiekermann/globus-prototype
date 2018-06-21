@@ -61,6 +61,7 @@ export default css`
     line-height: 0.875;
     margin-top: -15vw;
     padding: 30px;
+    position: relative;
   }
 
   @media ${tokens.mq.phablet} {

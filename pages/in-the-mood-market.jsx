@@ -9,7 +9,7 @@ import PageHead from '../components/page-head';
 
 export default () => (
   <Fragment>
-    <PageHead title="In the mood - Under the desert sun" />
+    <PageHead title="In the mood - Farmers Market" />
 
     <Header />
 
