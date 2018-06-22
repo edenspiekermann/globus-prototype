@@ -34,7 +34,7 @@ export default css`
   }
 
   .figure--portrait .figure__image {
-    max-width: 400px;
+    max-width: 720px;
   }
 
   .figure__caption {
