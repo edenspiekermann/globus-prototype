@@ -5,12 +5,12 @@ export default {
       alt: ''
     },
 
-    title: 'Canadian Whisky’s Long-Awaited Comeback',
+    title: 'Die besten Whiskeys sind jetzt auch Blends',
     published: '22. October 2018',
     authors: 'Text Max Mustermann, Fotos Laura Marling',
 
     content: [
-      'There was a time, in the decades after Prohibition, when Canadian whisky was all the rage in America, when a bottle of Crown Royal sat on the bar cart of any serious.'
+      'Jahrelang galten Single Malts als das Nonplusultra im Whiskeybrennen. Eine junge Generation Whiskey-Enthusiasten macht sich jetzt daran Geschmäcker zu verbinden – und mit Blends ganz neue Akzente zu setzen.'
     ],
 
     contentImage: {
